@@ -1,25 +1,26 @@
 // @ts-ignore
-import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
 // @ts-ignore
-import {navigationRef} from '@root/navigations/RootNavigations';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import MainScreen from '../screens/private/MainScreen';
-import SplashWithSearchBar from '../screens/private/splashWithSearchBar';
-import navigationStrings from './navigationStrings';
-import Login from '../screens/public/login';
-import {useTheme} from 'styled-components';
-import SignUp from '../screens/public/signUp';
-import SettingScreen from '../screens/private/settingScreen';
+import { navigationRef } from "@root/navigations/RootNavigations";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import MainScreen from "../screens/private/MainScreen";
+import SplashWithSearchBar from "../screens/private/splashWithSearchBar";
+import navigationStrings from "./navigationStrings";
+import Login from "../screens/public/login";
+import { useTheme } from "styled-components";
+import SignUp from "../screens/public/signUp";
+import SettingScreen from "../screens/private/settingScreen";
 import AppUpdate from "../screens/private/appUpdate";
 import DownloadResource from "../screens/downloadResource";
+import Akhar from "../screens/private/Akhar";
 
 type RouteProps = {
   scheme: any;
 };
 const Stack = createNativeStackNavigator();
-const Routes: React.FC<RouteProps> = ({scheme}) => {
-  const {colors}: any = useTheme();
+const Routes: React.FC<RouteProps> = ({ scheme }) => {
+  const { colors }: any = useTheme();
   // @ts-ignore
   // @ts-ignore
   // @ts-ignore
@@ -29,12 +30,12 @@ const Routes: React.FC<RouteProps> = ({scheme}) => {
         <Stack.Screen
           name="Home"
           component={MainScreen}
-          options={{title: 'Welcome', headerShown: false}}
+          options={{ title: "Welcome", headerShown: false }}
         />
         <Stack.Screen
           name={navigationStrings.SPLASH_WITH_SEARCH}
           component={SplashWithSearchBar}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
 
         <Stack.Screen
@@ -42,8 +43,8 @@ const Routes: React.FC<RouteProps> = ({scheme}) => {
           component={Login}
           options={{
             headerShown: true,
-            headerStyle: {backgroundColor: colors.secondary},
-            headerTintColor: 'white',
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
           }}
         />
 
@@ -52,8 +53,8 @@ const Routes: React.FC<RouteProps> = ({scheme}) => {
           component={SignUp}
           options={{
             headerShown: true,
-            headerStyle: {backgroundColor: colors.secondary},
-            headerTintColor: 'white',
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
           }}
         />
 
@@ -62,8 +63,8 @@ const Routes: React.FC<RouteProps> = ({scheme}) => {
           component={SettingScreen}
           options={{
             headerShown: true,
-            headerStyle: {backgroundColor: colors.secondary},
-            headerTintColor: 'white',
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
           }}
         />
 
@@ -72,8 +73,8 @@ const Routes: React.FC<RouteProps> = ({scheme}) => {
           component={AppUpdate}
           options={{
             headerShown: true,
-            headerStyle: {backgroundColor: colors.secondary},
-            headerTintColor: 'white',
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
           }}
         />
 
@@ -82,8 +83,18 @@ const Routes: React.FC<RouteProps> = ({scheme}) => {
           component={DownloadResource}
           options={{
             headerShown: true,
-            headerStyle: {backgroundColor: colors.secondary},
-            headerTintColor: 'white',
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
+          }}
+        />
+
+        <Stack.Screen
+          name={navigationStrings.AKHAR}
+          component={Akhar}
+          options={{
+            headerShown: true,
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
           }}
         />
       </Stack.Navigator>
