@@ -20,4 +20,8 @@ export default {
   APP_UPDATE: "Gursevak App Updates",
   DOWNLOAD_RESOURCE: "Download Sources",
   AKHAR: "35 Akhar",
+  SEARCH_SCREEN: "Gurbani Pankati",
+  ABOUT_APP: "Title (Ex: Gursevak and Bhagat Ji)",
+  PAKANTI_SEARCH: "Search",
+  POTHI_SHAIB_VIEW: ".",
 };

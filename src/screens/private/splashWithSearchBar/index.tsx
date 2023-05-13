@@ -14,6 +14,7 @@ import {
   icSehajPath,
   icSetting,
   icSundarGutka,
+  icThreeDots,
   icUser,
 } from "../../../assets";
 import {
@@ -156,16 +157,25 @@ const SplashWithSearchBar = ({ navigation }) => {
         </ButtonWrapper>
         <SearchWrapper>
           <InputWrapper>
-            <TextField
-              autoCapitalize={"none"}
-              placeholder="a b c d"
-              secureTextEntry={true}
-              icon={icSearch}
-            />
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.SEARCH_SCREEN);
+              }}
+            >
+              <TextField
+                defaultValue={"Search"}
+                autoCapitalize={"none"}
+                placeholder="Search"
+                secureTextEntry={false}
+                editable={false}
+                icon={icSearch}
+              />
+            </TouchableOpacity>
           </InputWrapper>
 
-          <ImageWrapper style={{ marginRight: 3 }} source={icRoundBack} />
+          <ImageWrapper style={{ marginLeft: 3 }} source={icRoundBack} />
           <ImageWrapper source={icAccentStart} />
+          <Image source={icThreeDots} />
         </SearchWrapper>
       </BottomWrapper>
     </MainWrapper>

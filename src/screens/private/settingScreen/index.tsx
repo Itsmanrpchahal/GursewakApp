@@ -1,31 +1,42 @@
 // @ts-ignore
-import React, {useState} from 'react';
-import styled, {withTheme} from 'styled-components/native';
-import {Image, ScrollView, Switch, TouchableOpacity} from 'react-native';
-import {useTheme} from 'styled-components';
-import {icCanada, icPaypal, icSetting, icyoutube} from '../../../assets';
-import {Dropdown} from 'react-native-element-dropdown';
-import navigationStrings from '../../../navigations/navigationStrings';
+import React, { useState } from "react";
+import styled, { withTheme } from "styled-components/native";
+import { Image, ScrollView, Switch, TouchableOpacity } from "react-native";
+import { useTheme } from "styled-components";
+import {
+  icCanada,
+  icEmail,
+  icFacebook,
+  icInstagram,
+  icPaypal,
+  icSetting,
+  icsoundCloud,
+  icweb,
+  icyoutube,
+  ytIcon,
+} from "../../../assets";
+import { Dropdown } from "react-native-element-dropdown";
+import navigationStrings from "../../../navigations/navigationStrings";
 
 const data = [
-  {label: 'Item 1', value: '1'},
-  {label: 'Item 2', value: '2'},
-  {label: 'Item 3', value: '3'},
-  {label: 'Item 4', value: '4'},
-  {label: 'Item 5', value: '5'},
-  {label: 'Item 6', value: '6'},
-  {label: 'Item 7', value: '7'},
-  {label: 'Item 8', value: '8'},
+  { label: "Item 1", value: "1" },
+  { label: "Item 2", value: "2" },
+  { label: "Item 3", value: "3" },
+  { label: "Item 4", value: "4" },
+  { label: "Item 5", value: "5" },
+  { label: "Item 6", value: "6" },
+  { label: "Item 7", value: "7" },
+  { label: "Item 8", value: "8" },
 ];
-const SettingScreen = ({navigation}) => {
+const SettingScreen = ({ navigation }) => {
   const [value, setValue] = useState(null);
   const [isFocus, setIsFocus] = useState(false);
-  const {colors}: any = useTheme();
+  const { colors }: any = useTheme();
   const [isEnabled, setIsEnabled] = useState(false);
-  const toggleSwitch = () => setIsEnabled(previousState => !previousState);
+  const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
 
   return (
-    <ScrollView style={{height: '100%', backgroundColor: colors.primary}}>
+    <ScrollView style={{ height: "100%", backgroundColor: colors.primary }}>
       <MainWrapper>
         <ItemWrapper>
           <TextWrapper>Language</TextWrapper>
@@ -36,11 +47,11 @@ const SettingScreen = ({navigation}) => {
               maxHeight={300}
               labelField="label"
               valueField="value"
-              placeholder={!isFocus ? 'Select item' : '...'}
+              placeholder={!isFocus ? "Select item" : "..."}
               value={value}
               onFocus={() => setIsFocus(true)}
               onBlur={() => setIsFocus(false)}
-              onChange={item => {
+              onChange={(item) => {
                 setValue(item.value);
                 setIsFocus(false);
               }}
@@ -59,11 +70,11 @@ const SettingScreen = ({navigation}) => {
               maxHeight={300}
               labelField="label"
               valueField="value"
-              placeholder={!isFocus ? 'Select item' : '...'}
+              placeholder={!isFocus ? "Select item" : "..."}
               value={value}
               onFocus={() => setIsFocus(true)}
               onBlur={() => setIsFocus(false)}
-              onChange={item => {
+              onChange={(item) => {
                 setValue(item.value);
                 setIsFocus(false);
               }}
@@ -75,8 +86,8 @@ const SettingScreen = ({navigation}) => {
         <ToggleWrapper>
           <TextWrapper>Other Apps’ Notifications</TextWrapper>
           <Switch
-            trackColor={{false: '#767577', true: '#81b0ff'}}
-            thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
+            trackColor={{ false: "#767577", true: "#81b0ff" }}
+            thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
             ios_backgroundColor="#3e3e3e"
             onValueChange={toggleSwitch}
             value={isEnabled}
@@ -91,8 +102,8 @@ const SettingScreen = ({navigation}) => {
         <ToggleWrapper>
           <TextWrapper>Daily Dose Notifications</TextWrapper>
           <Switch
-            trackColor={{false: '#767577', true: '#81b0ff'}}
-            thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
+            trackColor={{ false: "#767577", true: "#81b0ff" }}
+            thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
             ios_backgroundColor="#3e3e3e"
             onValueChange={toggleSwitch}
             value={isEnabled}
@@ -107,8 +118,8 @@ const SettingScreen = ({navigation}) => {
         <ToggleWrapper>
           <TextWrapper>Offline Media</TextWrapper>
           <Switch
-            trackColor={{false: '#767577', true: '#81b0ff'}}
-            thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
+            trackColor={{ false: "#767577", true: "#81b0ff" }}
+            thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
             ios_backgroundColor="#3e3e3e"
             onValueChange={toggleSwitch}
             value={isEnabled}
@@ -122,8 +133,8 @@ const SettingScreen = ({navigation}) => {
         <ToggleWrapper>
           <TextWrapper>Home Screen Introduction</TextWrapper>
           <Switch
-            trackColor={{false: '#767577', true: '#81b0ff'}}
-            thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
+            trackColor={{ false: "#767577", true: "#81b0ff" }}
+            thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
             ios_backgroundColor="#3e3e3e"
             onValueChange={toggleSwitch}
             value={isEnabled}
@@ -148,9 +159,27 @@ const SettingScreen = ({navigation}) => {
 
         <ToggleWrapper>
           <ItemWrapper1>
-            <TextWrapper>About Us</TextWrapper>
-            <TextWrapperWhite>About the Gursevak App</TextWrapperWhite>
-            <TextWrapperWhite>About Gursevak and Bhagat Ji</TextWrapperWhite>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.ABOUT_APP);
+              }}
+            >
+              <TextWrapper>About Us</TextWrapper>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.ABOUT_APP);
+              }}
+            >
+              <TextWrapperWhite>About the Gursevak App</TextWrapperWhite>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.ABOUT_APP);
+              }}
+            >
+              <TextWrapperWhite>About Gursevak and Bhagat Ji</TextWrapperWhite>
+            </TouchableOpacity>
             <TextWrapperWhite>Acknowledgements</TextWrapperWhite>
           </ItemWrapper1>
           <ImageWrapper source={icyoutube} />
@@ -162,7 +191,8 @@ const SettingScreen = ({navigation}) => {
             marginRight: 16,
             marginLeft: 16,
             marginBottom: -16,
-          }}>
+          }}
+        >
           Contact Us
         </TextWrapper>
         <ToggleWrapper>
@@ -170,54 +200,54 @@ const SettingScreen = ({navigation}) => {
             <TextWrapperWhite>Email</TextWrapperWhite>
             <DecsTextWrapperWhite>hello@gursevak.com</DecsTextWrapperWhite>
           </ItemWrapper1>
-          <ImageWrapper source={icyoutube} />
+          <ImageWrapper source={icEmail} />
         </ToggleWrapper>
-        <ToggleWrapper style={{marginTop: -10}}>
+        <ToggleWrapper style={{ marginTop: -10 }}>
           <ItemWrapper1>
             <TextWrapperWhite>Website</TextWrapperWhite>
             <DecsTextWrapperWhite>gursevak.com</DecsTextWrapperWhite>
           </ItemWrapper1>
-          <ImageWrapper source={icyoutube} />
+          <ImageWrapper source={icweb} />
         </ToggleWrapper>
 
-        <ToggleWrapper style={{marginTop: -10}}>
+        <ToggleWrapper style={{ marginTop: -10 }}>
           <ItemWrapper1>
             <TextWrapperWhite>Facebook</TextWrapperWhite>
             <DecsTextWrapperWhite>
               facebook.com/gursevaksevadar
             </DecsTextWrapperWhite>
           </ItemWrapper1>
-          <ImageWrapper source={icyoutube} />
+          <ImageWrapper source={icFacebook} />
         </ToggleWrapper>
 
-        <ToggleWrapper style={{marginTop: -10}}>
+        <ToggleWrapper style={{ marginTop: -10 }}>
           <ItemWrapper1>
             <TextWrapperWhite>Instagram</TextWrapperWhite>
             <DecsTextWrapperWhite>
               instagram.com/gursevaksevadar
             </DecsTextWrapperWhite>
           </ItemWrapper1>
-          <ImageWrapper source={icyoutube} />
+          <ImageWrapper source={icInstagram} />
         </ToggleWrapper>
 
-        <ToggleWrapper style={{marginTop: -10}}>
+        <ToggleWrapper style={{ marginTop: -10 }}>
           <ItemWrapper1>
             <TextWrapperWhite>SoundCloud</TextWrapperWhite>
             <DecsTextWrapperWhite>
               soundcloud.com/gursevaksevadar
             </DecsTextWrapperWhite>
           </ItemWrapper1>
-          <ImageWrapper source={icyoutube} />
+          <ImageWrapper source={icsoundCloud} />
         </ToggleWrapper>
 
-        <ToggleWrapper style={{marginTop: -10}}>
+        <ToggleWrapper style={{ marginTop: -10 }}>
           <ItemWrapper1>
             <TextWrapperWhite>YouTube</TextWrapperWhite>
             <DecsTextWrapperWhite>
               youtube.com/gursevaksevadar
             </DecsTextWrapperWhite>
           </ItemWrapper1>
-          <ImageWrapper source={icyoutube} />
+          <ImageWrapper source={ytIcon} />
         </ToggleWrapper>
         <DividerView />
 
@@ -229,7 +259,7 @@ const SettingScreen = ({navigation}) => {
           <ToggleWrapper>
             <ImageWrapper source={icPaypal} />
             <ImageWrapper source={icCanada} />
-            <UnderLineText style={{textDecorationLine: 'underline'}}>
+            <UnderLineText style={{ textDecorationLine: "underline" }}>
               Other Options
             </UnderLineText>
           </ToggleWrapper>
@@ -248,13 +278,15 @@ const SettingScreen = ({navigation}) => {
           <TouchableOpacity
             onPress={() => {
               navigation.navigate(navigationStrings.APP_UPDATE);
-            }}>
+            }}
+          >
             <DecsTextWrapperWhite>App Updates</DecsTextWrapperWhite>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => {
               navigation.navigate(navigationStrings.DOWNLOAD_RESOURCE);
-            }}>
+            }}
+          >
             <DecsTextWrapperWhite>Download Sources</DecsTextWrapperWhite>
           </TouchableOpacity>
         </ItemWrapper>
@@ -263,14 +295,14 @@ const SettingScreen = ({navigation}) => {
 
         <ItemWrapper>
           <TextWrapper>App Updates</TextWrapper>
-          <TextWrapperWhite style={{marginTop: 16}}>
+          <TextWrapperWhite style={{ marginTop: 16 }}>
             Export App Data
           </TextWrapperWhite>
-          <ToggleWrapper style={{margin: -16}}>
+          <ToggleWrapper style={{ margin: -16 }}>
             <TextWrapperWhite>Auto Backup</TextWrapperWhite>
             <Switch
-              trackColor={{false: '#767577', true: '#81b0ff'}}
-              thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
+              trackColor={{ false: "#767577", true: "#81b0ff" }}
+              thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
               ios_backgroundColor="#3e3e3e"
               onValueChange={toggleSwitch}
               value={isEnabled}
@@ -285,14 +317,14 @@ const SettingScreen = ({navigation}) => {
 export default withTheme(SettingScreen);
 
 const UnderLineText = styled.Text`
-  color: ${({theme}: any) => theme.colors.textWhite};
-  font-size: ${({theme, fontSize}: any) => theme.fontSize[0].cardSubTitle}px;
+  color: ${({ theme }: any) => theme.colors.textWhite};
+  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardSubTitle}px;
 `;
 
 const DecsTextWrapperWhite = styled.Text`
-  color: ${({theme}: any) => theme.colors.textWhite};
+  color: ${({ theme }: any) => theme.colors.textWhite};
   margin-top: 10px;
-  font-size: ${({theme, fontSize}: any) => theme.fontSize[0].cardDate}px;
+  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardDate}px;
 `;
 
 const ImageWrapper = styled.Image``;
@@ -300,14 +332,14 @@ const ImageWrapper = styled.Image``;
 const ItemWrapper1 = styled.View``;
 
 const TextWrapperWhite = styled.Text`
-  color: ${({theme}: any) => theme.colors.textWhite};
+  color: ${({ theme }: any) => theme.colors.textWhite};
   margin-top: 10px;
-  font-size: ${({theme, fontSize}: any) => theme.fontSize[0].cardSubTitle}px;
+  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardSubTitle}px;
 `;
 
 const WhiteTextWrapper = styled.Text`
-  color: ${({theme}: any) => theme.colors.textLightTheme};
-  font-size: ${({theme, fontSize}: any) => theme.fontSize[0].cardDate}px;
+  color: ${({ theme }: any) => theme.colors.textLightTheme};
+  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardDate}px;
   margin-bottom: 16px;
   margin-left: 16px;
   margin-right: 16px;
@@ -323,7 +355,7 @@ const ToggleWrapper = styled.View`
 const DividerView = styled.View`
   width: 100%;
   height: 1px;
-  background-color: ${({theme}: any) => theme.colors.textWhite};
+  background-color: ${({ theme }: any) => theme.colors.textWhite};
   opacity: 0.1;
 `;
 
@@ -341,12 +373,12 @@ const ItemWrapper = styled.View`
 `;
 
 const TextWrapper = styled.Text`
-  color: ${({theme}: any) => theme.colors.accentColor};
-  font-size: ${({theme, fontSize}: any) => theme.fontSize[0].cardSubTitle}px;
+  color: ${({ theme }: any) => theme.colors.accentColor};
+  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardSubTitle}px;
 `;
 
 const MainWrapper = styled.View`
   flex: 1;
   margin-top: 10px;
-  background-color: ${({theme}: any) => theme.colors.primary};
+  background-color: ${({ theme }: any) => theme.colors.primary};
 `;
