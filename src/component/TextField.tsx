@@ -1,10 +1,10 @@
 // @ts-ignore
-import React, {useState} from 'react';
-import {Image, TouchableOpacity} from 'react-native';
+import React, { useState } from "react";
+import { Image, TouchableOpacity } from "react-native";
 
-import {withTheme} from 'styled-components';
+import { withTheme } from "styled-components";
 // @ts-ignore
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
 type TextFieldProps = {
   onChangeText?: Function;
@@ -29,14 +29,14 @@ const TextField: React.FC<TextFieldProps> = ({
   icon = null,
   accessibilityLabel,
   secureTextEntry = false,
-  keyboardType = 'default',
+  keyboardType = "default",
   onChangeText,
-  autoCapitalize = 'sentences',
+  autoCapitalize = "sentences",
   error = null,
   theme,
   multiline = false,
   editable = true,
-  defaultValue = '',
+  defaultValue = "",
   fontSize = 14,
   style = {},
   ...rest
@@ -74,7 +74,8 @@ const TextField: React.FC<TextFieldProps> = ({
         {secureTextEntry && (
           <SecureEntryIcon>
             <TouchableOpacity
-              onPress={() => setShowSecureEntry(!showSecureEntry)}>
+              onPress={() => setShowSecureEntry(!showSecureEntry)}
+            >
               <Image source={icon} />
             </TouchableOpacity>
           </SecureEntryIcon>
@@ -109,8 +110,8 @@ const SecureEntryIcon = styled.View``;
 
 const TextInputField = styled.TextInput<FontSizeProps>`
   flex: 1;
-  color: ${({theme}: any) => theme.colors.textBlack};
-  font-size: ${({theme, fontSize}: any) => theme.fontSize[0].cardDate}px;
+  color: ${({ theme }: any) => theme.colors.textBlack};
+  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardDate}px;
   padding-left: 8px;
 `;
 
@@ -121,16 +122,16 @@ const Horizontal = styled.View`
   padding-bottom: 10px;
   flex-direction: row;
   align-items: center;
-  background-color: ${({theme}: any) => theme.colors.textWhite};
-  opacity: 0.7;
-  border-radius: 18px;
+  background-color: ${({ theme }: any) => theme.colors.textWhite};
+  opacity: 0.4;
+  border-radius: 22px;
   margin-top: 10px;
   height: 45px;
 `;
 
 const TextInputLabelWrapper__Content = styled.Text<FontSizeProps>`
-  color: ${({theme}: any) => theme.colors.text};
-  font-size: ${({theme, fontSize}: any) => theme.fontSize[0].cardDate}px;
+  color: ${({ theme }: any) => theme.colors.text};
+  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardDate}px;
   font-weight: 600;
 `;
 

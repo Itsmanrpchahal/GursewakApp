@@ -33,3 +33,7 @@ export { default as icFilter } from "../assets/filter/filter.png";
 export { default as icFullScreen } from "../assets/fullScreen/fullScreen.png";
 export { default as icNote } from "../assets/note/note.png";
 export { default as icOptions } from "../assets/options/options.png";
+export { default as icBack } from "../assets/backArrow/backArrow.png";
+export { default as icPlus } from "../assets/plus/plus.png";
+export { default as icMinus } from "../assets/minus/minus.png";
+export { default as icArrowDownWhite } from "../assets/downArrowWhite/downArrowWhite.png";

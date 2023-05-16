@@ -184,7 +184,6 @@ const PakantiSearchType = ({ navigation }) => {
                 setValue(item.value);
                 setIsFocus(false);
               }}
-              renderLeftIcon={() => <Image source={icSetting} />}
             />
           </DropdownWrapper>
         </Collapsible>

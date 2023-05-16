@@ -307,7 +307,7 @@ const HorizontalView = styled.View`
 
 const BottomWrapper = styled.View`
   position: absolute;
-  bottom: 20px;
+  bottom: 28px;
   width: 100%;
   padding: 16px;
   background-color: ${({ theme }: any) => theme.colors.primary};

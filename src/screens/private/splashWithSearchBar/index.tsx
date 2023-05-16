@@ -175,7 +175,13 @@ const SplashWithSearchBar = ({ navigation }) => {
 
           <ImageWrapper style={{ marginLeft: 3 }} source={icRoundBack} />
           <ImageWrapper source={icAccentStart} />
-          <Image source={icThreeDots} />
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate(navigationStrings.PAKANTI_SEARCH);
+            }}
+          >
+            <Image source={icThreeDots} />
+          </TouchableOpacity>
         </SearchWrapper>
       </BottomWrapper>
     </MainWrapper>

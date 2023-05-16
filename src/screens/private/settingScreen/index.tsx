@@ -55,7 +55,6 @@ const SettingScreen = ({ navigation }) => {
                 setValue(item.value);
                 setIsFocus(false);
               }}
-              renderLeftIcon={() => <Image source={icSetting} />}
             />
           </DropdownWrapper>
         </ItemWrapper>
@@ -78,7 +77,6 @@ const SettingScreen = ({ navigation }) => {
                 setValue(item.value);
                 setIsFocus(false);
               }}
-              renderLeftIcon={() => <Image source={icSetting} />}
             />
           </DropdownWrapper>
         </ItemWrapper>

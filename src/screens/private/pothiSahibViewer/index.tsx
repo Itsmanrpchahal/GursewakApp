@@ -1,9 +1,19 @@
-import React, { useState } from "react";
-import { FlatList, Image, TouchableOpacity } from "react-native";
+import React, { useRef, useState } from "react";
+import {
+  Animated,
+  FlatList,
+  Image,
+  SafeAreaView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import styled from "styled-components/native";
 import { withTheme } from "styled-components/native";
 import { Dropdown } from "react-native-element-dropdown";
 import { icSetting } from "../../../assets";
+import { NavigationContainer } from "@react-navigation/native";
+import navigationStrings from "../../../navigations/navigationStrings";
 
 const data = [
   {
@@ -38,20 +48,12 @@ const data = [
   },
 ];
 
-const PothiSahibViewer = () => {
+const PothiSahibViewer = ({ navigation }) => {
   const [isFocus, setIsFocus] = useState(false);
   const [value, setValue] = useState(null);
+
   return (
     <MainWrapper>
-      <HeaderWrapper>
-        <VerticleWrapper>
-          <TextWrapper>ਲਿਖਾਰੀ</TextWrapper>
-          <TextWrapper>ਰਾਗ</TextWrapper>
-        </VerticleWrapper>
-
-        <TextWrapper>ਅੰਗ ੧੨੩੪</TextWrapper>
-      </HeaderWrapper>
-
       <DropdownWrapper>
         <DropDownText>ਆਖਹਿ</DropDownText>
         <Dropdown
@@ -68,7 +70,6 @@ const PothiSahibViewer = () => {
             setValue(item.item);
             setIsFocus(false);
           }}
-          renderLeftIcon={() => <Image source={icSetting} />}
         />
       </DropdownWrapper>
       <FlatList
@@ -105,7 +106,7 @@ const PothiSahibViewer = () => {
 export default withTheme(PothiSahibViewer);
 
 const DropDownText = styled.Text`
-padding-left:8px
+  padding-left:8px
   color: ${({ theme }: any) => theme.colors.textBlack};
   font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].text26}px;
 `;
@@ -121,22 +122,22 @@ const DropdownWrapper = styled.View`
 
 const PothiTextSubDesc = styled.Text`
   color: ${({ theme }: any) => theme.colors.PothiTextSubDesc};
-  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].pothiTextDecs}px;
+  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardSubTitle};
 `;
 
 const PothiTextDesc1 = styled.Text`
   color: ${({ theme }: any) => theme.colors.pothiTextTitle};
-  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].pothiTextDecs}px;
+  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardSubTitle};
 `;
 
 const PothiTextDesc = styled.Text`
   color: ${({ theme }: any) => theme.colors.pothiTextDecs};
-  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].pothiTextDecs}px;
+  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardSubTitle};
 `;
 
 const PothiTextSubTitle = styled.Text`
   color: ${({ theme }: any) => theme.colors.pothiTextSubTitle};
-  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardTitle}px;
+  font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardTitle};
 `;
 
 const ItemWrapper = styled.View`
@@ -146,10 +147,6 @@ const ItemWrapper = styled.View`
 const PothiTextTitle = styled.Text`
   color: ${({ theme }: any) => theme.colors.pothiTextTitle};
   font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].text26}px;
-`;
-
-const TextWrapper = styled.Text`
-  color: ${({ theme }: any) => theme.colors.textWhite};
 `;
 
 const VerticleWrapper = styled.View``;

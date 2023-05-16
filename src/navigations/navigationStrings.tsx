@@ -25,4 +25,9 @@ export default {
   PAKANTI_SEARCH: "Search",
   POTHI_SHAIB_VIEW: "Pothi Sahib Viewer",
   POTHI_VIEWER_SAHIB: "Pothi Sahib Viewer",
+  POTHI_SIDE_MENU: "Pothi Sahib Viewer_",
+  HELP: "Help",
+  REPORT_MISTAKE: "Report Mistake",
+  POTHI_SETTING: "Setting",
+  ADD_NOTES: "Add Notes",
 };
