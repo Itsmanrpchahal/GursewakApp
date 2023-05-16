@@ -29,3 +29,7 @@ export { default as icThreeDots } from "../assets/setting/setting.png";
 export { default as icQuestionMark } from "../assets/questionMark/questionMark.png";
 export { default as icArrowUp } from "../assets/arrowUp/arrowUp.png";
 export { default as icArrowDown } from "../assets/arrowDown/arrowDown.png";
+export { default as icFilter } from "../assets/filter/filter.png";
+export { default as icFullScreen } from "../assets/fullScreen/fullScreen.png";
+export { default as icNote } from "../assets/note/note.png";
+export { default as icOptions } from "../assets/options/options.png";

@@ -8,14 +8,20 @@ import MainScreen from "../screens/private/MainScreen";
 import SplashWithSearchBar from "../screens/private/splashWithSearchBar";
 import navigationStrings from "./navigationStrings";
 import Login from "../screens/public/login";
-import { useTheme } from "styled-components";
+import styled, { useTheme } from "styled-components/native";
 import SignUp from "../screens/public/signUp";
 import SettingScreen from "../screens/private/settingScreen";
 import AppUpdate from "../screens/private/appUpdate";
 import Akhar from "../screens/private/Akhar";
 import aboutApp from "../screens/private/aboutApp";
 import { Image, TouchableOpacity } from "react-native";
-import { icQuestionMark } from "../assets";
+import {
+  icFilter,
+  icFullScreen,
+  icNote,
+  icOptions,
+  icQuestionMark,
+} from "../assets";
 import searchScreen from "../screens/private/searchScreen";
 import pakantiSeacrhType from "../screens/private/pakantiSeacrhType";
 import downloadResource from "../screens/private/downloadResource";
@@ -151,6 +157,16 @@ const Routes: React.FC<RouteProps> = ({ scheme }) => {
             headerShown: true,
             headerStyle: { backgroundColor: colors.secondary },
             headerTintColor: "white",
+            headerRight: (route: any) => {
+              return (
+                <HorizontalView>
+                  <ImageWrapper source={icFullScreen} />
+                  <ImageWrapper source={icFilter} />
+                  <ImageWrapper source={icNote} />
+                  <ImageWrapper style={{ marginTop: 6 }} source={icOptions} />
+                </HorizontalView>
+              );
+            },
           }}
         />
       </Stack.Navigator>
@@ -158,3 +174,11 @@ const Routes: React.FC<RouteProps> = ({ scheme }) => {
   );
 };
 export default Routes;
+
+const ImageWrapper = styled.Image`
+  margin: 4px;
+`;
+
+const HorizontalView = styled.View`
+  flex-direction: row;
+`;

@@ -23,5 +23,6 @@ export default {
   SEARCH_SCREEN: "Gurbani Pankati",
   ABOUT_APP: "Title (Ex: Gursevak and Bhagat Ji)",
   PAKANTI_SEARCH: "Search",
-  POTHI_SHAIB_VIEW: ".",
+  POTHI_SHAIB_VIEW: "Pothi Sahib Viewer",
+  POTHI_VIEWER_SAHIB: "Pothi Sahib Viewer",
 };

@@ -6,8 +6,6 @@ import { Dropdown } from "react-native-element-dropdown";
 import { Image, ScrollView, TouchableOpacity, View } from "react-native";
 import { useTheme } from "styled-components";
 import Collapsible from "react-native-collapsible";
-import FillBtn from "../../../component/FillBtn";
-import navigationStrings from "../../../navigations/navigationStrings";
 
 const data = [
   { label: "Item 1", value: "1" },
@@ -190,13 +188,6 @@ const PakantiSearchType = ({ navigation }) => {
             />
           </DropdownWrapper>
         </Collapsible>
-
-        <FillBtn
-          btntext={"Next"}
-          onPress={() => {
-            navigation.navigate(navigationStrings.POTHI_SHAIB_VIEW);
-          }}
-        />
       </MainWrapper>
     </ScrollView>
   );

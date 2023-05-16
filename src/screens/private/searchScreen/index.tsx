@@ -23,6 +23,8 @@ import {
 } from "../../../assets";
 import TextField from "../../../component/TextField";
 import navigationStrings from "../../../navigations/navigationStrings";
+import { FlatList } from "react-native";
+import PankatiView from "../../../component/pakantiView";
 
 var radio_props = [
   { label: "First Letter Start", value: 0 },
@@ -30,6 +32,39 @@ var radio_props = [
   { label: "Ang/Vaar", value: 1 },
   { label: "Gurmukhi", value: 1 },
   { label: "English", value: 1 },
+];
+
+var data = [
+  {
+    title: "Title",
+    subTitle: "SubTtitle",
+    desc: "Description",
+    raag: "Raag",
+  },
+  {
+    title: "Title",
+    subTitle: "SubTtitle",
+    desc: "Description",
+    raag: "Raag",
+  },
+  {
+    title: "Title",
+    subTitle: "SubTtitle",
+    desc: "Description",
+    raag: "Raag",
+  },
+  {
+    title: "Title",
+    subTitle: "SubTtitle",
+    desc: "Description",
+    raag: "Raag",
+  },
+  {
+    title: "Title",
+    subTitle: "SubTtitle",
+    desc: "Description",
+    raag: "Raag",
+  },
 ];
 
 const SearchScreen = ({ navigation }) => {
@@ -42,20 +77,23 @@ const SearchScreen = ({ navigation }) => {
   };
   return (
     <MainWrapper style={{ marginBottom: -16 }}>
-      <ScrollView>
+      <ScrollView
+        style={{ marginBottom: 130 }}
+        showsVerticalScrollIndicator={false}
+      >
         <MainWrapper>
           <TextWrapper>Search Type</TextWrapper>
           <RadioForm
             style={{ marginTop: 10 }}
             radio_props={radio_props}
-            buttonInnerColor={colors.textWhite}
-            buttonOuterColor={colors.textWhite}
-            buttonColor={colors.textWhite}
+            buttonInnerColor={colors.text}
+            buttonOuterColor={colors.text}
+            buttonColor={colors.text}
             animation={true}
-            labelColor={colors.textWhite}
+            labelColor={colors.text}
             labelStyle={{
               fontSize: 14,
-              color: colors.textWhite,
+              color: colors.text,
             }}
             initial={0}
             onPress={(value) => {
@@ -127,6 +165,21 @@ const SearchScreen = ({ navigation }) => {
               />
             </HorizontalView>
           </HorizontalViewMain>
+
+          <FlatList
+            data={data}
+            renderItem={({ item, index }) => {
+              return (
+                <TouchableOpacity
+                  onPress={() => {
+                    navigation.navigate(navigationStrings.POTHI_SHAIB_VIEW);
+                  }}
+                >
+                  <PankatiView item={item} />
+                </TouchableOpacity>
+              );
+            }}
+          ></FlatList>
         </MainWrapper>
       </ScrollView>
 
@@ -268,20 +321,23 @@ const HorizontalViewMain = styled.View`
 `;
 
 const TextDesc = styled.Text`
-  color: ${({ theme }: any) => theme.colors.textWhite};
+  color: ${({ theme }: any) => theme.colors.text};
+  margin-top: 8px;
   font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardDate}px;
   font-weight: 500;
 `;
 
 const TextWrapper = styled.Text`
-  color: ${({ theme }: any) => theme.colors.accentColor};
+  color: ${({ theme }: any) => theme.colors.blueYellow};
   font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardSubTitle}px;
 `;
 
 const MainWrapper1 = styled.View`
   flex: 1;
   height: 100%;
-  margin: -16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-bottom: -20px;
   align-items: center;
   background-color: ${({ theme }: any) => theme.colors.primary};
 `;
@@ -289,6 +345,6 @@ const MainWrapper1 = styled.View`
 const MainWrapper = styled.View`
   flex: 1;
   height: 100%;
-  padding: 16px;
-  background-color: ${({ theme }: any) => theme.colors.primary};
+  padding: 8px;
+  background-color: ${({ theme }: any) => theme.colors.pankantiBC};
 `;
