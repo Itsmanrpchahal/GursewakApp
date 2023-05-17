@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styled, { withTheme } from "styled-components/native";
 import FillBtn from "../../../component/FillBtn";
-import { ScrollView } from "react-native";
+import { ScrollView, StatusBar } from "react-native";
 import { useTheme } from "styled-components";
 import navigationStrings from "../../../navigations/navigationStrings";
 import CheckBox from "react-native-check-box";
@@ -14,6 +14,10 @@ const DownloadResource = () => {
   return (
     <ScrollView style={{ backgroundColor: colors.primary }}>
       <MainWrapper>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor={colors.secondary}
+        />
         <TextWrapper>Downloaded Sources</TextWrapper>
         <CheckBoxWrapper>
           <CheckBox

@@ -118,8 +118,6 @@ const TextInputField = styled.TextInput<FontSizeProps>`
 const Horizontal = styled.View`
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   flex-direction: row;
   align-items: center;
   background-color: ${({ theme }: any) => theme.colors.textWhite};

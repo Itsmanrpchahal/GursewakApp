@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import { StatusBar, Text, TouchableOpacity, View } from "react-native";
 import styled from "styled-components/native";
 import { withTheme } from "styled-components/native";
+import { Appearance } from "react-native";
+
 import {
   icArrowDown,
   icArrowDownWhite,
@@ -11,10 +13,12 @@ import {
 import Collapsible from "react-native-collapsible";
 
 const AddNotes = ({ navigation }) => {
+  const mode = Appearance.getColorScheme();
   const [collapsedBlackSearch, setCollaspedBlackSearch] = useState(false);
 
   return (
     <MainWrapper>
+      <StatusBar barStyle="light-content" backgroundColor={colors.secondary} />
       <TItleHorizontalView>
         <ItemWrapper1>
           <TextWrapperYellow>Add Notes</TextWrapperYellow>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   Image,
   ScrollView,
+  StatusBar,
   Switch,
   TouchableOpacity,
   View,
@@ -77,6 +78,7 @@ const SearchScreen = ({ navigation }) => {
   };
   return (
     <MainWrapper style={{ marginBottom: -16 }}>
+      <StatusBar barStyle="light-content" backgroundColor={colors.secondary} />
       <ScrollView
         style={{ marginBottom: 130 }}
         showsVerticalScrollIndicator={false}
@@ -246,7 +248,7 @@ const SearchScreen = ({ navigation }) => {
                 navigation.navigate(navigationStrings.PAKANTI_SEARCH);
               }}
             >
-              <Image source={icThreeDots} />
+              <Image style={{ marginRight: 10 }} source={icThreeDots} />
             </TouchableOpacity>
           </SearchWrapper>
         </BottomWrapper>

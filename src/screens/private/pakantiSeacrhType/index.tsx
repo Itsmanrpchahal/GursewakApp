@@ -3,9 +3,16 @@ import styled, { withTheme } from "styled-components/native";
 import { icArrowDown, icArrowUp, icSetting, ytIcon } from "../../../assets";
 import CheckBox from "react-native-check-box";
 import { Dropdown } from "react-native-element-dropdown";
-import { Image, ScrollView, TouchableOpacity, View } from "react-native";
+import {
+  Image,
+  ScrollView,
+  StatusBar,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { useTheme } from "styled-components";
 import Collapsible from "react-native-collapsible";
+import { Appearance } from "react-native";
 
 const data = [
   { label: "Item 1", value: "1" },
@@ -18,6 +25,7 @@ const data = [
   { label: "Item 8", value: "8" },
 ];
 const PakantiSearchType = ({ navigation }) => {
+  const mode = Appearance.getColorScheme();
   const [checked, setChecked] = useState(false);
   const [isFocus, setIsFocus] = useState(false);
   const [value, setValue] = useState(null);
@@ -30,6 +38,10 @@ const PakantiSearchType = ({ navigation }) => {
   return (
     <ScrollView style={{ backgroundColor: colors.primary }}>
       <MainWrapper>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor={colors.secondary}
+        />
         <TouchableOpacity
           onPress={() => {
             setCollaspedBlackSearch(!collapsedBlackSearch);
@@ -174,8 +186,14 @@ const PakantiSearchType = ({ navigation }) => {
               data={data}
               search={false}
               maxHeight={300}
+              containerStyle={{
+                backgroundColor: mode === "light" ? "white" : "gray",
+              }}
               labelField="label"
               valueField="value"
+              activeColor={colors.primary}
+              placeholderStyle={{ color: "black" }}
+              selectedTextStyle={{ color: "black" }}
               placeholder={!isFocus ? "Select item" : "..."}
               value={value}
               onFocus={() => setIsFocus(true)}

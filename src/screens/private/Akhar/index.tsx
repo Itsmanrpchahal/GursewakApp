@@ -1,5 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FlatList, Text, TouchableOpacity, View } from "react-native";
+import {
+  FlatList,
+  StatusBar,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { useTheme } from "styled-components";
 import styled, { withTheme } from "styled-components/native";
 import { data } from "../../../utils/constants";
@@ -22,6 +28,7 @@ const Akhar = () => {
 
   return (
     <MainWrapper>
+      <StatusBar barStyle="light-content" backgroundColor={colors.secondary} />
       <ButtonWrapper>
         <TouchableOpacity
           style={{ width: "50%", marginRight: 3 }}

@@ -1,9 +1,13 @@
 import React from "react";
+import { StatusBar } from "react-native";
+import { useTheme } from "styled-components";
 import styled, { withTheme } from "styled-components/native";
 
 const AboutApp = () => {
+  const { colors }: any = useTheme();
   return (
     <MainWrapper>
+      <StatusBar barStyle="light-content" backgroundColor={colors.secondary} />
       <TextWrapper>Subtitle</TextWrapper>
       <TextDesc style={{ marginTop: 5 }}>
         For example, if you are unsure whether the shabad you’re searching has

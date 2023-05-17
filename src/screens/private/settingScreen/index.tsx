@@ -1,8 +1,16 @@
 // @ts-ignore
 import React, { useState } from "react";
 import styled, { withTheme } from "styled-components/native";
-import { Image, ScrollView, Switch, TouchableOpacity } from "react-native";
+import {
+  Image,
+  ScrollView,
+  StatusBar,
+  Switch,
+  TouchableOpacity,
+} from "react-native";
 import { useTheme } from "styled-components";
+import { Appearance } from "react-native";
+
 import {
   icCanada,
   icEmail,
@@ -33,20 +41,31 @@ const SettingScreen = ({ navigation }) => {
   const [isFocus, setIsFocus] = useState(false);
   const { colors }: any = useTheme();
   const [isEnabled, setIsEnabled] = useState(false);
+  const mode = Appearance.getColorScheme();
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
 
   return (
     <ScrollView style={{ height: "100%", backgroundColor: colors.primary }}>
       <MainWrapper>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor={colors.secondary}
+        />
         <ItemWrapper>
           <TextWrapper>Language</TextWrapper>
           <DropdownWrapper>
             <Dropdown
               data={data}
               search={false}
+              activeColor={colors.primary}
               maxHeight={300}
+              containerStyle={{
+                backgroundColor: mode === "light" ? "white" : "gray",
+              }}
               labelField="label"
               valueField="value"
+              placeholderStyle={{ color: "black" }}
+              selectedTextStyle={{ color: "black" }}
               placeholder={!isFocus ? "Select item" : "..."}
               value={value}
               onFocus={() => setIsFocus(true)}
@@ -67,8 +86,14 @@ const SettingScreen = ({ navigation }) => {
               data={data}
               search={false}
               maxHeight={300}
+              activeColor={colors.primary}
+              containerStyle={{
+                backgroundColor: mode === "light" ? "white" : "gray",
+              }}
               labelField="label"
               valueField="value"
+              placeholderStyle={{ color: "black" }}
+              selectedTextStyle={{ color: "black" }}
               placeholder={!isFocus ? "Select item" : "..."}
               value={value}
               onFocus={() => setIsFocus(true)}

@@ -22,6 +22,7 @@ import {
   Image,
   SafeAreaView,
   ScrollView,
+  StatusBar,
   Text,
   TouchableOpacity,
 } from "react-native";
@@ -60,6 +61,7 @@ const SplashWithSearchBar = ({ navigation }) => {
   const { colors }: any = useTheme();
   return (
     <MainWrapper>
+      <StatusBar barStyle="light-content" backgroundColor={colors.primary} />
       <SafeAreaView>
         <ScrollView style={{ marginBottom: 150 }}>
           <MainWrapper1>
@@ -180,7 +182,7 @@ const SplashWithSearchBar = ({ navigation }) => {
               navigation.navigate(navigationStrings.PAKANTI_SEARCH);
             }}
           >
-            <Image source={icThreeDots} />
+            <Image style={{ marginRight: 10 }} source={icThreeDots} />
           </TouchableOpacity>
         </SearchWrapper>
       </BottomWrapper>
@@ -268,6 +270,7 @@ const TopWrapper = styled.View`
   flex-direction: row;
   justify-content: flex-end;
   margin-right: 10px;
+  margin-top: 10px;
 `;
 
 const MainWrapper1 = styled.View`

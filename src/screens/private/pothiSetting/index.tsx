@@ -10,6 +10,7 @@ import { useTheme } from "styled-components";
 import styled from "styled-components/native";
 import { withTheme } from "styled-components/native";
 import Collapsible from "react-native-collapsible";
+import { Appearance } from "react-native";
 import {
   icArrowDown,
   icArrowUp,
@@ -31,6 +32,7 @@ const data = [
 
 const PothiSetting = () => {
   const { colors }: any = useTheme();
+  const mode = Appearance.getColorScheme();
   const [collapsedBlackSearch, setCollaspedBlackSearch] = useState(false);
   const [isFocus, setIsFocus] = useState(false);
   const [value, setValue] = useState(null);
@@ -60,8 +62,14 @@ const PothiSetting = () => {
                 data={data}
                 search={false}
                 maxHeight={300}
+                activeColor={colors.primary}
+                containerStyle={{
+                  backgroundColor: mode === "light" ? "white" : "gray",
+                }}
                 labelField="label"
                 valueField="value"
+                placeholderStyle={{ color: "black" }}
+                selectedTextStyle={{ color: "black" }}
                 placeholder={!isFocus ? "Select item" : "..."}
                 value={value}
                 onFocus={() => setIsFocus(true)}

@@ -4,6 +4,7 @@ import {
   FlatList,
   Image,
   SafeAreaView,
+  StatusBar,
   Text,
   TouchableOpacity,
   View,
@@ -11,63 +12,49 @@ import {
 import styled from "styled-components/native";
 import { withTheme } from "styled-components/native";
 import { Dropdown } from "react-native-element-dropdown";
-import { icSetting } from "../../../assets";
-import { NavigationContainer } from "@react-navigation/native";
-import navigationStrings from "../../../navigations/navigationStrings";
+import { Appearance } from "react-native";
+import { useTheme } from "styled-components";
 
 const data = [
-  {
-    item: 1,
-  },
-  {
-    item: 1,
-  },
-  {
-    item: 1,
-  },
-  {
-    item: 1,
-  },
-  {
-    item: 1,
-  },
-  {
-    item: 1,
-  },
-  {
-    item: 1,
-  },
-  {
-    item: 1,
-  },
-  {
-    item: 1,
-  },
-  {
-    item: 1,
-  },
+  { label: "Item 1", value: "1" },
+  { label: "Item 2", value: "2" },
+  { label: "Item 3", value: "3" },
+  { label: "Item 4", value: "4" },
+  { label: "Item 5", value: "5" },
+  { label: "Item 6", value: "6" },
+  { label: "Item 7", value: "7" },
+  { label: "Item 8", value: "8" },
 ];
 
 const PothiSahibViewer = ({ navigation }) => {
   const [isFocus, setIsFocus] = useState(false);
   const [value, setValue] = useState(null);
-
+  const mode = Appearance.getColorScheme();
+  const { colors }: any = useTheme();
   return (
     <MainWrapper>
+      <StatusBar barStyle="light-content" backgroundColor={colors.secondary} />
       <DropdownWrapper>
         <DropDownText>ਆਖਹਿ</DropDownText>
         <Dropdown
           data={data}
           search={false}
           maxHeight={300}
-          labelField="item"
-          valueField="item"
+          activeColor={colors.primary}
+          containerStyle={{
+            backgroundColor: mode === "light" ? "white" : "gray",
+          }}
+          labelField="label"
+          valueField="value"
+          activeColor={colors.primary}
+          placeholderStyle={{ color: "black" }}
+          selectedTextStyle={{ color: "black" }}
           placeholder={!isFocus ? "Select item" : "..."}
           value={value}
           onFocus={() => setIsFocus(true)}
           onBlur={() => setIsFocus(false)}
           onChange={(item) => {
-            setValue(item.item);
+            setValue(item.value);
             setIsFocus(false);
           }}
         />

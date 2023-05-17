@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ScrollView, View } from "react-native";
+import { ScrollView, StatusBar, View } from "react-native";
 import styled from "styled-components/native";
 import { withTheme } from "styled-components/native";
 import TextField from "../../../component/TextField";
@@ -15,6 +15,10 @@ const ReportMistake = () => {
   return (
     <ScrollView style={{ backgroundColor: colors.pankantiBC }}>
       <MainWrapper>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor={colors.secondary}
+        />
         <TextField
           accessibilityLabel="Thuk"
           placeholder="Selected gurbwxI jI"

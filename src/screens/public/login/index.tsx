@@ -6,7 +6,7 @@ import { icInOnkar } from "../../../assets";
 import TextField from "../../../component/TextField";
 import FillBtn from "../../../component/FillBtn";
 import BorderBtn from "../../../component/BorderBtn";
-import { ScrollView } from "react-native";
+import { ScrollView, StatusBar } from "react-native";
 import { useTheme } from "styled-components";
 import navigationStrings from "../../../navigations/navigationStrings";
 
@@ -15,6 +15,10 @@ const Login = ({ navigation }) => {
   return (
     <ScrollView style={{ height: "100%", backgroundColor: colors.primary }}>
       <MainWrapper>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor={colors.secondary}
+        />
         <ImageWrapper source={icInOnkar} />
         <TextTitle>Resources</TextTitle>
         <ContentWrapper>
