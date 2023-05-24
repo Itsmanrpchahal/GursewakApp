@@ -17,6 +17,8 @@ import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import org.reactnative.maskedview.RNCMaskedViewPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
+// react-native-pager-view
+import com.reactnativepagerview.PagerViewPackage;
 // react-native-reanimated
 import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
@@ -71,6 +73,7 @@ public class PackageList {
       new AsyncStoragePackage(),
       new RNCMaskedViewPackage(),
       new RNGestureHandlerPackage(),
+      new PagerViewPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage()

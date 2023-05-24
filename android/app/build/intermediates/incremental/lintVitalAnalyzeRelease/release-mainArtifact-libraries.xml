@@ -1,5 +1,18 @@
 <libraries>
   <library
+      name="/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android@@:react-native-pager-view::release"
+      jars="/Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-pager-view/android/build/.transforms/f6c4802316336c027b23f4e979ac283d/transformed/out/jars/classes.jar:/Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-pager-view/android/build/.transforms/f6c4802316336c027b23f4e979ac283d/transformed/out/jars/libs/R.jar"
+      resolved="theme:react-native-pager-view:unspecified"
+      folder="/Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-pager-view/android/build/.transforms/f6c4802316336c027b23f4e979ac283d/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="com.facebook.react:react-android:0.71.6:release@aar"
       jars="/Users/itsmanprchahal/.gradle/caches/transforms-3/7315d445ad2740a0aaaaecf1eb84f546/transformed/jetified-react-android-0.71.6-release/jars/classes.jar"
       resolved="com.facebook.react:react-android:0.71.6"
@@ -680,13 +693,13 @@
       jars="/Users/itsmanprchahal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.21/568c1b78a8e17a4f35b31f0a74e2916095ed74c2/kotlin-stdlib-jdk7-1.6.21.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.21"/>
   <library
-      name="org.jetbrains.kotlin:kotlin-stdlib:1.6.21@jar"
-      jars="/Users/itsmanprchahal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.21/11ef67f1900634fd951bad28c53ec957fabbe5b8/kotlin-stdlib-1.6.21.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib:1.6.21"/>
+      name="org.jetbrains.kotlin:kotlin-stdlib:1.7.0@jar"
+      jars="/Users/itsmanprchahal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.0/a5f42c684ad9003160ef0d0f693ecf0ba7b13549/kotlin-stdlib-1.7.0.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib:1.7.0"/>
   <library
-      name="org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21@jar"
-      jars="/Users/itsmanprchahal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.21/5e5b55c26dbc80372a920aef60eb774b714559b8/kotlin-stdlib-common-1.6.21.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.6.21"/>
+      name="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0@jar"
+      jars="/Users/itsmanprchahal/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.7.0/51736992f422993a1e741051bdf3c12801bc1ca1/kotlin-stdlib-common-1.7.0.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.0"/>
   <library
       name="org.jetbrains:annotations:13.0@jar"
       jars="/Users/itsmanprchahal/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"

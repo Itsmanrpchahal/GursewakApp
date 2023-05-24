@@ -11,6 +11,7 @@ MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/itsmanprchahal/.gradle
 MERGED from [:react-native-async-storage_async-storage] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-masked-view_masked-view] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/@react-native-masked-view/masked-view/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-gesture-handler] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-pager-view] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-pager-view/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-reanimated] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-reanimated/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-safe-area-context] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
@@ -55,8 +56,8 @@ MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/itsmanpr
 MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/7beb639fcc3269499a2075501baa3ff3/transformed/sqlite-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/66d8fd6a87c1cb24b88597f2714c06ac/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/6d61bada2dadfadb85d8f85450b08fa8/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/9508305e9bb615b1c642c3025f09fcf7/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/bf6ce4dff9b9f08dcd11fa6d11e1b111/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/9508305e9bb615b1c642c3025f09fcf7/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/b7768745132d401d5f68ea8f173b9765/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.2.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/54c418b687e7c288a00295001ef9774c/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/695dd62e9acea732cc0dbb0c36d62612/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -65,8 +66,8 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/itsmanprchahal/.
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/itsmanprchahal/.gradle/caches/transforms-3/13b7b5f530795ed78edde7d3eb80416f/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/85e4bbe9c5d78990c6ba607fb1c9ab7a/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/itsmanprchahal/.gradle/caches/transforms-3/2b19c1765951b702622e3fffec6a7bd2/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/b618d334ebbce8811572224b8cbc3caa/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/itsmanprchahal/.gradle/caches/transforms-3/7de4cb111fcc2bef0540bb573df92db9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/b618d334ebbce8811572224b8cbc3caa/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/e7e59a8f50fa2e5de9e9f24336066e13/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/itsmanprchahal/.gradle/caches/transforms-3/d4dd93e17aad6fa0bdce406f4f0d4f40/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/384373dfdc1c875b0658779e880f6a49/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:17:1-24:12
@@ -184,6 +185,8 @@ MERGED from [:react-native-masked-view_masked-view] /Users/itsmanprchahal/Docume
 MERGED from [:react-native-masked-view_masked-view] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/@react-native-masked-view/masked-view/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-pager-view] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-pager-view/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-pager-view] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-pager-view/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-reanimated] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-reanimated/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-reanimated] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-reanimated/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -272,10 +275,10 @@ MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/itsmanprchahal/.gr
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/66d8fd6a87c1cb24b88597f2714c06ac/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/6d61bada2dadfadb85d8f85450b08fa8/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/6d61bada2dadfadb85d8f85450b08fa8/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/9508305e9bb615b1c642c3025f09fcf7/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/9508305e9bb615b1c642c3025f09fcf7/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/bf6ce4dff9b9f08dcd11fa6d11e1b111/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/bf6ce4dff9b9f08dcd11fa6d11e1b111/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/9508305e9bb615b1c642c3025f09fcf7/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/9508305e9bb615b1c642c3025f09fcf7/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/b7768745132d401d5f68ea8f173b9765/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/b7768745132d401d5f68ea8f173b9765/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.2.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/54c418b687e7c288a00295001ef9774c/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
@@ -292,10 +295,10 @@ MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/itsmanprchahal/.gradle
 MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/85e4bbe9c5d78990c6ba607fb1c9ab7a/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/itsmanprchahal/.gradle/caches/transforms-3/2b19c1765951b702622e3fffec6a7bd2/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/itsmanprchahal/.gradle/caches/transforms-3/2b19c1765951b702622e3fffec6a7bd2/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/b618d334ebbce8811572224b8cbc3caa/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/b618d334ebbce8811572224b8cbc3caa/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/itsmanprchahal/.gradle/caches/transforms-3/7de4cb111fcc2bef0540bb573df92db9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/itsmanprchahal/.gradle/caches/transforms-3/7de4cb111fcc2bef0540bb573df92db9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/b618d334ebbce8811572224b8cbc3caa/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/b618d334ebbce8811572224b8cbc3caa/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/e7e59a8f50fa2e5de9e9f24336066e13/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/e7e59a8f50fa2e5de9e9f24336066e13/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/itsmanprchahal/.gradle/caches/transforms-3/d4dd93e17aad6fa0bdce406f4f0d4f40/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41

@@ -38,7 +38,7 @@ const Akhar = () => {
         >
           <ButtonVerticle>
             <TextWrapperBottom color={colors.akharTextBtnColor}>
-              Gurbani Search
+              Learn Mode
             </TextWrapperBottom>
             <ViewDivider
               backgroundColor={
@@ -56,7 +56,7 @@ const Akhar = () => {
         >
           <ButtonVerticle>
             <TextWrapperBottom color={colors.akharTextBtnColor}>
-              Hukamnama Sahib
+              Test Mode
             </TextWrapperBottom>
             <ViewDivider
               backgroundColor={

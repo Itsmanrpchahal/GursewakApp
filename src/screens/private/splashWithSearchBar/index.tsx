@@ -82,9 +82,7 @@ const SplashWithSearchBar = ({ navigation }) => {
               </TouchableOpacity>
             </TopWrapper>
 
-            <TextWrapper>
-              ਵਾਹਿ ਵਾਹਿ ਬਾਣੀ ਨਿਰੰਕਾਰ ਹੈ।ਬਾਣੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਦੀ ਰੂਪ ਵਿਚ ਹੈ।
-            </TextWrapper>
+            <TextWrapper>Content to be added</TextWrapper>
             <Image source={icGoldenTemple} />
             <TextWrapperAccent>Learn Shudh Gurbani</TextWrapperAccent>
 
@@ -97,7 +95,7 @@ const SplashWithSearchBar = ({ navigation }) => {
                     style={{ width: "50%" }}
                     onPress={() =>
                       item.title === "Bal Updesh"
-                        ? navigation.navigate(navigationStrings.AKHAR)
+                        ? navigation.navigate(navigationStrings.BAL_UPDESH)
                         : null
                     }
                   >

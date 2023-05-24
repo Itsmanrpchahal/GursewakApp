@@ -32,6 +32,13 @@ import help from "../screens/private/help";
 import reportMistake from "../screens/private/reportMistake";
 import pothiSetting from "../screens/private/pothiSetting";
 import addNotes from "../screens/private/addNotes";
+import newNote from "../screens/private/newNote";
+import reportMistakeSelectLine from "../screens/private/reportMistake/reportMistakeSelectLine";
+import balUpdesh from "../screens/private/balUpdesh";
+import pageTitle from "../screens/private/pageTitle";
+import songs from "../screens/private/songs";
+import mediaPlayer from "../screens/private/mediaPlayer";
+import downloadTab from "../screens/private/downloadTab";
 
 type RouteProps = {
   scheme: any;
@@ -111,7 +118,7 @@ const Routes: React.FC<RouteProps> = ({ scheme }) => {
   // @ts-ignore
   return (
     <NavigationContainer ref={navigationRef} theme={scheme}>
-      <Stack.Navigator>
+      <Stack.Navigator head>
         <Stack.Screen
           name="Home"
           component={MainScreen}
@@ -290,10 +297,19 @@ const Routes: React.FC<RouteProps> = ({ scheme }) => {
                                     );
                                   } else if (item.title === "Report Mistake") {
                                     navigationRef.current.navigate(
-                                      navigationStrings.REPORT_MISTAKE
+                                      navigationStrings.REPORT_MISTAKE_LIST
+                                    );
+                                  } else if (
+                                    item.title === "Open Audio Playlist"
+                                  ) {
+                                    navigationRef.current.navigate(
+                                      navigationStrings.SONGS
+                                    );
+                                  } else if (item.title === "Download Audio") {
+                                    navigationRef.current.navigate(
+                                      navigationStrings.DOWNLOAD_AUDIOS
                                     );
                                   }
-
                                   setVisible(false);
                                 }}
                               >
@@ -348,6 +364,75 @@ const Routes: React.FC<RouteProps> = ({ scheme }) => {
         <Stack.Screen
           name={navigationStrings.ADD_NOTES}
           component={addNotes}
+          options={{
+            headerShown: true,
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
+          }}
+        />
+
+        <Stack.Screen
+          name={navigationStrings.NEW_NOTE}
+          component={newNote}
+          options={{
+            headerShown: true,
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
+          }}
+        />
+
+        <Stack.Screen
+          name={navigationStrings.REPORT_MISTAKE_LIST}
+          component={reportMistakeSelectLine}
+          options={{
+            headerShown: true,
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
+          }}
+        />
+
+        <Stack.Screen
+          name={navigationStrings.BAL_UPDESH}
+          component={balUpdesh}
+          options={{
+            headerShown: true,
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
+          }}
+        />
+
+        <Stack.Screen
+          name={navigationStrings.PAGE_TITLE}
+          component={pageTitle}
+          options={{
+            headerShown: true,
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
+          }}
+        />
+
+        <Stack.Screen
+          name={navigationStrings.SONGS}
+          component={songs}
+          options={{
+            headerShown: false,
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
+          }}
+        />
+        <Stack.Screen
+          name={navigationStrings.NOW_PLAYING}
+          component={mediaPlayer}
+          options={{
+            headerShown: true,
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
+          }}
+        />
+
+        <Stack.Screen
+          name={navigationStrings.DOWNLOAD_AUDIOS}
+          component={downloadTab}
           options={{
             headerShown: true,
             headerStyle: { backgroundColor: colors.secondary },

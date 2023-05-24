@@ -499,7 +499,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.gutbani;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gursevak.gurbaniiii;
 				PRODUCT_NAME = theme;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -526,7 +526,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.gutbani;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gursevak.gurbaniiii;
 				PRODUCT_NAME = theme;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

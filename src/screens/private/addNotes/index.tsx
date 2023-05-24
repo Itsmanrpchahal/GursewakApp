@@ -11,9 +11,12 @@ import {
   icPlus,
 } from "../../../assets";
 import Collapsible from "react-native-collapsible";
+import { useTheme } from "styled-components";
+import navigationStrings from "../../../navigations/navigationStrings";
 
 const AddNotes = ({ navigation }) => {
   const mode = Appearance.getColorScheme();
+  const { colors }: any = useTheme();
   const [collapsedBlackSearch, setCollaspedBlackSearch] = useState(false);
 
   return (
@@ -32,12 +35,19 @@ const AddNotes = ({ navigation }) => {
         </ItemWrapper1>
       </TItleHorizontalView>
 
-      <TItleHorizontalView>
-        <ItemWrapper1>
-          <TextWrapperYellow>New Folder</TextWrapperYellow>
-        </ItemWrapper1>
-        <ImageWrapper source={icPlus} />
-      </TItleHorizontalView>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate(navigationStrings.NEW_NOTE);
+        }}
+      >
+        <TItleHorizontalView>
+          <ItemWrapper1>
+            <TextWrapperYellow>New Folder</TextWrapperYellow>
+          </ItemWrapper1>
+          <ImageWrapper source={icPlus} />
+        </TItleHorizontalView>
+      </TouchableOpacity>
+
       <TouchableOpacity
         onPress={() => {
           setCollaspedBlackSearch(!collapsedBlackSearch);

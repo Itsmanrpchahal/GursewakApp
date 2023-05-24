@@ -27,7 +27,7 @@ const ReportMistake = () => {
         <TextField
           accessibilityLabel="Ang"
           placeholder="Selected gurbwxI jI"
-          keyboardType="number"
+          keyboardType="numeric"
           autoCapitalize={"none"}
         />
         <TextField

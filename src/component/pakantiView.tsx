@@ -6,18 +6,10 @@ import styled from "styled-components/native";
 const PankatiView = ({ item, navigation }) => {
   return (
     <MainWrapper>
-      <TitleWrapper>
-        ਵਾਹਿ ਵਾਹਿ ਬਾਣੀ ਨਿਰੰਕਾਰ ਹੈ।ਬਾਣੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਦੀ ਰੂਪ ਵਿਚ ਹੈ।
-      </TitleWrapper>
-      <TItleDesc>
-        ਵਾਹਿ ਵਾਹਿ ਬਾਣੀ ਨਿਰੰਕਾਰ ਹੈ।ਬਾਣੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਦੀ ਰੂਪ ਵਿਚ ਹੈ।
-      </TItleDesc>
-      <TItleDesc1>
-        ਵਾਹਿ ਵਾਹਿ ਬਾਣੀ ਨਿਰੰਕਾਰ ਹੈ।ਬਾਣੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਦੀ ਰੂਪ ਵਿਚ ਹੈ।
-      </TItleDesc1>
-      <Raag>
-        ਵਾਹਿ ਵਾਹਿ ਬਾਣੀ ਨਿਰੰਕਾਰ ਹੈ।ਬਾਣੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਦੀ ਰੂਪ ਵਿਚ ਹੈ।
-      </Raag>
+      <TitleWrapper>Content to be added</TitleWrapper>
+      <TItleDesc>Content to be added</TItleDesc>
+      <TItleDesc1>Content to be added</TItleDesc1>
+      <Raag>Content to be added</Raag>
     </MainWrapper>
   );
 };

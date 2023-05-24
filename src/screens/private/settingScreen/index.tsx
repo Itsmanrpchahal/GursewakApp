@@ -182,13 +182,7 @@ const SettingScreen = ({ navigation }) => {
 
         <ToggleWrapper>
           <ItemWrapper1>
-            <TouchableOpacity
-              onPress={() => {
-                navigation.navigate(navigationStrings.ABOUT_APP);
-              }}
-            >
-              <TextWrapper>About Us</TextWrapper>
-            </TouchableOpacity>
+            <TextWrapper>About Us</TextWrapper>
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate(navigationStrings.ABOUT_APP);
@@ -205,7 +199,6 @@ const SettingScreen = ({ navigation }) => {
             </TouchableOpacity>
             <TextWrapperWhite>Acknowledgements</TextWrapperWhite>
           </ItemWrapper1>
-          <ImageWrapper source={icyoutube} />
         </ToggleWrapper>
         <DividerView />
         <TextWrapper

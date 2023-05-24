@@ -66,21 +66,11 @@ const PothiSahibViewer = ({ navigation }) => {
           return (
             <TouchableOpacity onPress={() => {}}>
               <ItemWrapper>
-                <PothiTextTitle>
-                  ਆਖਹਿ ਮੰਗਹਿ ਦੇਹਿ ਦੇਹਿ ਦਾਤਿ ਕਰੇ ਦਾਤਾਰੁ॥
-                </PothiTextTitle>
-                <PothiTextSubTitle>
-                  ਆਖਹਿ ਮੰਗਹਿ ਦੇਹਿ ਦੇਹਿ ਦਾਤਿ ਕਰੇ ਦਾਤਾਰੁ॥
-                </PothiTextSubTitle>
-                <PothiTextDesc>
-                  ਆਖਹਿ ਮੰਗਹਿ ਦੇਹਿ ਦੇਹਿ ਦਾਤਿ ਕਰੇ ਦਾਤਾਰੁ॥
-                </PothiTextDesc>
-                <PothiTextDesc1>
-                  ਆਖਹਿ ਮੰਗਹਿ ਦੇਹਿ ਦੇਹਿ ਦਾਤਿ ਕਰੇ ਦਾਤਾਰੁ॥
-                </PothiTextDesc1>
-                <PothiTextSubDesc>
-                  ਆਖਹਿ ਮੰਗਹਿ ਦੇਹਿ ਦੇਹਿ ਦਾਤਿ ਕਰੇ ਦਾਤਾਰੁ॥
-                </PothiTextSubDesc>
+                <PothiTextTitle>Content to be added</PothiTextTitle>
+                <PothiTextSubTitle>Content to be added</PothiTextSubTitle>
+                <PothiTextDesc>Content to be added</PothiTextDesc>
+                <PothiTextDesc1>Content to be added</PothiTextDesc1>
+                <PothiTextSubDesc>Content to be added</PothiTextSubDesc>
               </ItemWrapper>
             </TouchableOpacity>
           );
