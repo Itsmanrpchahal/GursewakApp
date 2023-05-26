@@ -1407,6 +1407,7 @@ drawable redbox_top_border_background
 drawable rn_edit_text_material
 drawable src_assets_accentstar_accentstart
 drawable src_assets_arrow_arrow
+drawable src_assets_arrowcircle_arrowcircle
 drawable src_assets_arrowdown_arrowdown
 drawable src_assets_arrowup_arrowup
 drawable src_assets_backarrow_backarrow

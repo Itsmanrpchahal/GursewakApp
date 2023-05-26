@@ -26,8 +26,8 @@ const NewNote = ({ navigation }) => {
 
   return (
     <MainWrapper>
-      <TextWrapperBlueYellow>Add Note</TextWrapperBlueYellow>
-      <TextWrapperDesc>ਆਖਹਿ ਮੰਗਹਿ ਦੇਹਿ ਦੇਹਿ ਦਾਤਿ ਕਰੇ ਦਾਤਾਰੁ॥</TextWrapperDesc>
+      <TextWrapperBlueYellow>New Note</TextWrapperBlueYellow>
+      <TextWrapperDesc>Content to be added</TextWrapperDesc>
       <ImageWrapper></ImageWrapper>
       <DropdownWrapper>
         <Dropdown
@@ -54,12 +54,7 @@ const NewNote = ({ navigation }) => {
         />
       </DropdownWrapper>
 
-      <FillBtn
-        btntext={"Save"}
-        onPress={() => {
-          navigation.navigate(navigationStrings.SIGN_UP);
-        }}
-      />
+      <FillBtn btntext={"Save"} onPress={() => {}} />
     </MainWrapper>
   );
 };
@@ -80,9 +75,7 @@ const ImageWrapper = styled.Image`
   height: 360px;
   border-radius: 10px;
   margin:20px
-  border-color: gray;
-  border-width: 1px;
-  background-color: ${({ theme }: any) => theme.colors.backgroundAkhar};
+  background-color: ${({ theme }: any) => theme.colors.textWhite};
 `;
 
 const TextWrapperDesc = styled.Text`
@@ -92,7 +85,7 @@ const TextWrapperDesc = styled.Text`
 `;
 
 const TextWrapperBlueYellow = styled.Text`
-  color: ${({ theme }: any) => theme.colors.accentColor};
+  color: ${({ theme }: any) => theme.colors.blueYellow};
   margin-top: 8px;
   font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardTitle}px;
 `;

@@ -164,12 +164,20 @@
         "source": "com.theme.app-react-24:/drawable-mdpi/src_assets_plusyellow_plusyellow.png"
     },
     {
+        "merged": "com.theme.app-merged_res-29:/drawable-xhdpi_src_assets_arrowcircle_arrowcircle.png.flat",
+        "source": "com.theme.app-react-24:/drawable-xhdpi/src_assets_arrowcircle_arrowcircle.png"
+    },
+    {
         "merged": "com.theme.app-merged_res-29:/drawable-xhdpi_src_assets_whitebc_whitebc.png.flat",
         "source": "com.theme.app-react-24:/drawable-xhdpi/src_assets_whitebc_whitebc.png"
     },
     {
         "merged": "com.theme.app-merged_res-29:/drawable-xxhdpi_src_assets_downarrowwhite_downarrowwhite.png.flat",
         "source": "com.theme.app-react-24:/drawable-xxhdpi/src_assets_downarrowwhite_downarrowwhite.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-29:/drawable-mdpi_src_assets_arrowcircle_arrowcircle.png.flat",
+        "source": "com.theme.app-react-24:/drawable-mdpi/src_assets_arrowcircle_arrowcircle.png"
     },
     {
         "merged": "com.theme.app-merged_res-29:/drawable-mdpi_src_assets_youtube_youtube.png.flat",
@@ -390,6 +398,10 @@
     {
         "merged": "com.theme.app-merged_res-29:/drawable-xhdpi_src_assets_setting_setting.png.flat",
         "source": "com.theme.app-react-24:/drawable-xhdpi/src_assets_setting_setting.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-29:/drawable-xxhdpi_src_assets_arrowcircle_arrowcircle.png.flat",
+        "source": "com.theme.app-react-24:/drawable-xxhdpi/src_assets_arrowcircle_arrowcircle.png"
     },
     {
         "merged": "com.theme.app-merged_res-29:/drawable-mdpi_src_assets_soundcloud_soundcloud.png.flat",

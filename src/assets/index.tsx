@@ -46,3 +46,4 @@ export { default as icWhiteBC } from "../assets/whiteBC/whiteBC.png";
 export { default as icshareYellow } from "../assets/shareyellow/shareYellow.png";
 export { default as icSearchYellow } from "../assets/search/search.png";
 export { default as icplusYellow } from "../assets/plusYellow/plusYellow.png";
+export { default as icarrowCircle } from "../assets/arrowCircle/arrowCircle.png";

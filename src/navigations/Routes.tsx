@@ -21,6 +21,7 @@ import {
   icNote,
   icOptions,
   icQuestionMark,
+  icarrowCircle,
 } from "../assets";
 import searchScreen from "../screens/private/searchScreen";
 import pakantiSeacrhType from "../screens/private/pakantiSeacrhType";
@@ -187,6 +188,13 @@ const Routes: React.FC<RouteProps> = ({ scheme }) => {
             headerShown: true,
             headerStyle: { backgroundColor: colors.secondary },
             headerTintColor: "white",
+            headerRight: (route: any) => {
+              return (
+                <TouchableOpacity onPress={() => {}}>
+                  <Image source={icarrowCircle} />
+                </TouchableOpacity>
+              );
+            },
           }}
         />
 

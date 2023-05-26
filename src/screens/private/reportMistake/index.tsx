@@ -21,12 +21,12 @@ const ReportMistake = () => {
         />
         <TextField
           accessibilityLabel="Thuk"
-          placeholder="Selected gurbwxI jI"
+          placeholder="Placeholder"
           autoCapitalize={"none"}
         />
         <TextField
           accessibilityLabel="Ang"
-          placeholder="Selected gurbwxI jI"
+          placeholder="Placeholder"
           keyboardType="numeric"
           autoCapitalize={"none"}
         />

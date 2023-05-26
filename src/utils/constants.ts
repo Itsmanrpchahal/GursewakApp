@@ -14,143 +14,178 @@ export const ACCOUNTS = 'accounts'
 export const  data = [
     {
         id:0,
-        title:'ਓ'
+        title:'ਓ',
+        height:'18%'
     },
     {
         id:1,
-        title:'ਅ'
+        title:'ਅ',
+        height:'18%'
     },
     {
         id:2,
-        title:'ੲ'
+        title:'ੲ',
+        height:'18%'
     },
     {
         id:3,
-        title:'ਸ'
+        title:'ਸ',
+        height:'18%'
     },
     {
         id:4,
-        title:'ਹ'
+        title:'ਹ',
+        height:'18%'
     },
     {
         id:5,
-        title:'ਕ'
+        title:'ਕ',
+        height:'18%'
     },
     {
         id:6,
-        title:'ਖ'
+        title:'ਖ',
+        height:'18%'
     },
     {
         id:7,
-        title:'ਗ'
+        title:'ਗ',
+        height:'18%'
     },
     {
         id:8,
-        title:'ਘ'
+        title:'ਘ',
+        height:'18%'
     },
     {
         id:9,
-        title:'ਙ'
+        title:'ਙ',
+        height:'18%'
     },
     {
         id:10,
-        title:'ਚ'
+        title:'ਚ',
+        height:'18%'
     },
     {
         id:11,
-        title:'ਛ'
+        title:'ਛ',
+        height:'18%'
     },
     {
         id:12,
-        title:'ਜ'
+        title:'ਜ',
+        height:'18%'
     },
     {
         id:13,
-        title:'ਝ'
+        title:'ਝ',
+        height:'18%'
     },
     {
         id:14,
-        title:'ਞ'
+        title:'ਞ',
+        height:'18%'
     },
     {
         id:15,
-        title:'ਟ'
+        title:'ਟ',
+        height:'18%'
     },
     {
         id:16,
-        title:'ਠ'
+        title:'ਠ',
+        height:'18%'
     },
     {
         id:17,
-        title:'ਡ'
+        title:'ਡ',
+        height:'18%'
     },
     {
         id:18,
-        title:'ਢ'
+        title:'ਢ',
+        height:'18%'
     },
     {
         id:19,
-        title:'ਣ'
+        title:'ਣ',
+        height:'18%'
     },
     {
         id:20,
-        title:'ਤ'
+        title:'ਤ',
+        height:'18%'
     },
     {
         id:21,
-        title:'ਥ'
+        title:'ਥ',
+        height:'18%'
     },
     {
         id:22,
-        title:'ਦ'
+        title:'ਦ',
+        height:'18%'
     },
     {
         id:23,
-        title:'ਧ'
+        title:'ਧ',
+        height:'18%'
     },
     {
         id:24,
-        title:'ਨ'
+        title:'ਨ',
+        height:'18%'
     },
     {
         id:25,
-        title:'ਪ'
+        title:'ਪ',
+        height:'18%'
     },
     {
         id:26,
-        title:'ਫ'
+        title:'ਫ',
+        height:'18%'
     },
     {
         id:27,
-        title:'ਬ'
+        title:'ਬ',
+        height:'18%'
     },
     {
         id:28,
-        title:'ਭ'
+        title:'ਭ',
+        height:'18%'
     },
     {
         id:29,
-        title:'ਮ'
+        title:'ਮ',
+        height:'18%'
     },
     {
         id:30,
-        title:'ਯ'
+        title:'ਯ',
+        height:'18%'
     },
     {
         id:31,
-        title:'ਰ'
+        title:'ਰ',
+        height:'18%'
     },
     {
         id:32,
-        title:'ਲ'
+        title:'ਲ',
+        height:'18%'
     },
     {
         id:33,
-        title:'ਵ'
+        title:'ਵ',
+        height:'18%'
     },
     {
         id:34,
-        title:'ੜ'
+        title:'ੜ',
+        height:'18%'
     },
     
 ]
