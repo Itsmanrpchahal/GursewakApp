@@ -1,0 +1,6 @@
+module Pods_GursevakApp_GursevakAppTests {
+  umbrella header "Pods-GursevakApp-GursevakAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

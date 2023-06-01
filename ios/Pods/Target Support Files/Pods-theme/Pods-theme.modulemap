@@ -1,6 +1,0 @@
-module Pods_theme {
-  umbrella header "Pods-theme-umbrella.h"
-
-  export *
-  module * { export * }
-}

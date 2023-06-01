@@ -33,7 +33,7 @@ const data = [
   },
 ];
 
-const SongsTab = () => {
+const SongsTab = ({ navigation }) => {
   const { modeState } = useTypedSelector((state) => state.mode);
   const isFocused = useIsFocused();
   useEffect(() => {

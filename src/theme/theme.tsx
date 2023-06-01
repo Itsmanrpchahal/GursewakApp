@@ -11,6 +11,8 @@ export const navigationTheme = {
       ...LightTheme.colors,
       primary: "#2451A0",
       secondary: "#17428E",
+      primaryYellow: "#F5D43B",
+      secondaryWhite: "#FFFFFF",
       accentColor: "#F4D43B",
       header: "#17428E",
       pothiTextTitle: "#17428E",
@@ -23,11 +25,12 @@ export const navigationTheme = {
       red: "#D93F3C",
       textGray: "#808080",
       inactive: "#CBC9D6",
+      yellow: "#F5D43B",
       greenColor: "#17907A",
       textBlack: "#000000",
       raagColor: "#9F6634",
       blueYellow: "#2E509B",
-      blueWhite: "2451A0",
+      blueWhite: "#2451A0",
       blueYellowBC: "#F5D43B",
       akharTextBtnColor: "#17428E",
       pankantiColor: "#182D4E",
@@ -38,12 +41,14 @@ export const navigationTheme = {
       parrotGreen: "#16BD04",
       settingTheme: "#1F2732",
       cadmiumRed: "#D22B2B",
+      lightTheme: "#98A9C8",
     },
     spacing: {
       horizontal: 15,
     },
     fontSize: [
       {
+        cardSmallText: 12,
         cardDate: 14,
         cardTitle: 19,
         cardSubTitle: 15,
@@ -51,6 +56,7 @@ export const navigationTheme = {
         akharText: 32,
       },
       {
+        cardSmallText: 13,
         cardDate: 15,
         cardTitle: 20,
         cardSubTitle: 16,
@@ -58,6 +64,7 @@ export const navigationTheme = {
         akharText: 33,
       },
       {
+        cardSmallText: 14,
         cardDate: 16,
         cardTitle: 21,
         cardSubTitle: 17,
@@ -65,6 +72,7 @@ export const navigationTheme = {
         akharText: 34,
       },
       {
+        cardSmallText: 15,
         cardDate: 17,
         cardTitle: 22,
         cardSubTitle: 18,
@@ -72,6 +80,7 @@ export const navigationTheme = {
         akharText: 35,
       },
       {
+        cardSmallText: 16,
         cardDate: 18,
         cardTitle: 23,
         cardSubTitle: 19,
@@ -87,6 +96,8 @@ export const navigationTheme = {
       ...DarkTheme.colors,
       primary: "#182D4E",
       secondary: "#142849",
+      primaryYellow: "#0D1C39",
+      secondaryWhite: "#182D4E",
       header: "#0D1C39",
       accentColor: "#F4D43B",
       textLightTheme: "#B4CFFF",
@@ -94,9 +105,10 @@ export const navigationTheme = {
       pothiTextSubTitle: "#F5D43B",
       pothiTextDecs: "#9AB6E6",
       pothiTextSubDesc: "#DDDDDD",
-      blueWhite: "FFFFFF",
+      blueWhite: "#FFFFFF",
       primary1: "#2251A0",
       error: "#D93F3C",
+      yellow: "#F5D43B",
       text: "#FFFFFF",
       red: "#D93F3C",
       blueYellowBC: "#2251A0",
@@ -115,12 +127,14 @@ export const navigationTheme = {
       parrotGreen: "#16BD04",
       settingTheme: "#FFFFFF",
       cadmiumRed: "#D22B2B",
+      lightTheme: "#98A9C8",
     },
     spacing: {
       horizontal: 15,
     },
     fontSize: [
       {
+        cardSmallText: 12,
         cardDate: 14,
         cardTitle: 19,
         cardSubTitle: 15,
@@ -128,6 +142,7 @@ export const navigationTheme = {
         akharText: 32,
       },
       {
+        cardSmallText: 13,
         cardDate: 15,
         cardTitle: 20,
         cardSubTitle: 16,
@@ -135,6 +150,7 @@ export const navigationTheme = {
         akharText: 33,
       },
       {
+        cardSmallText: 14,
         cardDate: 16,
         cardTitle: 21,
         cardSubTitle: 17,
@@ -142,6 +158,7 @@ export const navigationTheme = {
         akharText: 34,
       },
       {
+        cardSmallText: 15,
         cardDate: 17,
         cardTitle: 22,
         cardSubTitle: 18,
@@ -149,6 +166,7 @@ export const navigationTheme = {
         akharText: 35,
       },
       {
+        cardSmallText: 16,
         cardDate: 18,
         cardTitle: 23,
         cardSubTitle: 19,

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FlatList, Text, TouchableOpacity } from "react-native";
 import styled, { withTheme } from "styled-components/native";
 import { NavigationContainer } from "@react-navigation/native";
@@ -20,6 +20,7 @@ import VideoTab from "../videoTab";
 import MusicComponent from "../../../component/musicComponent";
 import navigationStrings from "../../../navigations/navigationStrings";
 import { SafeAreaView } from "react-navigation";
+import DeviceInfo from "react-native-device-info";
 
 const data = [
   {
@@ -44,11 +45,16 @@ const SongsScreen = ({ navigation }) => {
   const [tab, setTab] = useState("Songs");
 
   const [i, setI] = useState(0);
+
+  useEffect(() => {}, []);
   return (
     <MainWrapper>
+      <SafeAreaView
+        style={{ backgroundColor: colors.secondary }}
+      ></SafeAreaView>
       <HeaderWrapper>
         <View style={{ flexDirection: "row" }}>
-          <HorizontalWrapper1 marginTop={Platform.OS === "android" ? 7 : 25}>
+          <HorizontalWrapper1 marginTop={Platform.OS === "android" ? -5 : 16}>
             <HorizontalWrapper>
               <TouchableOpacity
                 onPress={() => {
@@ -82,7 +88,7 @@ const SongsScreen = ({ navigation }) => {
         style={{
           flexDirection: "row",
           display: "flex",
-          marginTop: Platform.OS === "android" ? -36 : 5,
+          marginTop: Platform.OS === "android" ? -15 : -5,
         }}
       >
         {data.map((item, index) => {
@@ -117,13 +123,13 @@ const SongsScreen = ({ navigation }) => {
       ) : (
         <VideoTab />
       )}
-      <TouchableOpacity
+      {/* <TouchableOpacity
         onPress={() => {
           navigation.navigate(navigationStrings.NOW_PLAYING);
         }}
       >
-        {/* <MusicComponent></MusicComponent> */}
-      </TouchableOpacity>
+        <MusicComponent></MusicComponent>
+      </TouchableOpacity> */}
     </MainWrapper>
   );
 };
@@ -148,7 +154,8 @@ const TextWrapper = styled.Text`
 const HorizontalWrapper1 = styled.View<heightProps>`
   flex-direction: row;
   width: 98%;
-  top: ${({ marginTop }: any) => marginTop}px;
+  margin-top: ${({ marginTop }: any) => marginTop}px;
+  align-items: center;
   justify-content: space-between;
 `;
 
@@ -168,7 +175,7 @@ const ImageWrapper = styled.Image`
 `;
 
 const HeaderWrapper = styled.View`
-  height: 90px;
+  height: 70px;
   flex-direction: row;
   background-color: ${({ theme }: any) => theme.colors.secondary};
 `;

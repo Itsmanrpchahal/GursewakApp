@@ -40,6 +40,8 @@ import pageTitle from "../screens/private/pageTitle";
 import songs from "../screens/private/songs";
 import mediaPlayer from "../screens/private/mediaPlayer";
 import downloadTab from "../screens/private/downloadTab";
+import resources from "../screens/private/resources";
+import newReminder from "../screens/private/newReminder";
 
 type RouteProps = {
   scheme: any;
@@ -119,7 +121,7 @@ const Routes: React.FC<RouteProps> = ({ scheme }) => {
   // @ts-ignore
   return (
     <NavigationContainer ref={navigationRef} theme={scheme}>
-      <Stack.Navigator head>
+      <Stack.Navigator>
         <Stack.Screen
           name="Home"
           component={MainScreen}
@@ -441,6 +443,26 @@ const Routes: React.FC<RouteProps> = ({ scheme }) => {
         <Stack.Screen
           name={navigationStrings.DOWNLOAD_AUDIOS}
           component={downloadTab}
+          options={{
+            headerShown: true,
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
+          }}
+        />
+
+        <Stack.Screen
+          name={navigationStrings.RESOURCES}
+          component={resources}
+          options={{
+            headerShown: false,
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
+          }}
+        />
+
+        <Stack.Screen
+          name={navigationStrings.NEW_REMINDER}
+          component={newReminder}
           options={{
             headerShown: true,
             headerStyle: { backgroundColor: colors.secondary },

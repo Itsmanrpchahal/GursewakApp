@@ -37,4 +37,6 @@ export default {
   SONGS: "Songs",
   NOW_PLAYING: "Now Playing",
   DOWNLOAD_AUDIOS: "Download Media",
+  RESOURCES: "Resources",
+  NEW_REMINDER: "New Reminder",
 };

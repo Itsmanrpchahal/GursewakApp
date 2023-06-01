@@ -1,0 +1,6 @@
+module Pods_GursevakApp {
+  umbrella header "Pods-GursevakApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

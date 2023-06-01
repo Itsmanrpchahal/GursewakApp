@@ -96,6 +96,8 @@ const SplashWithSearchBar = ({ navigation }) => {
                     onPress={() =>
                       item.title === "Bal Updesh"
                         ? navigation.navigate(navigationStrings.BAL_UPDESH)
+                        : item.title === "Resources"
+                        ? navigation.navigate(navigationStrings.RESOURCES)
                         : null
                     }
                   >
