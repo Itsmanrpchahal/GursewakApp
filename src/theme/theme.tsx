@@ -18,6 +18,7 @@ export const navigationTheme = {
       pothiTextTitle: "#17428E",
       pothiTextSubTitle: "#142849",
       pothiTextDecs: "#525252",
+      gold: "#9F6634",
       pothiTextSubDesc: "#525252",
       textLightTheme: "#B4CFFF",
       error: "#D93F3C",
@@ -42,6 +43,8 @@ export const navigationTheme = {
       settingTheme: "#1F2732",
       cadmiumRed: "#D22B2B",
       lightTheme: "#98A9C8",
+      darkBlue: "#0D1C39",
+      pink: "#C91E86",
     },
     spacing: {
       horizontal: 15,
@@ -99,6 +102,7 @@ export const navigationTheme = {
       primaryYellow: "#0D1C39",
       secondaryWhite: "#182D4E",
       header: "#0D1C39",
+      blue: "#9AB6E6",
       accentColor: "#F4D43B",
       textLightTheme: "#B4CFFF",
       pothiTextTitle: "#FFFFFF",
@@ -128,6 +132,8 @@ export const navigationTheme = {
       settingTheme: "#FFFFFF",
       cadmiumRed: "#D22B2B",
       lightTheme: "#98A9C8",
+      gray: "#EDEDED",
+      pink: "#C91E86",
     },
     spacing: {
       horizontal: 15,

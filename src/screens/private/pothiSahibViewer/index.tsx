@@ -14,6 +14,8 @@ import { withTheme } from "styled-components/native";
 import { Dropdown } from "react-native-element-dropdown";
 import { Appearance } from "react-native";
 import { useTheme } from "styled-components";
+import navigationStrings from "../../../navigations/navigationStrings";
+import MusicComponent from "../../../component/musicComponent";
 
 const data = [
   { label: "Item 1", value: "1" },
@@ -64,7 +66,11 @@ const PothiSahibViewer = ({ navigation }) => {
         data={data}
         renderItem={({ item, index }) => {
           return (
-            <TouchableOpacity onPress={() => {}}>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.PATH);
+              }}
+            >
               <ItemWrapper>
                 <PothiTextTitle>Content to be added</PothiTextTitle>
                 <PothiTextSubTitle>Content to be added</PothiTextSubTitle>

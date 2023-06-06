@@ -19,6 +19,7 @@ import {
   icSetting,
 } from "../../../assets";
 import { Dropdown } from "react-native-element-dropdown";
+
 const data = [
   { label: "Item 1", value: "1" },
   { label: "Item 2", value: "2" },

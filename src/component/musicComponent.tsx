@@ -1,7 +1,9 @@
 import React from "react";
 import { View } from "react-native";
 import styled, { withTheme } from "styled-components/native";
-import { icCanada } from "../assets";
+import { icBack, icBackSong, icCanada, icNextSong, icPlay } from "../assets";
+import { Slider } from "react-native-elements";
+import { Animated } from "react-native";
 
 const MusicComponent = () => {
   return (
@@ -9,8 +11,28 @@ const MusicComponent = () => {
       <HorizontalWrapper>
         <ImageWrapper source={icCanada}></ImageWrapper>
         <VerticleWrapper>
-          <TitleWrapper>Track Name</TitleWrapper>
-          <DescWrapper>Description</DescWrapper>
+          <HorizontalWrapper style={{ marginRight: 50 }}>
+            <VerticleWrapper>
+              <TitleWrapper>Track Name</TitleWrapper>
+              <DescWrapper>Description</DescWrapper>
+            </VerticleWrapper>
+            <ImageWrapper1 source={icBackSong}></ImageWrapper1>
+            <ImageWrapper1 source={icPlay}></ImageWrapper1>
+            <ImageWrapper1 source={icNextSong}></ImageWrapper1>
+          </HorizontalWrapper>
+
+          <Slider
+            minimumValue={0}
+            maximumValue={100}
+            value={50}
+            onValueChange={(value) => console.log(value)}
+            trackStyle={{ height: 5, backgroundColor: "#FFFFFF" }}
+            thumbStyle={{
+              height: 20,
+              width: 20,
+              backgroundColor: "transparent",
+            }}
+          />
         </VerticleWrapper>
       </HorizontalWrapper>
     </MainWrapper>
@@ -31,7 +53,13 @@ const TitleWrapper = styled.Text`
   font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardSubTitle};
 `;
 
-const VerticleWrapper = styled.View``;
+const VerticleWrapper = styled.View`
+  width: 80%;
+`;
+
+const ImageWrapper1 = styled.Image`
+  margin-left: 16px;
+`;
 
 const ImageWrapper = styled.Image`
   height: 45px;
@@ -44,7 +72,7 @@ const HorizontalWrapper = styled.View`
 `;
 
 const MainWrapper = styled.View`
-  height: 100px;
+  height: 90px;
   padding:16px
   background-color: ${({ theme }: any) => theme.colors.secondary};
 `;

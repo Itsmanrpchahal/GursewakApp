@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FlatList, Text, TouchableOpacity } from "react-native";
+import { Button, FlatList, Text, TouchableOpacity } from "react-native";
 import styled, { withTheme } from "styled-components/native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
@@ -46,49 +46,38 @@ const SongsScreen = ({ navigation }) => {
 
   const [i, setI] = useState(0);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    navigation.setOptions({
+      title: tab,
+      headerRight: () => (
+        <View style={{ marginRight: 10 }}>
+          {tab === "Songs" ? (
+            <HorizontalWrapper>
+              <ImageWrapper source={icshareYellow}></ImageWrapper>
+              <ImageWrapper source={icSearchYellow}></ImageWrapper>
+            </HorizontalWrapper>
+          ) : tab === "Albums" || tab === "Video" || tab === "Download" ? (
+            <HorizontalWrapper>
+              <ImageWrapper source={icSearchYellow}></ImageWrapper>
+            </HorizontalWrapper>
+          ) : tab === "My Playlists" ? (
+            <HorizontalWrapper>
+              <ImageWrapper source={icplusYellow}></ImageWrapper>
+              <ImageWrapper source={icSearchYellow}></ImageWrapper>
+            </HorizontalWrapper>
+          ) : null}
+        </View>
+      ),
+    });
+  }, [tab]);
   return (
     <MainWrapper>
-      <SafeAreaView
-        style={{ backgroundColor: colors.secondary }}
-      ></SafeAreaView>
-      <HeaderWrapper>
-        <View style={{ flexDirection: "row" }}>
-          <HorizontalWrapper1 marginTop={Platform.OS === "android" ? -5 : 16}>
-            <HorizontalWrapper>
-              <TouchableOpacity
-                onPress={() => {
-                  navigation.goBack();
-                }}
-              >
-                <ImageWrapper source={icBack}></ImageWrapper>
-              </TouchableOpacity>
-              <TitleWrapper>{tab}</TitleWrapper>
-            </HorizontalWrapper>
-            {tab === "Songs" ? (
-              <HorizontalWrapper>
-                <ImageWrapper source={icshareYellow}></ImageWrapper>
-                <ImageWrapper source={icSearchYellow}></ImageWrapper>
-              </HorizontalWrapper>
-            ) : tab === "Albums" || tab === "Video" || tab === "Download" ? (
-              <HorizontalWrapper>
-                <ImageWrapper source={icSearchYellow}></ImageWrapper>
-              </HorizontalWrapper>
-            ) : tab === "My Playlists" ? (
-              <HorizontalWrapper>
-                <ImageWrapper source={icplusYellow}></ImageWrapper>
-                <ImageWrapper source={icSearchYellow}></ImageWrapper>
-              </HorizontalWrapper>
-            ) : null}
-          </HorizontalWrapper1>
-        </View>
-      </HeaderWrapper>
-
       <View
         style={{
           flexDirection: "row",
           display: "flex",
-          marginTop: Platform.OS === "android" ? -15 : -5,
+          width: "100%",
+          backgroundColor: colors.pankantiBC,
         }}
       >
         {data.map((item, index) => {
@@ -123,13 +112,13 @@ const SongsScreen = ({ navigation }) => {
       ) : (
         <VideoTab />
       )}
-      {/* <TouchableOpacity
+      <TouchableOpacity
         onPress={() => {
           navigation.navigate(navigationStrings.NOW_PLAYING);
         }}
       >
         <MusicComponent></MusicComponent>
-      </TouchableOpacity> */}
+      </TouchableOpacity>
     </MainWrapper>
   );
 };

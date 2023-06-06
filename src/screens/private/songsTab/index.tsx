@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FlatList, Text, TouchableOpacity, View } from "react-native";
 import styled from "styled-components/native";
 import { withTheme } from "styled-components/native";
 import { icDragMove, icblueDots, icyellowDots } from "../../../assets";
 import { useTypedSelector } from "@root/hooks/useTypedSelector";
 import { useIsFocused } from "@react-navigation/native";
+import { Menu, MenuItem, MenuDivider } from "react-native-material-menu";
+import { useTheme } from "styled-components";
 
 const data = [
   {
@@ -36,6 +38,9 @@ const data = [
 const SongsTab = ({ navigation }) => {
   const { modeState } = useTypedSelector((state) => state.mode);
   const isFocused = useIsFocused();
+  const [visible, setVisible] = useState(false);
+  const hideMenu = () => setVisible(false);
+  const { colors }: any = useTheme();
   useEffect(() => {
     if (isFocused) {
     }
@@ -54,10 +59,36 @@ const SongsTab = ({ navigation }) => {
                     Artist name or description
                   </TitleDecsWrapper>
                 </VerticleWrapper>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => {
+                    setVisible(!visible);
+                  }}
+                >
                   <ImageWrapper
                     source={modeState ? icyellowDots : icblueDots}
                   ></ImageWrapper>
+                  <Menu
+                    style={{
+                      backgroundColor: modeState
+                        ? colors.darkBlue
+                        : colors.gray,
+                      width: 260,
+                    }}
+                    visible={visible}
+                    onRequestClose={hideMenu}
+                  >
+                    <MenuWrapper1
+                      backgroundColor={modeState ? "#0D1C39" : "#EDEDED"}
+                    >
+                      <NoteText>Add to Playlist</NoteText>
+                      <DividerNoteView
+                        backgroundColor={
+                          modeState ? colors.textWhite : "#17428E"
+                        }
+                      ></DividerNoteView>
+                      <NoteText>Delete</NoteText>
+                    </MenuWrapper1>
+                  </Menu>
                 </TouchableOpacity>
               </ItemWrapper>
               <Divider></Divider>
@@ -71,6 +102,31 @@ const SongsTab = ({ navigation }) => {
 
 export default withTheme(SongsTab);
 
+type Props = {
+  backgroundColor: string;
+};
+
+const DividerNoteView = styled.View<Props>`
+  height: 1px;
+  opacity: 0.2;
+  margin-top:10px
+  margin-bottom:10px;
+  margin-right:-14px
+  margin-left:-14px
+  background-color: ${({ backgroundColor }: any) => backgroundColor};
+`;
+
+const NoteText = styled.Text`
+  color: ${({ theme }: any) => theme.colors.blueYellow};
+  font-size: ${({ theme }: any) => theme.fontSize[0].cardDate};
+`;
+
+const MenuWrapper1 = styled.View<Props>`
+  padding: 16px;
+  border-radius:10px
+  background-color: ${({ backgroundColor }: any) => backgroundColor};
+`;
+
 const Divider = styled.View`
   height: 1px;
   top: 16px;
@@ -82,7 +138,7 @@ const VerticleWrapper = styled.View`
 `;
 
 const ImageWrapper = styled.Image`
-  margin-top: -45px;
+  margin-right: 16px;
 `;
 
 const TitleDecsWrapper = styled.Text`
@@ -98,11 +154,12 @@ const TitleWrapper = styled.Text`
 
 const ItemWrapper = styled.View`
   justify-content: space-between;
-  padding-left: 10px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
-  align-items: flex-end;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
 `;
 
 const MainWrapper = styled.View`

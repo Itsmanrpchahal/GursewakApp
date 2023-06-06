@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Platform,
   SafeAreaView,
@@ -47,51 +47,48 @@ const Resources = ({ navigation }) => {
   const { colors }: any = useTheme();
   const [tab, setTab] = useState("Home");
   const [i, setI] = useState(0);
+
+  useEffect(() => {
+    navigation.setOptions({
+      title: tab,
+      headerRight: () => (
+        <View style={{ marginRight: 10 }}>
+          {tab === "Home" ? null : tab === "Daily Dose" ? (
+            <HorizontalWrapper>
+              <ImageWrapper source={icSearchYellow}></ImageWrapper>
+            </HorizontalWrapper>
+          ) : tab === "Notes" ? (
+            <HorizontalWrapper>
+              <ImageWrapper source={icplusYellow}></ImageWrapper>
+              <ImageWrapper source={icSearchYellow}></ImageWrapper>
+            </HorizontalWrapper>
+          ) : tab === "Reminders" ? (
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.NEW_REMINDER);
+              }}
+            >
+              <ImageWrapper source={icplusYellow}></ImageWrapper>
+            </TouchableOpacity>
+          ) : tab === "Kamaiyi" ? (
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.NEW_TRACKER);
+              }}
+            >
+              <ImageWrapper source={icplusYellow}></ImageWrapper>
+            </TouchableOpacity>
+          ) : null}
+        </View>
+      ),
+    });
+  }, [tab]);
   return (
     <MainWrapper>
-      <SafeAreaView
-        style={{ backgroundColor: colors.secondary }}
-      ></SafeAreaView>
-      <HeaderWrapper>
-        <View style={{ flexDirection: "row" }}>
-          <HorizontalWrapper1 marginTop={Platform.OS === "android" ? -5 : -19}>
-            <HorizontalWrapper>
-              <TouchableOpacity
-                onPress={() => {
-                  navigation.goBack();
-                }}
-              >
-                <ImageWrapper source={icBack}></ImageWrapper>
-              </TouchableOpacity>
-              <TitleWrapper>{tab}</TitleWrapper>
-            </HorizontalWrapper>
-            {tab === "Home" ? null : tab === "Daily Dose" ? (
-              <HorizontalWrapper>
-                <ImageWrapper source={icSearchYellow}></ImageWrapper>
-              </HorizontalWrapper>
-            ) : tab === "Notes" ? (
-              <HorizontalWrapper>
-                <ImageWrapper source={icplusYellow}></ImageWrapper>
-                <ImageWrapper source={icSearchYellow}></ImageWrapper>
-              </HorizontalWrapper>
-            ) : tab === "Kamaiyi" || tab === "Reminders" ? (
-              <TouchableOpacity
-                onPress={() => {
-                  navigation.navigate(navigationStrings.NEW_REMINDER);
-                }}
-              >
-                <ImageWrapper source={icplusYellow}></ImageWrapper>
-              </TouchableOpacity>
-            ) : null}
-          </HorizontalWrapper1>
-        </View>
-      </HeaderWrapper>
-
       <View
         style={{
           flexDirection: "row",
           display: "flex",
-          marginTop: Platform.OS === "android" ? -15 : -20,
         }}
       >
         <ScrollView

@@ -6,6 +6,7 @@ import { icDragMove, icblueDots, icyellowDots } from "../../../assets";
 import { useTypedSelector } from "@root/hooks/useTypedSelector";
 import { useIsFocused } from "@react-navigation/native";
 import navigationStrings from "../../../navigations/navigationStrings";
+import { navigationRef } from "../../../navigations/RootNavigations";
 const data = [
   {
     title: "Hello",
@@ -32,7 +33,7 @@ const data = [
     title: "Hello",
   },
 ];
-const NotesTab = () => {
+const NotesTab = ({ navigation }) => {
   const { modeState } = useTypedSelector((state) => state.mode);
 
   return (
@@ -42,17 +43,24 @@ const NotesTab = () => {
         renderItem={() => {
           return (
             <View style={{ height: 80 }}>
-              <ItemWrapper>
-                <VerticleWrapper>
-                  <TitleWrapper>Folder Name</TitleWrapper>
-                  <TitleDecsWrapper>Date Created</TitleDecsWrapper>
-                </VerticleWrapper>
-                <TouchableOpacity>
-                  <ImageWrapper
-                    source={modeState ? icyellowDots : icblueDots}
-                  ></ImageWrapper>
-                </TouchableOpacity>
-              </ItemWrapper>
+              <TouchableOpacity
+                onPress={() => {
+                  navigationRef.current.navigate(navigationStrings.NOTES);
+                }}
+              >
+                <ItemWrapper>
+                  <VerticleWrapper>
+                    <TitleWrapper>Folder Name</TitleWrapper>
+                    <TitleDecsWrapper>Date Created</TitleDecsWrapper>
+                  </VerticleWrapper>
+                  <TouchableOpacity>
+                    <ImageWrapper
+                      source={modeState ? icyellowDots : icblueDots}
+                    ></ImageWrapper>
+                  </TouchableOpacity>
+                </ItemWrapper>
+              </TouchableOpacity>
+
               <Divider></Divider>
             </View>
           );

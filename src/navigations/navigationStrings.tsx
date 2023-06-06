@@ -39,4 +39,13 @@ export default {
   DOWNLOAD_AUDIOS: "Download Media",
   RESOURCES: "Resources",
   NEW_REMINDER: "New Reminder",
+  NOTES: "Name of Folder",
+  NOTE_DETAIL: "Note Detail",
+  NEW_TRACKER: "New Tracker",
+  PATH: "Path?",
+  POTHIS_SAHIBS: "Pothi Sahibs",
+  POTHI_SAHIBS_1: "Pothi Sahibs 1",
+  SEHAJ_PATH: "Sehaj Path",
+  PATH_LIST: "Path Name",
+  SUNDAR_GUTKA: "Sundar Gutka",
 };

@@ -1,5 +1,5 @@
 // @ts-ignore
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { withTheme } from "styled-components/native";
 import styled from "styled-components/native";
 import {
@@ -29,6 +29,7 @@ import {
 import navigationStrings from "../../../navigations/navigationStrings";
 import { useTheme } from "styled-components";
 import TextField from "../../../component/TextField";
+import { useTypedSelector } from "@root/hooks/useTypedSelector";
 
 const data = [
   {
@@ -59,6 +60,8 @@ const data = [
 const SplashWithSearchBar = ({ navigation }) => {
   const [tab, setTab] = useState(0);
   const { colors }: any = useTheme();
+  const { modeState } = useTypedSelector((state) => state.mode);
+
   return (
     <MainWrapper>
       <StatusBar barStyle="light-content" backgroundColor={colors.primary} />
@@ -98,6 +101,14 @@ const SplashWithSearchBar = ({ navigation }) => {
                         ? navigation.navigate(navigationStrings.BAL_UPDESH)
                         : item.title === "Resources"
                         ? navigation.navigate(navigationStrings.RESOURCES)
+                        : item.title === "MultiMedia"
+                        ? navigation.navigate(navigationStrings.SONGS)
+                        : item.title === "Literature"
+                        ? navigation.navigate(navigationStrings.POTHIS_SAHIBS)
+                        : item.title === "Sehaj Path"
+                        ? navigation.navigate(navigationStrings.SEHAJ_PATH)
+                        : item.title === "Sundar Gutka"
+                        ? navigation.navigate(navigationStrings.SUNDAR_GUTKA)
                         : null
                     }
                   >
@@ -175,8 +186,11 @@ const SplashWithSearchBar = ({ navigation }) => {
             </TouchableOpacity>
           </InputWrapper>
 
-          <ImageWrapper style={{ marginLeft: 3 }} source={icRoundBack} />
-          <ImageWrapper source={icAccentStart} />
+          <ImageWrapper
+            style={{ marginLeft: 3, width: 28 }}
+            source={icRoundBack}
+          />
+          <ImageWrapper style={{ width: 28 }} source={icAccentStart} />
           <TouchableOpacity
             onPress={() => {
               navigation.navigate(navigationStrings.PAKANTI_SEARCH);
@@ -263,6 +277,7 @@ const ImageWrapper1 = styled.Image``;
 const ImageWrapper = styled.Image`
   height: 25px;
   width: 25px;
+  padding: 2px;
   margin-right: 16px;
 `;
 

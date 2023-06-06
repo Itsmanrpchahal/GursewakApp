@@ -1,5 +1,5 @@
 // @ts-ignore
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled, { withTheme } from "styled-components/native";
 import {
   Image,
@@ -25,6 +25,8 @@ import {
 } from "../../../assets";
 import { Dropdown } from "react-native-element-dropdown";
 import navigationStrings from "../../../navigations/navigationStrings";
+import { useTypedSelector } from "@root/hooks/useTypedSelector";
+import { useActions } from "@root/hooks/useActions";
 
 const data = [
   { label: "Item 1", value: "1" },
@@ -36,16 +38,35 @@ const data = [
   { label: "Item 7", value: "7" },
   { label: "Item 8", value: "8" },
 ];
+const themeData = [
+  { label: "Light", value: false },
+  { label: "Dark", value: true },
+];
 const SettingScreen = ({ navigation }) => {
+  const [theme, setTheme] = useState(false);
   const [value, setValue] = useState(null);
   const [isFocus, setIsFocus] = useState(false);
   const { colors }: any = useTheme();
   const [isEnabled, setIsEnabled] = useState(false);
   const mode = Appearance.getColorScheme();
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
+  const { modeState } = useTypedSelector((state) => state.mode);
+  const { getMode } = useActions();
 
+  useEffect(() => {
+    if (modeState) {
+      getMode({ mode: modeState });
+    } else {
+      getMode({ mode: false });
+    }
+
+    navigation.setOptions({ headerShown: true });
+  }, []);
   return (
-    <ScrollView style={{ height: "100%", backgroundColor: colors.primary }}>
+    <ScrollView
+      showsVerticalScrollIndicator={false}
+      style={{ backgroundColor: colors.primary }}
+    >
       <MainWrapper>
         <StatusBar
           barStyle="light-content"
@@ -70,10 +91,7 @@ const SettingScreen = ({ navigation }) => {
               value={value}
               onFocus={() => setIsFocus(true)}
               onBlur={() => setIsFocus(false)}
-              onChange={(item) => {
-                setValue(item.value);
-                setIsFocus(false);
-              }}
+              onChange={(item) => {}}
             />
           </DropdownWrapper>
         </ItemWrapper>
@@ -81,9 +99,10 @@ const SettingScreen = ({ navigation }) => {
 
         <ItemWrapper>
           <TextWrapper>App Mode</TextWrapper>
+
           <DropdownWrapper>
             <Dropdown
-              data={data}
+              data={themeData}
               search={false}
               maxHeight={300}
               activeColor={colors.primary}
@@ -92,15 +111,12 @@ const SettingScreen = ({ navigation }) => {
               }}
               labelField="label"
               valueField="value"
-              placeholderStyle={{ color: "black" }}
               selectedTextStyle={{ color: "black" }}
-              placeholder={!isFocus ? "Select item" : "..."}
+              placeholder={modeState ? "Dark" : "Light"}
               value={value}
-              onFocus={() => setIsFocus(true)}
-              onBlur={() => setIsFocus(false)}
               onChange={(item) => {
-                setValue(item.value);
-                setIsFocus(false);
+                setTheme(item.value);
+                getMode({ mode: item.value });
               }}
             />
           </DropdownWrapper>
@@ -197,7 +213,13 @@ const SettingScreen = ({ navigation }) => {
             >
               <TextWrapperWhite>About Gursevak and Bhagat Ji</TextWrapperWhite>
             </TouchableOpacity>
-            <TextWrapperWhite>Acknowledgements</TextWrapperWhite>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.HELP);
+              }}
+            >
+              <TextWrapperWhite>Acknowledgements</TextWrapperWhite>
+            </TouchableOpacity>
           </ItemWrapper1>
         </ToggleWrapper>
         <DividerView />
@@ -285,7 +307,6 @@ const SettingScreen = ({ navigation }) => {
         <ItemWrapper>
           <TextWrapper>Legal</TextWrapper>
           <DecsTextWrapperWhite>Privacy Policy</DecsTextWrapperWhite>
-          <DecsTextWrapperWhite>Name of Policy</DecsTextWrapperWhite>
         </ItemWrapper>
         <DividerView />
 

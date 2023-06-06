@@ -5,7 +5,7 @@ import { withTheme } from "styled-components/native";
 import { icDragMove, icblueDots, icshareYellow } from "../../../assets";
 import { data } from "../../../utils/constants";
 import { useTypedSelector } from "@root/hooks/useTypedSelector";
-import * as Progress from "react-native-progress";
+import ProgressBar from "react-native-progress/Bar";
 
 const HomeTab = () => {
   const { modeState } = useTypedSelector((state) => state.mode);
@@ -36,31 +36,31 @@ const HomeTab = () => {
                   <TitleWrapper style={{ margin: 10 }}>
                     Mool Mantar Jaap
                   </TitleWrapper>
-                  <Progress.Bar
-                    indeterminate={true}
-                    progress={0.5}
-                    height={10}
-                    style={{ width: "90%", marginLeft: 10 }}
+                  <ProgressBar
+                    style={{ border: 10 }}
+                    progress={0.3}
+                    width={340}
+                    height={20}
                   />
 
                   <TitleWrapper style={{ margin: 10 }}>
                     Name of Sehaj Paath
                   </TitleWrapper>
-                  <Progress.Bar
-                    indeterminate={true}
-                    progress={0.5}
-                    height={10}
-                    style={{ width: "90%", marginLeft: 10 }}
+                  <ProgressBar
+                    style={{ border: 10 }}
+                    progress={0.3}
+                    width={340}
+                    height={20}
                   />
 
                   <TitleWrapper style={{ margin: 10 }}>
                     Counter Name
                   </TitleWrapper>
-                  <Progress.Bar
-                    indeterminate={true}
-                    progress={0.5}
-                    height={10}
-                    style={{ width: "90%", marginLeft: 10 }}
+                  <ProgressBar
+                    style={{ border: 10 }}
+                    progress={0.3}
+                    width={340}
+                    height={20}
                   />
                 </View>
               ) : (
