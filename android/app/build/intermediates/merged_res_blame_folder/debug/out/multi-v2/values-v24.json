@@ -1,16 +1,33 @@
 {
     "logs": [
         {
-            "outputFile": "com.theme.app-mergeDebugResources-29:/values-v24/values-v24.xml",
+            "outputFile": "com.theme.app-mergeDebugResources-3:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/itsmanprchahal/.gradle/caches/transforms-3/be9a285d7d94d789380b4b7ef5365ae2/transformed/appcompat-1.4.1/res/values-v24/values-v24.xml",
+                    "source": "/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/b2ea3509956ed09c0d23f03f2ed37f35/transformed/appcompat-1.4.1/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
                         "startOffsets": "55,212",
                         "endColumns": "156,134",
                         "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/6060ebf119098a93a44fa446de028d52/transformed/media-1.6.0/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,121,182,248",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "116,177,243,310"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "347,413,474,540",
+                        "endColumns": "65,60,65,66",
+                        "endOffsets": "408,469,535,602"
                     }
                 }
             ]

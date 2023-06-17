@@ -36,6 +36,7 @@ export const navigationTheme = {
       akharTextBtnColor: "#17428E",
       pankantiColor: "#182D4E",
       pankantiBC: "#E8E8E8",
+      yelloDull: "#676947",
       textWhite: "#FFF",
       divider: "#808080",
       backgroundAkhar: "#EDEDED",
@@ -123,6 +124,7 @@ export const navigationTheme = {
       raagColor: "#F5D43B",
       textBlack: "#000000",
       blueYellow: "#F5D43B",
+      yelloDull: "#676947",
       backgroundAkhar: "#182D4E",
       akharTextBtnColor: "#F5D43B",
       pankantiColor: "#FFFFFFF",
@@ -133,6 +135,7 @@ export const navigationTheme = {
       cadmiumRed: "#D22B2B",
       lightTheme: "#98A9C8",
       gray: "#EDEDED",
+      darkBlue: "#0D1C39",
       pink: "#C91E86",
     },
     spacing: {

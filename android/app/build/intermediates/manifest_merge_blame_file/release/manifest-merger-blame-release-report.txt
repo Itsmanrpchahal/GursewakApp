@@ -13,70 +13,159 @@
 11    <uses-permission android:name="android.permission.INTERNET" />
 11-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:3:5-67
 11-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:3:22-64
-12
-13    <application
-13-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:5:5-24:19
-14        android:name="com.theme.MainApplication"
-14-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:6:7-38
-15        android:allowBackup="false"
-15-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:10:7-34
-16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.7.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/08e1174eef2c209ea18090f1084adbcb/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
-17        android:icon="@mipmap/ic_launcher"
-17-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:8:7-41
-18        android:label="@string/app_name"
-18-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:7:7-39
-19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:9:7-52
-20        android:theme="@style/AppTheme" >
-20-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:11:7-38
-21        <activity
-21-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:12:7-23:18
-22            android:name="com.theme.MainActivity"
-22-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:13:9-37
-23            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-23-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:15:9-118
-24            android:exported="true"
-24-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:18:9-32
-25            android:label="@string/app_name"
-25-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:14:9-41
-26            android:launchMode="singleTask"
-26-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:16:9-40
-27            android:windowSoftInputMode="adjustResize" >
-27-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:17:9-51
-28            <intent-filter>
-28-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:19:9-22:25
-29                <action android:name="android.intent.action.MAIN" />
-29-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:20:13-65
-29-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:20:21-62
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:21:13-73
-31-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:21:23-70
-32            </intent-filter>
-33        </activity>
-34
-35        <provider
-35-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/30102b16e64b2b966e993f978f0d77f3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-36            android:name="androidx.startup.InitializationProvider"
-36-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/30102b16e64b2b966e993f978f0d77f3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
-37            android:authorities="com.theme.androidx-startup"
-37-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/30102b16e64b2b966e993f978f0d77f3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
-38            android:exported="false" >
-38-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/30102b16e64b2b966e993f978f0d77f3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
-39            <meta-data
-39-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/30102b16e64b2b966e993f978f0d77f3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-40                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-40-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/30102b16e64b2b966e993f978f0d77f3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
-41                android:value="androidx.startup" />
-41-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/30102b16e64b2b966e993f978f0d77f3/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
-42            <meta-data
-42-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/168829b299da31b5f39d19c1353bb79f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-43                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-43-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/168829b299da31b5f39d19c1353bb79f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-44                android:value="androidx.startup" />
-44-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/itsmanprchahal/.gradle/caches/transforms-3/168829b299da31b5f39d19c1353bb79f/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-45        </provider>
-46    </application>
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:3:5-67
+12-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:3:22-64
+13    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+13-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:5:5-77
+13-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:5:22-75
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:6:4-79
+14-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:6:21-76
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:7:4-80
+15-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:7:21-77
+16    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+16-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:8:4-87
+16-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:8:21-84
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:9:2-76
+17-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:9:19-73
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:10:2-68
+18-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:10:19-65
+19    <!-- Required to access Google Play Licensing -->
+20    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+20-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-73
+20-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-70
+21    <!--
+22         Required to keep CPU alive while downloading files
+23        (NOT to keep screen awake)
+24    -->
+25    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required to check whether Wi-Fi is enabled -->
+25-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:5-68
+25-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:22-65
+26    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+26-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:5-76
+26-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:22-73
+27    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+27-->[com.google.android.gms:play-services-iid:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/eec86663d59661698d1c36f62565d450/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:5-82
+27-->[com.google.android.gms:play-services-iid:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/eec86663d59661698d1c36f62565d450/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:22-79
+28    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+28-->[com.android.installreferrer:installreferrer:1.1.2] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/efe86c1876b106907afb9f4779b8b89c/transformed/jetified-installreferrer-1.1.2/AndroidManifest.xml:9:5-110
+28-->[com.android.installreferrer:installreferrer:1.1.2] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/efe86c1876b106907afb9f4779b8b89c/transformed/jetified-installreferrer-1.1.2/AndroidManifest.xml:9:22-107
+29
+30    <application
+30-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:12:5-36:19
+31        android:name="com.theme.MainApplication"
+31-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:13:7-38
+32        android:allowBackup="false"
+32-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:17:7-34
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.7.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/4a22c56bd155f6fe55c0e2a2811f7ace/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+34        android:icon="@mipmap/ic_launcher"
+34-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:15:7-41
+35        android:label="@string/app_name"
+35-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:14:7-39
+36        android:roundIcon="@mipmap/ic_launcher_round"
+36-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:16:7-52
+37        android:theme="@style/AppTheme" >
+37-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:18:7-38
+38        <activity
+38-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:19:7-35:18
+39            android:name="com.theme.MainActivity"
+39-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:20:9-37
+40            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+40-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:22:9-118
+41            android:exported="true"
+41-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:25:9-32
+42            android:label="@string/app_name"
+42-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:21:9-41
+43            android:launchMode="singleTask"
+43-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:23:9-40
+44            android:windowSoftInputMode="adjustResize" >
+44-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:24:9-51
+45            <intent-filter>
+45-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:26:9-29:25
+46                <action android:name="android.intent.action.MAIN" />
+46-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:27:13-65
+46-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:27:21-62
 47
-48</manifest>
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:28:13-73
+48-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:28:23-70
+49            </intent-filter>
+50            <intent-filter>
+50-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:30:11-34:21
+51                <action android:name="android.intent.action.MAIN" />
+51-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:27:13-65
+51-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:27:21-62
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:28:13-73
+53-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:28:23-70
+54
+55                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+55-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:33:11-75
+55-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:33:19-73
+56            </intent-filter>
+57        </activity>
+58
+59        <provider
+59-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:34:9-42:20
+60            android:name="com.RNFetchBlob.Utils.FileProvider"
+60-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:35:13-62
+61            android:authorities="com.theme.provider"
+61-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-60
+62            android:exported="false"
+62-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-37
+63            android:grantUriPermissions="true" >
+63-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-47
+64            <meta-data
+64-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:39:13-41:58
+65                android:name="android.support.FILE_PROVIDER_PATHS"
+65-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:40:17-67
+66                android:resource="@xml/provider_paths" />
+66-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:41:17-55
+67        </provider>
+68
+69        <activity
+69-->[com.google.android.gms:play-services-base:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fdd1ce27533080bff695effec7a105d0/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+70            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+70-->[com.google.android.gms:play-services-base:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fdd1ce27533080bff695effec7a105d0/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+71            android:exported="false"
+71-->[com.google.android.gms:play-services-base:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fdd1ce27533080bff695effec7a105d0/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+72            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+72-->[com.google.android.gms:play-services-base:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fdd1ce27533080bff695effec7a105d0/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+73
+74        <meta-data
+74-->[com.google.android.gms:play-services-basement:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/23f3804d2fc3a5327346cce623865525/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+75            android:name="com.google.android.gms.version"
+75-->[com.google.android.gms:play-services-basement:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/23f3804d2fc3a5327346cce623865525/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+76            android:value="@integer/google_play_services_version" />
+76-->[com.google.android.gms:play-services-basement:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/23f3804d2fc3a5327346cce623865525/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+77
+78        <provider
+78-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+79            android:name="androidx.startup.InitializationProvider"
+79-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+80            android:authorities="com.theme.androidx-startup"
+80-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+81            android:exported="false" >
+81-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+82            <meta-data
+82-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+83                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+83-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+84                android:value="androidx.startup" />
+84-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+85            <meta-data
+85-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/c08a5e03aea05228390578a64c2ed911/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+86                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+86-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/c08a5e03aea05228390578a64c2ed911/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+87                android:value="androidx.startup" />
+87-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/c08a5e03aea05228390578a64c2ed911/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+88        </provider>
+89    </application>
+90
+91</manifest>

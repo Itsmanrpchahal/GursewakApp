@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Appearance, View } from "react-native";
+import { Appearance, TextInput, View } from "react-native";
 import styled from "styled-components/native";
 import { withTheme } from "styled-components/native";
 
@@ -7,6 +7,10 @@ import { Dropdown } from "react-native-element-dropdown";
 import { useTheme } from "styled-components";
 import FillBtn from "../../../component/FillBtn";
 import navigationStrings from "../../../navigations/navigationStrings";
+import AwesomeAlert from "react-native-awesome-alerts";
+import TextField from "../../../component/TextField";
+import { color } from "react-native-elements/dist/helpers";
+
 const data = [
   { label: "Item 1", value: "1" },
   { label: "Item 2", value: "2" },
@@ -23,6 +27,8 @@ const NewNote = ({ navigation }) => {
   const { colors }: any = useTheme();
   const [isFocus, setIsFocus] = useState(false);
   const [value, setValue] = useState(null);
+  const [showalert, setShowAlert] = useState(false);
+  const [cancelable, setCancelable] = useState(true);
 
   return (
     <MainWrapper>
@@ -50,16 +56,52 @@ const NewNote = ({ navigation }) => {
           onChange={(item) => {
             setValue(item.value);
             setIsFocus(false);
+            setShowAlert(!showalert);
           }}
         />
       </DropdownWrapper>
-
+      <AwesomeAlert
+        customView={
+          <View style={{ width: 220 }}>
+            <TextWrapper>New Folder</TextWrapper>
+            <TextInput
+              style={{ marginTop: 10, width: "100%" }}
+              placeholder="New Folder"
+              autoCapitalize={"none"}
+            />
+            <View
+              style={{
+                height: 1,
+                backgroundColor: colors.primary,
+                marginTop: 5,
+              }}
+            ></View>
+          </View>
+        }
+        show={showalert}
+        showProgress={false}
+        closeOnTouchOutside={false}
+        closeOnHardwareBackPress={false}
+        showCancelButton={false}
+        showConfirmButton={true}
+        confirmButtonColor="#2451A0"
+        confirmText="Create"
+        onConfirmPressed={() => {
+          setShowAlert(false);
+        }}
+      />
       <FillBtn btntext={"Save"} onPress={() => {}} />
     </MainWrapper>
   );
 };
 
 export default withTheme(NewNote);
+
+const TextWrapper = styled.Text`
+  font-weight: 600;
+  font-size: ${({ theme }: any) => theme.fontSize[0].cardDate};
+  color: ${({ theme }: any) => theme.colors.primary};
+`;
 
 const DropdownWrapper = styled.View`
   height: 45px;

@@ -139,6 +139,7 @@ const VerticleWrapper = styled.View`
 
 const ImageWrapper = styled.Image`
   margin-right: 16px;
+  margin-top: 5px;
 `;
 
 const TitleDecsWrapper = styled.Text`

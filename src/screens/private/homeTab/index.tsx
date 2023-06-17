@@ -6,10 +6,11 @@ import { icDragMove, icblueDots, icshareYellow } from "../../../assets";
 import { data } from "../../../utils/constants";
 import { useTypedSelector } from "@root/hooks/useTypedSelector";
 import ProgressBar from "react-native-progress/Bar";
+import { useTheme } from "styled-components";
 
 const HomeTab = () => {
   const { modeState } = useTypedSelector((state) => state.mode);
-
+  const { colors }: any = useTheme();
   return (
     <MainWrapper>
       <FlatList
@@ -33,35 +34,92 @@ const HomeTab = () => {
               </HorizontalWrapper>
               {item.index === 4 ? (
                 <View>
-                  <TitleWrapper style={{ margin: 10 }}>
+                  <TitleWrapper style={{ marginLeft: 10, marginTop: 10 }}>
                     Mool Mantar Jaap
                   </TitleWrapper>
-                  <ProgressBar
-                    style={{ border: 10 }}
-                    progress={0.3}
-                    width={340}
-                    height={20}
-                  />
+                  <View style={{ position: "relative", padding: 10 }}>
+                    <BackView
+                      backgroundColor={
+                        modeState ? colors.yellow : colors.primary
+                      }
+                    ></BackView>
+                    <HorizontalWrapper1>
+                      <UpperView
+                        backgroundColor={
+                          modeState ? colors.yellow : colors.primary
+                        }
+                        width={"40%"}
+                      >
+                        <TextNumber
+                          color={
+                            modeState ? colors.textBlack : colors.textWhite
+                          }
+                        >
+                          12
+                        </TextNumber>
+                      </UpperView>
+                    </HorizontalWrapper1>
+                  </View>
 
-                  <TitleWrapper style={{ margin: 10 }}>
+                  <TitleWrapper style={{ marginLeft: 10 }}>
                     Name of Sehaj Paath
                   </TitleWrapper>
-                  <ProgressBar
-                    style={{ border: 10 }}
-                    progress={0.3}
-                    width={340}
-                    height={20}
-                  />
+                  <View style={{ position: "relative", padding: 10 }}>
+                    <BackView
+                      backgroundColor={
+                        modeState ? colors.yellow : colors.primary
+                      }
+                    ></BackView>
+                    <HorizontalWrapper1>
+                      <UpperView
+                        backgroundColor={
+                          modeState ? colors.yellow : colors.primary
+                        }
+                        width={"40%"}
+                      >
+                        <TextNumber
+                          color={
+                            modeState ? colors.textBlack : colors.textWhite
+                          }
+                        >
+                          12
+                        </TextNumber>
+                      </UpperView>
+                    </HorizontalWrapper1>
+                  </View>
 
-                  <TitleWrapper style={{ margin: 10 }}>
+                  <TitleWrapper style={{ marginLeft: 10 }}>
                     Counter Name
                   </TitleWrapper>
-                  <ProgressBar
-                    style={{ border: 10 }}
-                    progress={0.3}
-                    width={340}
-                    height={20}
-                  />
+                  <View
+                    style={{
+                      position: "relative",
+                      padding: 10,
+                      marginTop: -1,
+                    }}
+                  >
+                    <BackView
+                      backgroundColor={
+                        modeState ? colors.yellow : colors.primary
+                      }
+                    ></BackView>
+                    <HorizontalWrapper1>
+                      <UpperView
+                        backgroundColor={
+                          modeState ? colors.yellow : colors.primary
+                        }
+                        width={"40%"}
+                      >
+                        <TextNumber
+                          color={
+                            modeState ? colors.textBlack : colors.textWhite
+                          }
+                        >
+                          12
+                        </TextNumber>
+                      </UpperView>
+                    </HorizontalWrapper1>
+                  </View>
                 </View>
               ) : (
                 <TitleWrapper1>
@@ -85,12 +143,51 @@ const HomeTab = () => {
 
 export default withTheme(HomeTab);
 
+type Props = {
+  color: string;
+  fontSize: string;
+  backgroundColor: string;
+  width: string;
+};
+
 const ImageView = styled.View`
   align-items: flex-end;
   padding: 10px;
 `;
 
 const ImageWrapper = styled.Image``;
+
+const BackView = styled.View<Props>`
+    width:100%
+    margin-top:10px;
+    border-radius:10px;
+    height:15px
+    opacity:0.3;
+    background-color: ${({ backgroundColor }: any) => backgroundColor};
+
+`;
+
+const TextNumber = styled.Text`
+  padding-right: 5px;
+  text-align:right
+  color: ${({ color }: any) => color};
+  font-size: ${({ theme }: any) => theme.fontSize[0].cardSmallText};
+`;
+
+const UpperView = styled.View<Props>`
+    width:${({ width }: any) => width};
+    margin-top:10px;
+    border-radius:10px;
+    height:15px
+  background-color: ${({ backgroundColor }: any) => backgroundColor};
+`;
+
+const HorizontalWrapper1 = styled.View`
+    width:100%
+  flex-direction: row;
+  position: absolute;
+  padding:10px
+`;
 
 const HorizontalWrapper = styled.View`
   background-color: ${({ theme }: any) => theme.colors.primaryYellow};

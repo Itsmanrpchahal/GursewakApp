@@ -1,27 +1,46 @@
 {
     "logs": [
         {
-            "outputFile": "com.theme.app-mergeDebugResources-29:/values-lo/values-lo.xml",
+            "outputFile": "com.theme.app-mergeDebugResources-3:/values-lo/values-lo.xml",
             "map": [
                 {
-                    "source": "/Users/itsmanprchahal/.gradle/caches/transforms-3/e119862b677da2b2e1ecc2c5dd9a0d3b/transformed/jetified-play-services-base-17.0.0/res/values-lo/values.xml",
+                    "source": "/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/b42f7006fc185b161354def26638851a/transformed/jetified-exoplayer-core-2.18.1/res/values-lo/values-lo.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "245,351,553,681,786,997,1120,1254,1395,1606,1709,1906,2033,2263,2450,2544,2639",
-                        "endColumns": "105,201,127,104,210,122,133,140,210,102,196,126,229,186,93,94,109",
-                        "endOffsets": "350,552,680,785,996,1119,1253,1394,1605,1708,1905,2032,2262,2449,2543,2638,2748"
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,185,251,316,391,461,553,640",
+                        "endColumns": "68,60,65,64,74,69,91,86,71",
+                        "endOffsets": "119,180,246,311,386,456,548,635,707"
                     },
                     "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2772,2882,3084,3216,3325,3536,3663,3801,4137,4348,4455,4652,4783,5013,5204,5302,5401",
-                        "endColumns": "109,201,131,108,210,126,137,144,210,106,196,130,229,190,97,98,113",
-                        "endOffsets": "2877,3079,3211,3320,3531,3658,3796,3941,4343,4450,4647,4778,5008,5199,5297,5396,5510"
+                        "startLines": "88,89,90,91,92,93,94,95,96",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "8025,8094,8155,8221,8286,8361,8431,8523,8610",
+                        "endColumns": "68,60,65,64,74,69,91,86,71",
+                        "endOffsets": "8089,8150,8216,8281,8356,8426,8518,8605,8677"
                     }
                 },
                 {
-                    "source": "/Users/itsmanprchahal/.gradle/caches/transforms-3/08e1174eef2c209ea18090f1084adbcb/transformed/core-1.7.0/res/values-lo/values-lo.xml",
+                    "source": "/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/2a85b18e02e8e7476a3c171339ec8361/transformed/jetified-exoplayer-ui-2.18.1/res/values-lo/values-lo.xml",
+                    "from": {
+                        "startLines": "2,11,15,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,286,477,655,737,817,894,982,1064,1140,1204,1297,1389,1459,1523,1586,1656,1766,1873,1983,2051,2128,2198,2274,2358,2440,2502,2565,2618,2676,2724,2785,2844,2912,2973,3039,3103,3162,3226,3293,3360,3414,3474,3548,3622",
+                        "endLines": "10,14,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60",
+                        "endColumns": "17,12,12,81,79,76,87,81,75,63,92,91,69,63,62,69,109,106,109,67,76,69,75,83,81,61,62,52,57,47,60,58,67,60,65,63,58,63,66,66,53,59,73,73,55",
+                        "endOffsets": "281,472,650,732,812,889,977,1059,1135,1199,1292,1384,1454,1518,1581,1651,1761,1868,1978,2046,2123,2193,2269,2353,2435,2497,2560,2613,2671,2719,2780,2839,2907,2968,3034,3098,3157,3221,3288,3355,3409,3469,3543,3617,3673"
+                    },
+                    "to": {
+                        "startLines": "2,11,15,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,97,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,336,527,6115,6197,6277,6354,6442,6524,6600,6664,6757,6849,6919,6983,7046,7116,7226,7333,7443,7511,7588,7658,7734,7818,7900,7962,8682,8976,9034,9082,9143,9202,9270,9331,9397,9461,9520,9584,9651,9718,9772,9832,9906,9980",
+                        "endLines": "10,14,18,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,97,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117",
+                        "endColumns": "17,12,12,81,79,76,87,81,75,63,92,91,69,63,62,69,109,106,109,67,76,69,75,83,81,61,62,52,57,47,60,58,67,60,65,63,58,63,66,66,53,59,73,73,55",
+                        "endOffsets": "331,522,700,6192,6272,6349,6437,6519,6595,6659,6752,6844,6914,6978,7041,7111,7221,7328,7438,7506,7583,7653,7729,7813,7895,7957,8020,8730,9029,9077,9138,9197,9265,9326,9392,9456,9515,9579,9646,9713,9767,9827,9901,9975,10031"
+                    }
+                },
+                {
+                    "source": "/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/0248f3923ccb04279ba1c2b6e3e03fb7/transformed/core-1.9.0/res/values-lo/values-lo.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,15 +49,49 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "48",
+                        "startLines": "119",
                         "startColumns": "4",
-                        "startOffsets": "5597",
+                        "startOffsets": "10118",
                         "endColumns": "100",
-                        "endOffsets": "5693"
+                        "endOffsets": "10214"
                     }
                 },
                 {
-                    "source": "/Users/itsmanprchahal/.gradle/caches/transforms-3/46288970f3df631865ec6c63ce3e36a6/transformed/jetified-play-services-basement-17.0.0/res/values-lo/values.xml",
+                    "source": "/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/abf844490e85754df255fcee67fac05e/transformed/jetified-extension-mediasession-2.18.1/res/values-lo/values-lo.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,138,218",
+                        "endColumns": "82,79,77",
+                        "endOffsets": "133,213,291"
+                    },
+                    "to": {
+                        "startLines": "98,99,100",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "8735,8818,8898",
+                        "endColumns": "82,79,77",
+                        "endOffsets": "8813,8893,8971"
+                    }
+                },
+                {
+                    "source": "/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fdd1ce27533080bff695effec7a105d0/transformed/jetified-play-services-base-17.0.0/res/values-lo/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "245,351,553,681,786,997,1120,1254,1395,1606,1709,1906,2033,2263,2450,2544,2639",
+                        "endColumns": "105,201,127,104,210,122,133,140,210,102,196,126,229,186,93,94,109",
+                        "endOffsets": "350,552,680,785,996,1119,1253,1394,1605,1708,1905,2032,2262,2449,2543,2638,2748"
+                    },
+                    "to": {
+                        "startLines": "46,47,48,49,50,51,52,53,55,56,57,58,59,60,61,62,63",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3372,3482,3684,3816,3925,4136,4263,4401,4737,4948,5055,5252,5383,5613,5804,5902,6001",
+                        "endColumns": "109,201,131,108,210,126,137,144,210,106,196,130,229,190,97,98,113",
+                        "endOffsets": "3477,3679,3811,3920,4131,4258,4396,4541,4943,5050,5247,5378,5608,5799,5897,5996,6110"
+                    }
+                },
+                {
+                    "source": "/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/23f3804d2fc3a5327346cce623865525/transformed/jetified-play-services-basement-17.0.0/res/values-lo/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -47,15 +100,15 @@
                         "endOffsets": "437"
                     },
                     "to": {
-                        "startLines": "37",
+                        "startLines": "54",
                         "startColumns": "4",
-                        "startOffsets": "3946",
+                        "startOffsets": "4546",
                         "endColumns": "190",
-                        "endOffsets": "4132"
+                        "endOffsets": "4732"
                     }
                 },
                 {
-                    "source": "/Users/itsmanprchahal/.gradle/caches/transforms-3/be9a285d7d94d789380b4b7ef5365ae2/transformed/appcompat-1.4.1/res/values-lo/values-lo.xml",
+                    "source": "/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/b2ea3509956ed09c0d23f03f2ed37f35/transformed/appcompat-1.4.1/res/values-lo/values-lo.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -64,11 +117,11 @@
                         "endOffsets": "203,306,419,504,608,719,797,874,965,1058,1150,1244,1344,1437,1532,1628,1719,1810,1891,1998,2102,2200,2303,2407,2511,2668,2767,2849"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,47",
+                        "startLines": "19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,118",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,208,311,424,509,613,724,802,879,970,1063,1155,1249,1349,1442,1537,1633,1724,1815,1896,2003,2107,2205,2308,2412,2516,2673,5515",
+                        "startOffsets": "705,808,911,1024,1109,1213,1324,1402,1479,1570,1663,1755,1849,1949,2042,2137,2233,2324,2415,2496,2603,2707,2805,2908,3012,3116,3273,10036",
                         "endColumns": "102,102,112,84,103,110,77,76,90,92,91,93,99,92,94,95,90,90,80,106,103,97,102,103,103,156,98,81",
-                        "endOffsets": "203,306,419,504,608,719,797,874,965,1058,1150,1244,1344,1437,1532,1628,1719,1810,1891,1998,2102,2200,2303,2407,2511,2668,2767,5592"
+                        "endOffsets": "803,906,1019,1104,1208,1319,1397,1474,1565,1658,1750,1844,1944,2037,2132,2228,2319,2410,2491,2598,2702,2800,2903,3007,3111,3268,3367,10113"
                     }
                 }
             ]

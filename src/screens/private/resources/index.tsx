@@ -91,11 +91,7 @@ const Resources = ({ navigation }) => {
           display: "flex",
         }}
       >
-        <ScrollView
-          horizontal={true}
-          showsHorizontalScrollIndicator={false}
-          pagingEnabled={true}
-        >
+        <ScrollView horizontal={true}>
           {data.map((item, index) => {
             return (
               <View style={{ backgroundColor: colors.pankantiBC }}>

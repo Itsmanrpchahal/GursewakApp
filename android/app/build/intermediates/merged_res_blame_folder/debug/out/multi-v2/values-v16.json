@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.theme.app-mergeDebugResources-29:/values-v16/values-v16.xml",
+            "outputFile": "com.theme.app-mergeDebugResources-3:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/itsmanprchahal/.gradle/caches/transforms-3/08e1174eef2c209ea18090f1084adbcb/transformed/core-1.7.0/res/values-v16/values-v16.xml",
+                    "source": "/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/0248f3923ccb04279ba1c2b6e3e03fb7/transformed/core-1.9.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/itsmanprchahal/.gradle/caches/transforms-3/be9a285d7d94d789380b4b7ef5365ae2/transformed/appcompat-1.4.1/res/values-v16/values-v16.xml",
+                    "source": "/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/b2ea3509956ed09c0d23f03f2ed37f35/transformed/appcompat-1.4.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

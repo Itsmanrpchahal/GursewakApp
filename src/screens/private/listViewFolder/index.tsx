@@ -38,7 +38,6 @@ const ListViewFolder = ({ navigation }) => {
                 <HeaderText
                   style={{ padding: 10, marginTop: 10 }}
                   color={modeState ? colors.yellow : colors.textBlack}
-                  width={100}
                 >
                   Content to be Added
                 </HeaderText>
@@ -46,7 +45,6 @@ const ListViewFolder = ({ navigation }) => {
                 <HeaderText
                   style={{ padding: 10, marginTop: -10 }}
                   color={colors.blueWhite}
-                  width={100}
                 >
                   Content to be Added
                 </HeaderText>
@@ -86,12 +84,10 @@ const Divider = styled.View`
 const DescText = styled.Text<TextProps>`
   color: ${({ color }: any) => color};
   margin-left:10px
-  fontsize: ${({ theme }: any) => theme.fontSize[0].cardSmallText}px;
+  font-size: ${({ theme }: any) => theme.fontSize[0].cardSmallText}px;
 `;
 
 const HeaderText = styled.Text<TextProps>`
-  width: ${({ width }: any) => width}%;
-  text-align: ${({ textAlign }: any) => textAlign};
   color: ${({ color }: any) => color};
   font-size: 16px;
 `;

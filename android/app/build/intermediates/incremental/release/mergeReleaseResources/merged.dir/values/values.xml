@@ -114,6 +114,14 @@
     <color name="cardview_shadow_start_color">#37000000</color>
     <color name="catalyst_logbox_background">#ffffffff</color>
     <color name="catalyst_redbox_background">#eecc0000</color>
+    <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
+    <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
+    <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
+    <color name="common_google_signin_btn_text_dark_pressed">@android:color/white</color>
+    <color name="common_google_signin_btn_text_light_default">#90000000</color>
+    <color name="common_google_signin_btn_text_light_disabled">#1F000000</color>
+    <color name="common_google_signin_btn_text_light_focused">#90000000</color>
+    <color name="common_google_signin_btn_text_light_pressed">#DE000000</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_dark_default_color_background">#121212</color>
     <color name="design_dark_default_color_error">#CF6679</color>
@@ -641,6 +649,7 @@
     <integer name="config_tooltipAnimTime">150</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
     <integer name="design_tab_indicator_anim_duration_ms">300</integer>
+    <integer name="google_play_services_version">12451000</integer>
     <integer name="hide_password_duration">320</integer>
     <integer name="mtrl_badge_max_character_count">4</integer>
     <integer name="mtrl_btn_anim_delay_ms">100</integer>
@@ -728,6 +737,24 @@
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="combobox_description" translatable="false">Combo Box</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are missing from your device.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue"><ns1:g id="app_name">%1$s</ns1:g> is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are not supported by your device.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update Google Play services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are currently updating.</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
@@ -3017,11 +3044,19 @@
     <style name="ShapeAppearanceOverlay.TopRightDifferentCornerSize">
     <item name="cornerSizeTopRight">20px</item>
   </style>
-    <style name="SpinnerDatePickerDialog" ns2:targetApi="lollipop" parent="Theme.AppCompat.Light.Dialog">
+    <style name="SpinnerDatePickerDialog" parent="SpinnerDatePickerDialogBase"/>
+    <style name="SpinnerDatePickerDialogBase" ns2:targetApi="lollipop" parent="Theme.AppCompat.DayNight.Dialog">
         <item name="android:datePickerStyle">@style/SpinnerDatePickerStyle</item>
     </style>
-    <style name="SpinnerDatePickerStyle" ns2:targetApi="lollipop" parent="android:Widget.Material.Light.DatePicker">
+    <style name="SpinnerDatePickerStyle" ns2:targetApi="lollipop" parent="android:Widget.Material.DatePicker">
         <item name="android:datePickerMode">spinner</item>
+    </style>
+    <style name="SpinnerTimePickerDialog" parent="SpinnerTimePickerDialogBase"/>
+    <style name="SpinnerTimePickerDialogBase" ns2:targetApi="lollipop" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:timePickerStyle">@style/SpinnerTimePickerStyle</item>
+    </style>
+    <style name="SpinnerTimePickerStyle" ns2:targetApi="lollipop" parent="android:Widget.Material.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
     </style>
     <style name="Test.ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Day" parent="">
     <item name="cornerFamily">rounded</item>
@@ -6045,6 +6080,19 @@
         
         <attr name="android:dropDownHorizontalOffset"/>
     </declare-styleable>
+    <declare-styleable name="LoadingImageView"><attr name="imageAspectRatioAdjust">
+<enum name="none" value="0"/>
+
+<enum name="adjust_width" value="1"/>
+
+<enum name="adjust_height" value="2"/>
+
+</attr>
+
+<attr format="float" name="imageAspectRatio"/>
+
+<attr format="boolean" name="circleCrop"/>
+</declare-styleable>
     <declare-styleable name="MaterialAlertDialog">
     <attr format="dimension" name="backgroundInsetStart"/>
     <attr format="dimension" name="backgroundInsetTop"/>
@@ -6503,6 +6551,25 @@
       <enum name="cut" value="1"/>
     </attr>
   </declare-styleable>
+    <declare-styleable name="SignInButton"><attr format="reference" name="buttonSize">
+<enum name="standard" value="0"/>
+
+<enum name="wide" value="1"/>
+
+<enum name="icon_only" value="2"/>
+
+</attr>
+<attr format="reference" name="colorScheme">
+<enum name="dark" value="0"/>
+
+<enum name="light" value="1"/>
+
+<enum name="auto" value="2"/>
+
+</attr>
+
+<attr format="reference|string" name="scopeUris"/>
+</declare-styleable>
     <declare-styleable name="SimpleDraweeView" parent="GenericDraweeHierarchy">
 
     
@@ -7114,5 +7181,39 @@
         
         <attr name="android:inflatedId"/>
         <attr name="android:id"/>
+    </declare-styleable>
+    <declare-styleable name="scaleStyle">
+        <attr name="scalableType">
+            <enum name="none" value="0"/>
+
+            <enum name="fitXY" value="1"/>
+            <enum name="fitStart" value="2"/>
+            <enum name="fitCenter" value="3"/>
+            <enum name="fitEnd" value="4"/>
+
+            <enum name="leftTop" value="5"/>
+            <enum name="leftCenter" value="6"/>
+            <enum name="leftBottom" value="7"/>
+            <enum name="centerTop" value="8"/>
+            <enum name="center" value="9"/>
+            <enum name="centerBottom" value="10"/>
+            <enum name="rightTop" value="11"/>
+            <enum name="rightCenter" value="12"/>
+            <enum name="rightBottom" value="13"/>
+
+            <enum name="leftTopCrop" value="14"/>
+            <enum name="leftCenterCrop" value="15"/>
+            <enum name="leftBottomCrop" value="16"/>
+            <enum name="centerTopCrop" value="17"/>
+            <enum name="centerCrop" value="18"/>
+            <enum name="centerBottomCrop" value="19"/>
+            <enum name="rightTopCrop" value="20"/>
+            <enum name="rightCenterCrop" value="21"/>
+            <enum name="rightBottomCrop" value="22"/>
+
+            <enum name="startInside" value="23"/>
+            <enum name="centerInside" value="24"/>
+            <enum name="endInside" value="25"/>
+        </attr>
     </declare-styleable>
 </resources>

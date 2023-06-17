@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Image,
   ScrollView,
@@ -18,6 +18,7 @@ import { useTheme } from "styled-components";
 import {
   icAccentStart,
   icArrow,
+  icArrowBlue,
   icRoundBack,
   icSearch,
   icThreeDots,
@@ -26,6 +27,8 @@ import TextField from "../../../component/TextField";
 import navigationStrings from "../../../navigations/navigationStrings";
 import { FlatList } from "react-native";
 import PankatiView from "../../../component/pakantiView";
+import { useTypedSelector } from "@root/hooks/useTypedSelector";
+import { navigationRef } from "@root/navigations/RootNavigations";
 
 var radio_props = [
   { label: "First Letter Start", value: 0 },
@@ -68,105 +71,117 @@ var data = [
   },
 ];
 
-const SearchScreen = ({ navigation }) => {
+const SearchScreen = (props, { navigation }) => {
   const [initial, setInitial] = useState(0);
   const { colors }: any = useTheme();
   const [theme, setTheme] = useState<any>(false);
   const [tab, setTab] = useState(0);
+  const { modeState } = useTypedSelector((state) => state.mode);
   const toggleRememberPin = (value) => {
     setTheme(value);
   };
+
   return (
     <MainWrapper style={{ marginBottom: -16 }}>
       <StatusBar barStyle="light-content" backgroundColor={colors.secondary} />
+
       <ScrollView
         style={{ marginBottom: 130 }}
         showsVerticalScrollIndicator={false}
       >
         <MainWrapper>
-          <TextWrapper>Search Type</TextWrapper>
-          <RadioForm
-            style={{ marginTop: 10 }}
-            radio_props={radio_props}
-            buttonInnerColor={colors.text}
-            buttonOuterColor={colors.text}
-            buttonColor={colors.text}
-            animation={true}
-            labelColor={colors.text}
-            labelStyle={{
-              fontSize: 14,
-              color: colors.text,
-            }}
-            initial={0}
-            onPress={(value) => {
-              setInitial(value);
-            }}
-          />
-
-          <TextDesc>Similar Letters</TextDesc>
-          <TextDesc style={{ marginTop: 5 }}>
-            For example, if you are unsure whether the shabad you’re searching
-            has bIcwr or vIcwr, enabling Similar Letters will display results
-            for both.
-          </TextDesc>
-
-          <HorizontalViewMain>
-            <HorizontalView>
-              <TextDesc>v</TextDesc>
-
-              <ImageWrapper
-                style={{ marginLeft: -30 }}
-                source={icArrow}
-              ></ImageWrapper>
-              <Switch
-                trackColor={{ false: "gray", true: "yellow" }}
-                onValueChange={toggleRememberPin}
-                value={theme}
+          {props.route.params.searchType === 0 ? (
+            <View>
+              <TextWrapper>Search Type</TextWrapper>
+              <RadioForm
+                style={{ marginTop: 10 }}
+                radio_props={radio_props}
+                buttonInnerColor={colors.text}
+                buttonOuterColor={colors.text}
+                buttonColor={colors.text}
+                animation={true}
+                labelColor={colors.text}
+                labelStyle={{
+                  fontSize: 14,
+                  color: colors.text,
+                }}
+                initial={0}
+                onPress={(value) => {
+                  setInitial(value);
+                }}
               />
-            </HorizontalView>
 
-            <HorizontalView>
-              <TextDesc>.K </TextDesc>
-              <ImageWrapper
-                style={{ marginLeft: -30 }}
-                source={icArrow}
-              ></ImageWrapper>
-              <Switch
-                trackColor={{ false: "gray", true: "yellow" }}
-                onValueChange={toggleRememberPin}
-                value={theme}
-              />
-            </HorizontalView>
-          </HorizontalViewMain>
+              <TextDesc>Similar Letters</TextDesc>
+              <TextDesc style={{ marginTop: 5 }}>
+                For example, if you are unsure whether the shabad you’re
+                searching has bIcwr or vIcwr, enabling Similar Letters will
+                display results for both.
+              </TextDesc>
 
-          <HorizontalViewMain style={{ marginTop: -10 }}>
-            <HorizontalView>
-              <TextDesc>.x </TextDesc>
+              <HorizontalViewMain>
+                <HorizontalView>
+                  <TextDesc>v</TextDesc>
 
-              <ImageWrapper
-                style={{ marginLeft: -30 }}
-                source={icArrow}
-              ></ImageWrapper>
-              <Switch
-                trackColor={{ false: "gray", true: "yellow" }}
-                onValueChange={toggleRememberPin}
-                value={theme}
-              />
-            </HorizontalView>
+                  <ImageWrapper
+                    style={{ marginTop: 5 }}
+                    source={modeState ? icArrow : icArrowBlue}
+                  ></ImageWrapper>
+                  <TextDesc>v</TextDesc>
+                  <Switch
+                    trackColor={{ false: "gray", true: "yellow" }}
+                    onValueChange={toggleRememberPin}
+                    value={theme}
+                  />
+                </HorizontalView>
 
-            <HorizontalView>
-              <TextDesc>ikR kr</TextDesc>
-              <ImageWrapper
-                style={{ marginLeft: -30 }}
-                source={icArrow}
-              ></ImageWrapper>
-              <Switch
-                trackColor={{ false: "gray", true: "yellow" }}
-                onValueChange={toggleRememberPin}
-                value={theme}
-              />
-            </HorizontalView>
-          </HorizontalViewMain>
+                <HorizontalView>
+                  <TextDesc>.K </TextDesc>
+                  <ImageWrapper
+                    style={{ marginTop: 5 }}
+                    source={modeState ? icArrow : icArrowBlue}
+                  ></ImageWrapper>
+                  <TextDesc>.K </TextDesc>
+
+                  <Switch
+                    trackColor={{ false: "gray", true: "yellow" }}
+                    onValueChange={toggleRememberPin}
+                    value={theme}
+                  />
+                </HorizontalView>
+              </HorizontalViewMain>
+
+              <HorizontalViewMain style={{ marginTop: -10 }}>
+                <HorizontalView>
+                  <TextDesc>.x</TextDesc>
+
+                  <ImageWrapper
+                    style={{ marginTop: 5 }}
+                    source={modeState ? icArrow : icArrowBlue}
+                  ></ImageWrapper>
+                  <TextDesc>.x</TextDesc>
+                  <Switch
+                    trackColor={{ false: "gray", true: "yellow" }}
+                    onValueChange={toggleRememberPin}
+                    value={theme}
+                  />
+                </HorizontalView>
+
+                <HorizontalView>
+                  <TextDesc>ikR kr</TextDesc>
+                  <ImageWrapper
+                    style={{ marginTop: 5 }}
+                    source={modeState ? icArrow : icArrowBlue}
+                  ></ImageWrapper>
+                  <TextDesc>ikR kr</TextDesc>
+                  <Switch
+                    trackColor={{ false: "gray", true: "yellow" }}
+                    onValueChange={toggleRememberPin}
+                    value={theme}
+                  />
+                </HorizontalView>
+              </HorizontalViewMain>
+            </View>
+          ) : null}
 
           <FlatList
             data={data}
@@ -174,7 +189,9 @@ const SearchScreen = ({ navigation }) => {
               return (
                 <TouchableOpacity
                   onPress={() => {
-                    navigation.navigate(navigationStrings.POTHI_SHAIB_VIEW);
+                    navigationRef.current.navigate(
+                      navigationStrings.POTHI_SHAIB_VIEW
+                    );
                   }}
                 >
                   <PankatiView item={item} />
@@ -228,29 +245,68 @@ const SearchScreen = ({ navigation }) => {
               </ButtonVerticle>
             </TouchableOpacity>
           </ButtonWrapper>
-          <SearchWrapper>
-            <InputWrapper>
-              <TouchableOpacity onPress={() => {}}>
-                <TextField
-                  autoCapitalize={"none"}
-                  placeholder="Search"
-                  secureTextEntry={false}
-                  editable={true}
-                  icon={icSearch}
-                />
-              </TouchableOpacity>
-            </InputWrapper>
+          {tab === 0 ? (
+            <SearchWrapper>
+              <InputWrapper width={70}>
+                <TouchableOpacity onPress={() => {}}>
+                  <TextField
+                    defaultValue={"Search"}
+                    autoCapitalize={"none"}
+                    placeholder="Search"
+                    secureTextEntry={false}
+                    editable={false}
+                    icon={icSearch}
+                  />
+                </TouchableOpacity>
+              </InputWrapper>
 
-            <ImageWrapper style={{ marginLeft: 3 }} source={icRoundBack} />
-            <ImageWrapper source={icAccentStart} />
-            <TouchableOpacity
-              onPress={() => {
-                navigation.navigate(navigationStrings.PAKANTI_SEARCH);
-              }}
-            >
-              <Image style={{ marginRight: 10 }} source={icThreeDots} />
-            </TouchableOpacity>
-          </SearchWrapper>
+              <ImageWrapper
+                style={{
+                  marginLeft: 3,
+                  height: 23,
+                  width: 23,
+                  paddingRight: 15,
+                }}
+                source={icRoundBack}
+              />
+              <TouchableOpacity onPress={() => {}}>
+                <ImageWrapper source={icAccentStart} />
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => {}}>
+                <Image source={icThreeDots} />
+              </TouchableOpacity>
+            </SearchWrapper>
+          ) : (
+            <SearchWrapper>
+              <InputWrapper width={40}>
+                <TouchableOpacity>
+                  <TextField
+                    defaultValue={"Type 1"}
+                    autoCapitalize={"none"}
+                    placeholder="Type 1"
+                    secureTextEntry={false}
+                    editable={false}
+                    icon={icSearch}
+                  />
+                </TouchableOpacity>
+              </InputWrapper>
+              <InputWrapper width={40}>
+                <TouchableOpacity>
+                  <TextField
+                    defaultValue={"Type 2"}
+                    autoCapitalize={"none"}
+                    placeholder="Type 2"
+                    secureTextEntry={false}
+                    editable={false}
+                    icon={icSearch}
+                  />
+                </TouchableOpacity>
+              </InputWrapper>
+              <TouchableOpacity onPress={() => {}}>
+                <ImageWrapper source={icAccentStart} />
+              </TouchableOpacity>
+            </SearchWrapper>
+          )}
         </BottomWrapper>
       </MainWrapper1>
     </MainWrapper>
@@ -262,10 +318,11 @@ export default withTheme(SearchScreen);
 type ColorProps = {
   color: string;
   backgroundColor: string;
+  width: string;
 };
 
-const InputWrapper = styled.View`
-  width: 70%;
+const InputWrapper = styled.View<ColorProps>`
+  width: ${({ width }: any) => width}%;
 `;
 
 const ViewDivider = styled.View<ColorProps>`

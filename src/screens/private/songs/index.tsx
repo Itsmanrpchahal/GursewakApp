@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Button, FlatList, Text, TouchableOpacity } from "react-native";
+import {
+  Button,
+  FlatList,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+} from "react-native";
 import styled, { withTheme } from "styled-components/native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
@@ -80,25 +86,27 @@ const SongsScreen = ({ navigation }) => {
           backgroundColor: colors.pankantiBC,
         }}
       >
-        {data.map((item, index) => {
-          return (
-            <View style={{ backgroundColor: colors.pankantiBC }}>
-              <TouchableOpacity
-                onPress={() => {
-                  setTab(item.title);
-                  setI(index);
-                }}
-              >
-                <View
-                  style={{ marginLeft: 10, marginRight: 10, marginTop: 10 }}
+        <ScrollView horizontal={true}>
+          {data.map((item, index) => {
+            return (
+              <View style={{ backgroundColor: colors.pankantiBC }}>
+                <TouchableOpacity
+                  onPress={() => {
+                    setTab(item.title);
+                    setI(index);
+                  }}
                 >
-                  <TextWrapper>{item.title}</TextWrapper>
-                  {i === index ? <Divider></Divider> : null}
-                </View>
-              </TouchableOpacity>
-            </View>
-          );
-        })}
+                  <View
+                    style={{ marginLeft: 10, marginRight: 10, marginTop: 10 }}
+                  >
+                    <TextWrapper>{item.title}</TextWrapper>
+                    {i === index ? <Divider></Divider> : null}
+                  </View>
+                </TouchableOpacity>
+              </View>
+            );
+          })}
+        </ScrollView>
       </View>
 
       {tab === "Songs" ? (

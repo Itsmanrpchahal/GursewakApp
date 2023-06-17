@@ -15,7 +15,6 @@ const NoteDetail = () => {
       <HeaderText
         style={{ padding: 10, marginTop: 10 }}
         color={modeState ? colors.yellow : colors.textBlack}
-        width={100}
       >
         Content to be Added
       </HeaderText>
@@ -43,8 +42,8 @@ type TextProps = {
 };
 
 const ContentView = styled.Text`
-padding:10px
-  fontsize: ${({ theme }: any) => theme.fontSize[0].cardSmallText};
+  padding:10px
+  font-size: ${({ theme }: any) => theme.fontSize[0].cardSmallText}px;
   color: ${({ theme }: any) => theme.colors.blueWhite};
 
 `;
@@ -52,14 +51,12 @@ padding:10px
 const DescText = styled.Text<TextProps>`
   color: ${({ color }: any) => color};
   margin-left:10px
-  fontsize: ${({ theme }: any) => theme.fontSize[0].cardSmallText};
+  font-size: ${({ theme }: any) => theme.fontSize[0].cardSmallText}px;
 `;
 
 const HeaderText = styled.Text<TextProps>`
-  width: ${({ width }: any) => width}%;
-  text-align: ${({ textAlign }: any) => textAlign};
   color: ${({ color }: any) => color};
-  fontsize: 10px;
+  font-size: 10px;
 `;
 
 const MainWrapper = styled.View`

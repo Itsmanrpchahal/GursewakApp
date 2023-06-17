@@ -48,4 +48,5 @@ export default {
   SEHAJ_PATH: "Sehaj Path",
   PATH_LIST: "Path Name",
   SUNDAR_GUTKA: "Sundar Gutka",
+  FAVOURITE: "Favourite",
 };

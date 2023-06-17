@@ -59,9 +59,9 @@ const VideoTab = () => {
                     </VerticleWrapper>
                   </Horizontal>
                   <TouchableOpacity>
-                    <ImageWrapper
+                    <ImageWrapper1
                       source={modeState ? icyellowDots : icblueDots}
-                    ></ImageWrapper>
+                    ></ImageWrapper1>
                   </TouchableOpacity>
                 </HorizontalWrapper>
               </ItemWrapper>
@@ -105,8 +105,7 @@ const VerticleWrapper = styled.View`
 `;
 
 const ImageWrapper1 = styled.Image`
-  margin-top: -43px;
-  margin-right: 15px;
+  margin-top: 5px;
 `;
 
 const ImageWrapper = styled.Image`

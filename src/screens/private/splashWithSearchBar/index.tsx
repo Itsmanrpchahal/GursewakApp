@@ -25,6 +25,7 @@ import {
   StatusBar,
   Text,
   TouchableOpacity,
+  View,
 } from "react-native";
 import navigationStrings from "../../../navigations/navigationStrings";
 import { useTheme } from "styled-components";
@@ -66,64 +67,69 @@ const SplashWithSearchBar = ({ navigation }) => {
     <MainWrapper>
       <StatusBar barStyle="light-content" backgroundColor={colors.primary} />
       <SafeAreaView>
-        <ScrollView style={{ marginBottom: 150 }}>
-          <MainWrapper1>
-            <TopWrapper>
-              <TouchableOpacity
-                onPress={() => {
-                  navigation.navigate(navigationStrings.SETTINGS);
-                }}
-              >
-                <ImageWrapper source={icSetting} />
-              </TouchableOpacity>
-              <TouchableOpacity
-                onPress={() => {
-                  navigation.navigate(navigationStrings.LOGIN);
-                }}
-              >
-                <ImageWrapper source={icUser} />
-              </TouchableOpacity>
-            </TopWrapper>
-
-            <TextWrapper>Content to be added</TextWrapper>
-            <Image source={icGoldenTemple} />
-            <TextWrapperAccent>Learn Shudh Gurbani</TextWrapperAccent>
-
-            <FlatList
-              data={data}
-              numColumns={2}
-              renderItem={({ item, index }) => {
-                return (
-                  <TouchableOpacity
-                    style={{ width: "50%" }}
-                    onPress={() =>
-                      item.title === "Bal Updesh"
-                        ? navigation.navigate(navigationStrings.BAL_UPDESH)
-                        : item.title === "Resources"
-                        ? navigation.navigate(navigationStrings.RESOURCES)
-                        : item.title === "MultiMedia"
-                        ? navigation.navigate(navigationStrings.SONGS)
-                        : item.title === "Literature"
-                        ? navigation.navigate(navigationStrings.POTHIS_SAHIBS)
-                        : item.title === "Sehaj Path"
-                        ? navigation.navigate(navigationStrings.SEHAJ_PATH)
-                        : item.title === "Sundar Gutka"
-                        ? navigation.navigate(navigationStrings.SUNDAR_GUTKA)
-                        : null
-                    }
-                  >
-                    <ListView>
-                      <ImageWrapper1 source={item.iamge} />
-                      <TextWrapper style={{ marginTop: 5 }}>
-                        {item.title}
-                      </TextWrapper>
-                    </ListView>
-                  </TouchableOpacity>
-                );
+        <MainWrapper1>
+          <TopWrapper>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.SETTINGS);
               }}
-            />
-          </MainWrapper1>
-        </ScrollView>
+            >
+              <ImageWrapper source={icSetting} />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.LOGIN);
+              }}
+            >
+              <ImageWrapper source={icUser} />
+            </TouchableOpacity>
+          </TopWrapper>
+
+          {/* <TextWrapper>Content to be added</TextWrapper> */}
+          <Image style={{ marginTop: -10 }} source={icGoldenTemple} />
+          <TextWrapperAccent>Learn Shudh Gurbani</TextWrapperAccent>
+
+          <FlatList
+            style={{
+              height: "100%",
+              marginTop: -10,
+            }}
+            columnWrapperStyle={{ justifyContent: "space-between" }}
+            data={data}
+            numColumns={2}
+            renderItem={({ item, index }) => {
+              return (
+                <TouchableOpacity
+                  style={{
+                    width: "50%",
+                  }}
+                  onPress={() =>
+                    item.title === "Bal Updesh"
+                      ? navigation.navigate(navigationStrings.BAL_UPDESH)
+                      : item.title === "Resources"
+                      ? navigation.navigate(navigationStrings.RESOURCES)
+                      : item.title === "MultiMedia"
+                      ? navigation.navigate(navigationStrings.SONGS)
+                      : item.title === "Literature"
+                      ? navigation.navigate(navigationStrings.POTHIS_SAHIBS)
+                      : item.title === "Sehaj Path"
+                      ? navigation.navigate(navigationStrings.SEHAJ_PATH)
+                      : item.title === "Sundar Gutka"
+                      ? navigation.navigate(navigationStrings.SUNDAR_GUTKA)
+                      : null
+                  }
+                >
+                  <ListView>
+                    <ImageWrapper1 source={item.iamge} />
+                    <TextWrapper style={{ marginTop: 5 }}>
+                      {item.title}
+                    </TextWrapper>
+                  </ListView>
+                </TouchableOpacity>
+              );
+            }}
+          />
+        </MainWrapper1>
       </SafeAreaView>
 
       <BottomWrapper>
@@ -168,37 +174,76 @@ const SplashWithSearchBar = ({ navigation }) => {
             </ButtonVerticle>
           </TouchableOpacity>
         </ButtonWrapper>
-        <SearchWrapper>
-          <InputWrapper>
+        {tab === 0 ? (
+          <SearchWrapper>
+            <InputWrapper width={70}>
+              <TouchableOpacity
+                onPress={() => {
+                  navigation.navigate(navigationStrings.SEARCH_SCREEN, {
+                    searchType: 0,
+                  });
+                }}
+              >
+                <TextField
+                  defaultValue={"Search"}
+                  autoCapitalize={"none"}
+                  placeholder="Search"
+                  secureTextEntry={false}
+                  editable={false}
+                  icon={icSearch}
+                />
+              </TouchableOpacity>
+            </InputWrapper>
+
+            <ImageWrapper
+              style={{ marginLeft: 3, height: 23, width: 23, paddingRight: 15 }}
+              source={icRoundBack}
+            />
             <TouchableOpacity
               onPress={() => {
-                navigation.navigate(navigationStrings.SEARCH_SCREEN);
+                navigation.navigate(navigationStrings.FAVOURITE);
               }}
             >
-              <TextField
-                defaultValue={"Search"}
-                autoCapitalize={"none"}
-                placeholder="Search"
-                secureTextEntry={false}
-                editable={false}
-                icon={icSearch}
-              />
+              <ImageWrapper source={icAccentStart} />
             </TouchableOpacity>
-          </InputWrapper>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.PAKANTI_SEARCH);
+              }}
+            >
+              <Image source={icThreeDots} />
+            </TouchableOpacity>
+          </SearchWrapper>
+        ) : (
+          <SearchWrapper>
+            <InputWrapper width={70}>
+              <TouchableOpacity
+                onPress={() => {
+                  navigation.navigate(navigationStrings.SEARCH_SCREEN, {
+                    searchType: 1,
+                  });
+                }}
+              >
+                <TextField
+                  defaultValue={"Search"}
+                  autoCapitalize={"none"}
+                  placeholder="Search"
+                  secureTextEntry={false}
+                  editable={false}
+                  icon={icSearch}
+                />
+              </TouchableOpacity>
+            </InputWrapper>
 
-          <ImageWrapper
-            style={{ marginLeft: 3, width: 28 }}
-            source={icRoundBack}
-          />
-          <ImageWrapper style={{ width: 28 }} source={icAccentStart} />
-          <TouchableOpacity
-            onPress={() => {
-              navigation.navigate(navigationStrings.PAKANTI_SEARCH);
-            }}
-          >
-            <Image style={{ marginRight: 10 }} source={icThreeDots} />
-          </TouchableOpacity>
-        </SearchWrapper>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.FAVOURITE);
+              }}
+            >
+              <ImageWrapper source={icAccentStart} />
+            </TouchableOpacity>
+          </SearchWrapper>
+        )}
       </BottomWrapper>
     </MainWrapper>
   );
@@ -209,10 +254,11 @@ export default withTheme(SplashWithSearchBar);
 type ColorProps = {
   color: string;
   backgroundColor: string;
+  width: string;
 };
 
-const InputWrapper = styled.View`
-  width: 70%;
+const InputWrapper = styled.View<ColorProps>`
+  width: ${({ width }: any) => width}%;
 `;
 
 const SearchWrapper = styled.View`
@@ -241,12 +287,12 @@ const ButtonVerticle = styled.View`
 
 const ButtonWrapper = styled.View`
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: -15px;
 `;
 
 const BottomWrapper = styled.View`
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   padding: 16px;
   background-color: ${({ theme }: any) => theme.colors.primary};
 `;
@@ -254,12 +300,13 @@ const BottomWrapper = styled.View`
 const ListView = styled.View`
   width: 100%;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
   justify-content: space-between;
 `;
 
 const TextWrapperAccent = styled.Text`
   width: 100%;
+  top: -25px;
   text-align: center;
   color: ${({ theme }: any) => theme.colors.accentColor};
   font-size: ${({ theme, fontSize }: any) => theme.fontSize[0].cardTitle}px;
@@ -275,16 +322,13 @@ const TextWrapper = styled.Text`
 const ImageWrapper1 = styled.Image``;
 
 const ImageWrapper = styled.Image`
-  height: 25px;
-  width: 25px;
-  padding: 2px;
   margin-right: 16px;
 `;
 
 const TopWrapper = styled.View`
   flex-direction: row;
   justify-content: flex-end;
-  margin-right: 10px;
+  margin-right: 50px;
   margin-top: 10px;
 `;
 

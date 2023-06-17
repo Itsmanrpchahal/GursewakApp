@@ -6,7 +6,7 @@
     mergedManifest="build/intermediates/merged_manifest/release/AndroidManifest.xml"
     proguardFiles="build/intermediates/default_proguard_files/global/proguard-android.txt-7.3.1:proguard-rules.pro"
     partialResultsDir="build/intermediates/lint_vital_partial_results/release/out"
-    desugaredMethodsFiles="/Users/itsmanprchahal/.gradle/caches/transforms-3/a6b5bc90c4ddfb60390879627ba5458e/transformed/D8BackportedDesugaredMethods.txt">
+    desugaredMethodsFiles="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/14f8b397768f3ae0253d6307fd6db200/transformed/D8BackportedDesugaredMethods.txt">
   <buildFeatures
       namespacing="REQUIRED"/>
   <sourceProviders>
@@ -14,7 +14,7 @@
         manifest="src/main/AndroidManifest.xml"
         javaDirectories="src/main/java:build/generated/rncli/src/main/java:build/generated/source/codegen/java:src/main/kotlin"
         resDirectories="src/main/res"
-        assetsDirectories="src/main/assets"/>
+        assetsDirectories="src/main/assets:build/intermediates/ReactNativeVectorIcons"/>
     <sourceProvider
         manifest="src/release/AndroidManifest.xml"
         javaDirectories="src/release/java:src/release/kotlin"

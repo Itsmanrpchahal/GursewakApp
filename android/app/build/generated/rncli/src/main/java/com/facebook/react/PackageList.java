@@ -13,6 +13,10 @@ import java.util.ArrayList;
 
 // @react-native-async-storage/async-storage
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
+// @react-native-community/datetimepicker
+import com.reactcommunity.rndatetimepicker.RNDateTimePickerPackage;
+// @react-native-community/slider
+import com.reactnativecommunity.slider.ReactSliderPackage;
 // @react-native-masked-view/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
 // react-native-device-info
@@ -21,6 +25,8 @@ import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.rnfs.RNFSPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
+// react-native-linear-gradient
+import com.BV.LinearGradient.LinearGradientPackage;
 // react-native-pager-view
 import com.reactnativepagerview.PagerViewPackage;
 // react-native-reanimated
@@ -31,6 +37,14 @@ import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-sound-player
 import com.johnsonsu.rnsoundplayer.RNSoundPlayerPackage;
+// react-native-svg
+import com.horcrux.svg.SvgPackage;
+// react-native-track-player
+import com.doublesymmetry.trackplayer.TrackPlayer;
+// react-native-vector-icons
+import com.oblador.vectoricons.VectorIconsPackage;
+// react-native-video
+import com.brentvatne.react.ReactVideoPackage;
 // rn-fetch-blob
 import com.RNFetchBlob.RNFetchBlobPackage;
 
@@ -79,15 +93,22 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new AsyncStoragePackage(),
+      new RNDateTimePickerPackage(),
+      new ReactSliderPackage(),
       new RNCMaskedViewPackage(),
       new RNDeviceInfo(),
       new RNFSPackage(),
       new RNGestureHandlerPackage(),
+      new LinearGradientPackage(),
       new PagerViewPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
       new RNSoundPlayerPackage(),
+      new SvgPackage(),
+      new TrackPlayer(),
+      new VectorIconsPackage(),
+      new ReactVideoPackage(),
       new RNFetchBlobPackage()
     ));
   }

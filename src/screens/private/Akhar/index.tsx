@@ -125,11 +125,11 @@ const Akhar = () => {
             </AkharWrapper>
           </HorizontalWrapper>
 
-          {view === 0 ||
-          view === 1 ||
-          view === 2 ||
-          view === 3 ||
-          view === 4 ? (
+          {(view === 0 && tab === 0) ||
+          (view === 1 && tab === 0) ||
+          (view === 2 && tab === 0) ||
+          (view === 3 && tab === 0) ||
+          (view === 4 && tab === 0) ? (
             <HiddenView>
               <TitleText>Content to be added</TitleText>
             </HiddenView>

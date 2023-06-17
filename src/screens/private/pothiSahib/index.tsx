@@ -1,41 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import { FlatList, TouchableOpacity, View } from "react-native";
 import styled, { withTheme } from "styled-components/native";
 import { icDragMove } from "../../../assets";
 import navigationStrings from "../../../navigations/navigationStrings";
+import DraggableFlatList from "react-native-draggable-flatlist";
 
 const data = [
   {
+    id: "1",
     title: "Hello",
   },
   {
+    id: "2",
     title: "Hello",
   },
   {
+    id: "3",
     title: "Hello",
   },
   {
+    id: "4",
     title: "Hello",
   },
   {
+    id: "5",
     title: "Hello",
   },
   {
+    id: "6",
     title: "Hello",
   },
   {
+    id: "7",
     title: "Hello",
   },
   {
+    id: "8",
     title: "Hello",
   },
 ];
 const PothiSahib = ({ navigation }) => {
+  const [dragData, setDragData] = useState(data);
+
+  const onDragEnd = ({ data }) => {
+    setDragData(data);
+  };
   return (
     <MainWrapper>
-      <FlatList
-        data={data}
-        renderItem={() => {
+      <DraggableFlatList
+        onDragEnd={onDragEnd}
+        keyExtractor={(item) => item.id}
+        data={dragData}
+        renderItem={({ item, drag, isActive }) => {
           return (
             <View style={{ height: 80 }}>
               <TouchableOpacity
@@ -49,7 +65,7 @@ const PothiSahib = ({ navigation }) => {
                     <TitleWrapper>Pothi Sahibs</TitleWrapper>
                     <TitleDecsWrapper>Description</TitleDecsWrapper>
                   </VerticleWrapper>
-                  <TouchableOpacity>
+                  <TouchableOpacity onLongPress={drag}>
                     <ImageWrapper source={icDragMove}></ImageWrapper>
                   </TouchableOpacity>
                 </ItemWrapper>
@@ -58,7 +74,7 @@ const PothiSahib = ({ navigation }) => {
             </View>
           );
         }}
-      ></FlatList>
+      ></DraggableFlatList>
     </MainWrapper>
   );
 };

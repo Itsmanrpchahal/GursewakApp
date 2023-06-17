@@ -1,50 +1,70 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FlatList, TouchableOpacity, View } from "react-native";
 import styled, { withTheme } from "styled-components/native";
-import { icDragMove, icThreeDots } from "../../../assets";
+import {
+  icDragMove,
+  icThreeDots,
+  icblueDots,
+  icyellowDots,
+} from "../../../assets";
 import navigationStrings from "../../../navigations/navigationStrings";
 import { useTypedSelector } from "@root/hooks/useTypedSelector";
 import { useTheme } from "styled-components";
+import DraggableFlatList from "react-native-draggable-flatlist";
 
 const data = [
   {
+    id: "1",
     title: "Hello",
   },
   {
+    id: "2",
     title: "Hello",
   },
   {
+    id: "3",
     title: "Hello",
   },
   {
+    id: "4",
     title: "Hello",
   },
   {
+    id: "5",
     title: "Hello",
   },
   {
+    id: "6",
     title: "Hello",
   },
   {
+    id: "7",
     title: "Hello",
   },
   {
+    id: "8",
     title: "Hello",
   },
 ];
 const PothiSahibProgress = ({ navigation }) => {
   const { modeState } = useTypedSelector((state) => state.mode);
   const { colors }: any = useTheme();
+  const [dragData, setDragData] = useState(data);
 
+  const onDragEnd = ({ data }) => {
+    setDragData(data);
+  };
   useEffect(() => {
     navigation.setOptions({ title: "Pothi Sahibs" });
   }, []);
 
   return (
     <MainWrapper>
-      <FlatList
-        data={data}
-        renderItem={() => {
+      <DraggableFlatList
+        onDragEnd={onDragEnd}
+        keyExtractor={(item) => item.id}
+        data={dragData}
+        renderItem={({ item, drag, isActive }) => {
           return (
             <View style={{ height: 100 }}>
               <TouchableOpacity
@@ -58,7 +78,9 @@ const PothiSahibProgress = ({ navigation }) => {
                     <HorizontalWrapper1>
                       <TitleWrapper>Pothi Sahibs</TitleWrapper>
                       <TouchableOpacity>
-                        <ImageWrapper1 source={icThreeDots}></ImageWrapper1>
+                        <ImageWrapper1
+                          source={modeState ? icyellowDots : icblueDots}
+                        ></ImageWrapper1>
                       </TouchableOpacity>
                     </HorizontalWrapper1>
                     <TitleDecsWrapper>Description</TitleDecsWrapper>
@@ -86,7 +108,7 @@ const PothiSahibProgress = ({ navigation }) => {
                       </HorizontalWrapper>
                     </View>
                   </VerticleWrapper>
-                  <TouchableOpacity>
+                  <TouchableOpacity onLongPress={drag}>
                     <ImageWrapper source={icDragMove}></ImageWrapper>
                   </TouchableOpacity>
                 </ItemWrapper>
@@ -95,7 +117,7 @@ const PothiSahibProgress = ({ navigation }) => {
             </View>
           );
         }}
-      ></FlatList>
+      ></DraggableFlatList>
     </MainWrapper>
   );
 };

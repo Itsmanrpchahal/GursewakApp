@@ -65,6 +65,7 @@ import pothiSahibProgress from "../screens/private/pothiSahibProgress";
 import sehajPathList from "../screens/private/sehajPathList";
 import pathList from "../screens/private/pathList";
 import sundarGutka from "../screens/private/sundarGutka";
+import favouriteTab from "../screens/private/favouriteTab";
 type RouteProps = {
   scheme: any;
 };
@@ -799,6 +800,15 @@ const Routes: React.FC<RouteProps> = ({ scheme }) => {
         <Stack.Screen
           name={navigationStrings.SUNDAR_GUTKA}
           component={sundarGutka}
+          options={{
+            headerShown: true,
+            headerStyle: { backgroundColor: colors.secondary },
+            headerTintColor: "white",
+          }}
+        />
+        <Stack.Screen
+          name={navigationStrings.FAVOURITE}
+          component={favouriteTab}
           options={{
             headerShown: true,
             headerStyle: { backgroundColor: colors.secondary },

@@ -25,6 +25,7 @@ export { default as icsoundCloud } from "../assets/soundCloud/soundCloud.png";
 export { default as icweb } from "../assets/web/web.png";
 export { default as ytIcon } from "../assets/ytIcon/youTube.png";
 export { default as icArrow } from "../assets/arrow/arrow.png";
+export { default as icArrowBlue } from "../assets/arrowBlue/icArrowBlue.png";
 export { default as icThreeDots } from "../assets/setting/setting.png";
 export { default as icQuestionMark } from "../assets/questionMark/questionMark.png";
 export { default as icArrowUp } from "../assets/arrowUp/arrowUp.png";
@@ -64,3 +65,9 @@ export { default as icRepeatYellow } from "../assets/RepearYellow/RepeatYellow.p
 export { default as icRepeatBlue } from "../assets/RepeatBlue/Repeat.png";
 export { default as icAddPink } from "../assets/addPink/addPink.png";
 export { default as icAddGold } from "../assets/addGold/addGold.png";
+export { default as icEditBlue } from "../assets/editBlue/editBlue.png";
+export { default as icShareArrowBlue } from "../assets/shareArrowBlue/shareArrowBlue.png";
+export { default as icShareArrowYellow } from "../assets/shareArrowYellow/shareArrowYellow.png";
+export { default as icPauseYellow } from "../assets/pauseYellow/pauseYellow.png";
+export { default as icPauseBlue } from "../assets/pauseBlue/pauseBlue.png";
+export { default as icRewindYellow } from "../assets/rewindYellow/rewindYellow.png";

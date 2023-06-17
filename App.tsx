@@ -1,5 +1,5 @@
 import { Appearance, LogBox, StatusBar, Text } from "react-native";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components/native";
 import { navigationTheme } from "./src/theme/theme";
 import { useTypedSelector } from "./src/hooks/useTypedSelector";
@@ -7,11 +7,16 @@ import { Provider } from "react-redux";
 import { store } from "./src/store";
 import Routes from "./src/navigations/Routes";
 import { useTheme } from "styled-components/native";
+import GlobalFont from "react-native-global-font";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+
 const AppWrapper = () => {
   return (
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </GestureHandlerRootView>
   );
 };
 

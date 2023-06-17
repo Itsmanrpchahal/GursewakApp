@@ -93,12 +93,12 @@ const VerticleWrapper = styled.View`
 `;
 
 const ImageWrapper1 = styled.Image`
-  margin-top: -43px;
+  margin-top: -38px;
   margin-right: 15px;
 `;
 
 const ImageWrapper = styled.Image`
-  margin-top: -45px;
+  margin-top: -40px;
   margin-right: 15px;
 `;
 
