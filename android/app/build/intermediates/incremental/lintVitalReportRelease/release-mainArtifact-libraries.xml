@@ -1,5 +1,18 @@
 <libraries>
   <library
+      name="/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android@@:react-native-community_slider::release"
+      jars="/Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/@react-native-community/slider/android/build/.transforms/7ac3caae5735eba1921762440685eb3d/transformed/out/jars/classes.jar:/Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/@react-native-community/slider/android/build/.transforms/7ac3caae5735eba1921762440685eb3d/transformed/out/jars/libs/R.jar"
+      resolved="theme:react-native-community_slider:unspecified"
+      folder="/Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/@react-native-community/slider/android/build/.transforms/7ac3caae5735eba1921762440685eb3d/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android@@:react-native-pager-view::release"
       jars="/Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-pager-view/android/build/.transforms/8d277bc991cad979ded3033bd75076de/transformed/out/jars/classes.jar:/Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-pager-view/android/build/.transforms/8d277bc991cad979ded3033bd75076de/transformed/out/jars/libs/R.jar"
       resolved="theme:react-native-pager-view:unspecified"
@@ -208,6 +221,19 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android@@:react-native-track-player::release"
+      jars="/Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/.transforms/ad12e3ccbc340053b8e9048236714e1c/transformed/out/jars/classes.jar:/Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/.transforms/ad12e3ccbc340053b8e9048236714e1c/transformed/out/jars/libs/R.jar"
+      resolved="theme:react-native-track-player:unspecified"
+      folder="/Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/.transforms/ad12e3ccbc340053b8e9048236714e1c/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android@@:react-native-vector-icons::release"
       jars="/Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-vector-icons/android/build/.transforms/84e50470e5cd0e46801d4be27e9f1c1a/transformed/out/jars/classes.jar:/Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-vector-icons/android/build/.transforms/84e50470e5cd0e46801d4be27e9f1c1a/transformed/out/jars/libs/R.jar"
       resolved="theme:react-native-vector-icons:unspecified"
@@ -377,10 +403,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.core:core:1.7.0@aar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/4a22c56bd155f6fe55c0e2a2811f7ace/transformed/core-1.7.0/jars/classes.jar"
-      resolved="androidx.core:core:1.7.0"
-      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/4a22c56bd155f6fe55c0e2a2811f7ace/transformed/core-1.7.0"
+      name="androidx.core:core:1.9.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/0248f3923ccb04279ba1c2b6e3e03fb7/transformed/core-1.9.0/jars/classes.jar"
+      resolved="androidx.core:core:1.9.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/0248f3923ccb04279ba1c2b6e3e03fb7/transformed/core-1.9.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -536,10 +562,10 @@
       jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.3.0/21f49f5f9b85fc49de712539f79123119740595/annotation-1.3.0.jar"
       resolved="androidx.annotation:annotation:1.3.0"/>
   <library
-      name="androidx.annotation:annotation-experimental:1.1.0@aar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/032916e5e5ef229aa1b1bc29af4286fb/transformed/jetified-annotation-experimental-1.1.0/jars/classes.jar"
-      resolved="androidx.annotation:annotation-experimental:1.1.0"
-      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/032916e5e5ef229aa1b1bc29af4286fb/transformed/jetified-annotation-experimental-1.1.0"
+      name="androidx.annotation:annotation-experimental:1.3.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/023336ada2276b88d4b5be7abba6a392/transformed/jetified-annotation-experimental-1.3.0/jars/classes.jar"
+      resolved="androidx.annotation:annotation-experimental:1.3.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/023336ada2276b88d4b5be7abba6a392/transformed/jetified-annotation-experimental-1.3.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -548,6 +574,51 @@
       symbolFile="R.txt"
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
+  <library
+      name="com.facebook.fresco:imagepipeline-okhttp3:2.5.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/18a301251ba8af71c3fc7d68bdec6338/transformed/jetified-imagepipeline-okhttp3-2.5.0/jars/classes.jar"
+      resolved="com.facebook.fresco:imagepipeline-okhttp3:2.5.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/18a301251ba8af71c3fc7d68bdec6338/transformed/jetified-imagepipeline-okhttp3-2.5.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.squareup.okhttp3:okhttp-urlconnection:4.9.2@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/4.9.2/3b9e64d3d56370bc7488ed8b336d17a8013cb336/okhttp-urlconnection-4.9.2.jar"
+      resolved="com.squareup.okhttp3:okhttp-urlconnection:4.9.2"/>
+  <library
+      name="com.squareup.okhttp3:okhttp:4.9.2@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/4.9.2/5302714ee9320b64cf65ed865e5f65981ef9ba46/okhttp-4.9.2.jar"
+      resolved="com.squareup.okhttp3:okhttp:4.9.2"/>
+  <library
+      name="com.squareup.okio:okio:2.10.0@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.10.0/accaddddbb597fb70290fd40358b1ce66b8c2b3d/okio-jvm-2.10.0.jar"
+      resolved="com.squareup.okio:okio:2.10.0"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.7.10/d70d7d2c56371f7aa18f32e984e3e2e998fe9081/kotlin-stdlib-jdk8-1.7.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.7.10/1ef73fee66f45d52c67e2aca12fd945dbe0659bf/kotlin-stdlib-jdk7-1.7.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib:1.7.10@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.10/d2abf9e77736acc4450dc4a3f707fa2c10f5099d/kotlin-stdlib-1.7.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib:1.7.10"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.7.10/bac80c520d0a9e3f3673bc2658c6ed02ef45a76a/kotlin-stdlib-common-1.7.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10"/>
+  <library
+      name="org.jetbrains:annotations:20.1.0@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/20.1.0/2fcd1f3225bca0c4a7bc931142076f8c1e80993f/annotations-20.1.0.jar"
+      resolved="org.jetbrains:annotations:20.1.0"/>
   <library
       name="androidx.tracing:tracing:1.1.0@aar"
       jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/1fa82d0d7a768db36ed77bf4838398c8/transformed/jetified-tracing-1.1.0/jars/classes.jar"
@@ -777,51 +848,6 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.facebook.fresco:imagepipeline-okhttp3:2.5.0@aar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/18a301251ba8af71c3fc7d68bdec6338/transformed/jetified-imagepipeline-okhttp3-2.5.0/jars/classes.jar"
-      resolved="com.facebook.fresco:imagepipeline-okhttp3:2.5.0"
-      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/18a301251ba8af71c3fc7d68bdec6338/transformed/jetified-imagepipeline-okhttp3-2.5.0"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="com.squareup.okhttp3:okhttp-urlconnection:4.9.2@jar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/4.9.2/3b9e64d3d56370bc7488ed8b336d17a8013cb336/okhttp-urlconnection-4.9.2.jar"
-      resolved="com.squareup.okhttp3:okhttp-urlconnection:4.9.2"/>
-  <library
-      name="com.squareup.okhttp3:okhttp:4.9.2@jar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/4.9.2/5302714ee9320b64cf65ed865e5f65981ef9ba46/okhttp-4.9.2.jar"
-      resolved="com.squareup.okhttp3:okhttp:4.9.2"/>
-  <library
-      name="com.squareup.okio:okio:2.9.0@jar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.9.0/dcc813b08ce5933f8bdfd1dfbab4ad4bd170e7a/okio-jvm-2.9.0.jar"
-      resolved="com.squareup.okio:okio:2.9.0"/>
-  <library
-      name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10@jar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.6.10/e80fe6ac3c3573a80305f5ec43f86b829e8ab53d/kotlin-stdlib-jdk8-1.6.10.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10"/>
-  <library
-      name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10@jar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.10/e1c380673654a089c4f0c9f83d0ddfdc1efdb498/kotlin-stdlib-jdk7-1.6.10.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10"/>
-  <library
-      name="org.jetbrains.kotlin:kotlin-stdlib:1.6.10@jar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.10/b8af3fe6f1ca88526914929add63cf5e7c5049af/kotlin-stdlib-1.6.10.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib:1.6.10"/>
-  <library
-      name="org.jetbrains:annotations:13.0@jar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"
-      resolved="org.jetbrains:annotations:13.0"/>
-  <library
-      name="org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10@jar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.10/c118700e3a33c8a0d9adc920e9dec0831171925/kotlin-stdlib-common-1.6.10.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10"/>
-  <library
       name="com.facebook.yoga:proguard-annotations:1.19.0@jar"
       jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/com.facebook.yoga/proguard-annotations/1.19.0/fcbbb39052e6490eaaf6a6959c49c3a4fbe87c63/proguard-annotations-1.19.0.jar"
       resolved="com.facebook.yoga:proguard-annotations:1.19.0"/>
@@ -847,6 +873,45 @@
       jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/7cb1208751475af28cb01e7b404226c9/transformed/jetified-Android-ScalableVideoView-10e7b4da8b/jars/classes.jar"
       resolved="com.github.adityaxjha:Android-ScalableVideoView:10e7b4da8b"
       folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/7cb1208751475af28cb01e7b404226c9/transformed/jetified-Android-ScalableVideoView-10e7b4da8b"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.github.DoubleSymmetry:KotlinAudio:v1.2.4@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/3437202423f489fd0035c418273ab46e/transformed/jetified-KotlinAudio-v1.2.4/jars/classes.jar"
+      resolved="com.github.DoubleSymmetry:KotlinAudio:v1.2.4"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/3437202423f489fd0035c418273ab46e/transformed/jetified-KotlinAudio-v1.2.4"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="io.coil-kt:coil:1.4.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/7efc762f22028b193ea2ab6d4b3c2865/transformed/jetified-coil-1.4.0/jars/classes.jar"
+      resolved="io.coil-kt:coil:1.4.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/7efc762f22028b193ea2ab6d4b3c2865/transformed/jetified-coil-1.4.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="io.coil-kt:coil-base:1.4.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/e5bf4ed20911e3f25b6e2e4da9d951a0/transformed/jetified-coil-base-1.4.0/jars/classes.jar"
+      resolved="io.coil-kt:coil-base:1.4.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/e5bf4ed20911e3f25b6e2e4da9d951a0/transformed/jetified-coil-base-1.4.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1012,10 +1077,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.core:core-ktx:1.6.0@aar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/b7e66068d09b67e64143081c4c3484ac/transformed/jetified-core-ktx-1.6.0/jars/classes.jar"
-      resolved="androidx.core:core-ktx:1.6.0"
-      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/b7e66068d09b67e64143081c4c3484ac/transformed/jetified-core-ktx-1.6.0"
+      name="androidx.test:rules:1.4.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/4bdcd82217f5c12ee4c3b9fb8d1d45ea/transformed/rules-1.4.0/jars/classes.jar"
+      resolved="androidx.test:rules:1.4.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/4bdcd82217f5c12ee4c3b9fb8d1d45ea/transformed/rules-1.4.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1024,6 +1089,40 @@
       symbolFile="R.txt"
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
+  <library
+      name="androidx.test:runner:1.4.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/2ba858c9e9d58e815b8744bbcf55c4f9/transformed/runner-1.4.0/jars/classes.jar"
+      resolved="androidx.test:runner:1.4.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/2ba858c9e9d58e815b8744bbcf55c4f9/transformed/runner-1.4.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.test.services:storage:1.4.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/8581f2acace50980656080be46917638/transformed/jetified-storage-1.4.0/jars/classes.jar"
+      resolved="androidx.test.services:storage:1.4.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/8581f2acace50980656080be46917638/transformed/jetified-storage-1.4.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.3@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.3/d9fd39e22656fd44437d763b0fed86595cab3be8/kotlinx-coroutines-android-1.6.3.jar"
+      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.3"/>
+  <library
+      name="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.3@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.3/b2c2f0c8e99eac632a8db723b365bd59067cf7bd/kotlinx-coroutines-core-jvm-1.6.3.jar"
+      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.3"/>
   <library
       name="androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar"
       jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/192e4b7b165e8f041688fb78ac1411b5/transformed/coordinatorlayout-1.1.0/jars/classes.jar"
@@ -1038,10 +1137,36 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.recyclerview:recyclerview:1.1.0@aar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/a6d46d70d54894dadc4625a9e86aef12/transformed/recyclerview-1.1.0/jars/classes.jar"
-      resolved="androidx.recyclerview:recyclerview:1.1.0"
-      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/a6d46d70d54894dadc4625a9e86aef12/transformed/recyclerview-1.1.0"
+      name="com.google.android.exoplayer:exoplayer:2.18.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/abb293e6370a78c9799f6652cd1797af/transformed/jetified-exoplayer-2.18.1/jars/classes.jar"
+      resolved="com.google.android.exoplayer:exoplayer:2.18.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/abb293e6370a78c9799f6652cd1797af/transformed/jetified-exoplayer-2.18.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.exoplayer:exoplayer-ui:2.18.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/2a85b18e02e8e7476a3c171339ec8361/transformed/jetified-exoplayer-ui-2.18.1/jars/classes.jar"
+      resolved="com.google.android.exoplayer:exoplayer-ui:2.18.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/2a85b18e02e8e7476a3c171339ec8361/transformed/jetified-exoplayer-ui-2.18.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.recyclerview:recyclerview:1.2.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/f8d2c1ff14d98e00ea126cfdff8c10f5/transformed/recyclerview-1.2.1/jars/classes.jar"
+      resolved="androidx.recyclerview:recyclerview:1.2.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/f8d2c1ff14d98e00ea126cfdff8c10f5/transformed/recyclerview-1.2.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1064,6 +1189,32 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="com.google.android.exoplayer:extension-mediasession:2.18.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/abf844490e85754df255fcee67fac05e/transformed/jetified-extension-mediasession-2.18.1/jars/classes.jar"
+      resolved="com.google.android.exoplayer:extension-mediasession:2.18.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/abf844490e85754df255fcee67fac05e/transformed/jetified-extension-mediasession-2.18.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.media:media:1.6.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/6060ebf119098a93a44fa446de028d52/transformed/media-1.6.0/jars/classes.jar"
+      resolved="androidx.media:media:1.6.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/6060ebf119098a93a44fa446de028d52/transformed/media-1.6.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="androidx.legacy:legacy-support-core-utils:1.0.0@aar"
       jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fe7bbfd4412079eb3fa1bda5d7438c7d/transformed/legacy-support-core-utils-1.0.0/jars/classes.jar"
       resolved="androidx.legacy:legacy-support-core-utils:1.0.0"
@@ -1077,9 +1228,117 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="com.google.android.exoplayer:exoplayer-dash:2.18.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/8ffcb8ddc1a734ad3489aeccbcc9a1b5/transformed/jetified-exoplayer-dash-2.18.1/jars/classes.jar"
+      resolved="com.google.android.exoplayer:exoplayer-dash:2.18.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/8ffcb8ddc1a734ad3489aeccbcc9a1b5/transformed/jetified-exoplayer-dash-2.18.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.exoplayer:exoplayer-hls:2.18.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/3ba199665ca6ffb772ae699f74120c4b/transformed/jetified-exoplayer-hls-2.18.1/jars/classes.jar"
+      resolved="com.google.android.exoplayer:exoplayer-hls:2.18.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/3ba199665ca6ffb772ae699f74120c4b/transformed/jetified-exoplayer-hls-2.18.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.exoplayer:exoplayer-rtsp:2.18.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/47352db2ab8150cea046d4a117f5243f/transformed/jetified-exoplayer-rtsp-2.18.1/jars/classes.jar"
+      resolved="com.google.android.exoplayer:exoplayer-rtsp:2.18.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/47352db2ab8150cea046d4a117f5243f/transformed/jetified-exoplayer-rtsp-2.18.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.exoplayer:exoplayer-smoothstreaming:2.18.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/e11d8619c6139f475c3eb719fb7f6154/transformed/jetified-exoplayer-smoothstreaming-2.18.1/jars/classes.jar"
+      resolved="com.google.android.exoplayer:exoplayer-smoothstreaming:2.18.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/e11d8619c6139f475c3eb719fb7f6154/transformed/jetified-exoplayer-smoothstreaming-2.18.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.exoplayer:exoplayer-core:2.18.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/b42f7006fc185b161354def26638851a/transformed/jetified-exoplayer-core-2.18.1/jars/classes.jar"
+      resolved="com.google.android.exoplayer:exoplayer-core:2.18.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/b42f7006fc185b161354def26638851a/transformed/jetified-exoplayer-core-2.18.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.core:core-ktx:1.9.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/00ea63d45ad9e7516708fa7098c80f31/transformed/jetified-core-ktx-1.9.0/jars/classes.jar"
+      resolved="androidx.core:core-ktx:1.9.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/00ea63d45ad9e7516708fa7098c80f31/transformed/jetified-core-ktx-1.9.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.localbroadcastmanager:localbroadcastmanager:1.1.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/85b6f1bc484d408fe7a6fec634e62924/transformed/localbroadcastmanager-1.1.0/jars/classes.jar"
+      resolved="androidx.localbroadcastmanager:localbroadcastmanager:1.1.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/85b6f1bc484d408fe7a6fec634e62924/transformed/localbroadcastmanager-1.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.orhanobut:logger:2.2.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/57f9336fa0eb818637a6c35e3d5d2568/transformed/jetified-logger-2.2.0/jars/classes.jar"
+      resolved="com.orhanobut:logger:2.2.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/57f9336fa0eb818637a6c35e3d5d2568/transformed/jetified-logger-2.2.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="androidx.resourceinspection:resourceinspection-annotation:1.0.0@jar"
       jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/androidx.resourceinspection/resourceinspection-annotation/1.0.0/8c21f8ff5d96d5d52c948707f7e4d6ca6773feef/resourceinspection-annotation-1.0.0.jar"
       resolved="androidx.resourceinspection:resourceinspection-annotation:1.0.0"/>
+  <library
+      name="androidx.collection:collection-ktx:1.1.0@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/androidx.collection/collection-ktx/1.1.0/f807b2f366f7b75142a67d2f3c10031065b5168/collection-ktx-1.1.0.jar"
+      resolved="androidx.collection:collection-ktx:1.1.0"/>
   <library
       name="androidx.cardview:cardview:1.0.0@aar"
       jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/4b4b858fdf71566dd1a1d5c8aed65b84/transformed/cardview-1.0.0/jars/classes.jar"
@@ -1098,10 +1357,10 @@
       jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/androidx.concurrent/concurrent-futures/1.0.0/c1e77e3ee6f4643b77496a1ddf7a2eef1aefdaa1/concurrent-futures-1.0.0.jar"
       resolved="androidx.concurrent:concurrent-futures:1.0.0"/>
   <library
-      name="androidx.documentfile:documentfile:1.0.0@aar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/84d358800278c8bbd4d5066ae35b0def/transformed/documentfile-1.0.0/jars/classes.jar"
-      resolved="androidx.documentfile:documentfile:1.0.0"
-      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/84d358800278c8bbd4d5066ae35b0def/transformed/documentfile-1.0.0"
+      name="com.google.android.exoplayer:exoplayer-datasource:2.18.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/9da7d84b3212b3a1e57ee0ab4b410182/transformed/jetified-exoplayer-datasource-2.18.1/jars/classes.jar"
+      resolved="com.google.android.exoplayer:exoplayer-datasource:2.18.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/9da7d84b3212b3a1e57ee0ab4b410182/transformed/jetified-exoplayer-datasource-2.18.1"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1111,10 +1370,62 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/3585b4dde86e30e5295a4c4d0a4a6a4c/transformed/localbroadcastmanager-1.0.0/jars/classes.jar"
-      resolved="androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
-      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/3585b4dde86e30e5295a4c4d0a4a6a4c/transformed/localbroadcastmanager-1.0.0"
+      name="com.google.android.exoplayer:exoplayer-database:2.18.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/b5acbd6473039e53c8bd045aacfbbdc6/transformed/jetified-exoplayer-database-2.18.1/jars/classes.jar"
+      resolved="com.google.android.exoplayer:exoplayer-database:2.18.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/b5acbd6473039e53c8bd045aacfbbdc6/transformed/jetified-exoplayer-database-2.18.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.exoplayer:exoplayer-extractor:2.18.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/c66f55fad9157587bb66d36194020ab2/transformed/jetified-exoplayer-extractor-2.18.1/jars/classes.jar"
+      resolved="com.google.android.exoplayer:exoplayer-extractor:2.18.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/c66f55fad9157587bb66d36194020ab2/transformed/jetified-exoplayer-extractor-2.18.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.exoplayer:exoplayer-decoder:2.18.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/53ebad57a71cf48f98839194945c8a2a/transformed/jetified-exoplayer-decoder-2.18.1/jars/classes.jar"
+      resolved="com.google.android.exoplayer:exoplayer-decoder:2.18.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/53ebad57a71cf48f98839194945c8a2a/transformed/jetified-exoplayer-decoder-2.18.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.exoplayer:exoplayer-common:2.18.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/03e75b9bb82787daf9937cf49b7431b5/transformed/jetified-exoplayer-common-2.18.1/jars/classes.jar"
+      resolved="com.google.android.exoplayer:exoplayer-common:2.18.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/03e75b9bb82787daf9937cf49b7431b5/transformed/jetified-exoplayer-common-2.18.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.documentfile:documentfile:1.0.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/84d358800278c8bbd4d5066ae35b0def/transformed/documentfile-1.0.0/jars/classes.jar"
+      resolved="androidx.documentfile:documentfile:1.0.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/84d358800278c8bbd4d5066ae35b0def/transformed/documentfile-1.0.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -1137,6 +1448,36 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="androidx.exifinterface:exifinterface:1.3.3@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/6a4210a2e844a4ea396739ff7cba327b/transformed/exifinterface-1.3.3/jars/classes.jar"
+      resolved="androidx.exifinterface:exifinterface:1.3.3"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/6a4210a2e844a4ea396739ff7cba327b/transformed/exifinterface-1.3.3"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.test:monitor:1.4.0@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/430ab97834078fb99b9611de2c08e658/transformed/monitor-1.4.0/jars/classes.jar"
+      resolved="androidx.test:monitor:1.4.0"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/430ab97834078fb99b9611de2c08e658/transformed/monitor-1.4.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-common-java8:2.4.0@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common-java8/2.4.0/5b8f86fea035328fc9e8c660773037a3401ce25f/lifecycle-common-java8-2.4.0.jar"
+      resolved="androidx.lifecycle:lifecycle-common-java8:2.4.0"/>
+  <library
       name="com.android.installreferrer:installreferrer:1.1.2@aar"
       jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/efe86c1876b106907afb9f4779b8b89c/transformed/jetified-installreferrer-1.1.2/jars/classes.jar"
       resolved="com.android.installreferrer:installreferrer:1.1.2"
@@ -1150,11 +1491,48 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="com.jakewharton.timber:timber:5.0.1@aar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/952979ea0b2887ab26cdf2b01c085d4b/transformed/jetified-timber-5.0.1/jars/classes.jar"
+      resolved="com.jakewharton.timber:timber:5.0.1"
+      folder="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/952979ea0b2887ab26cdf2b01c085d4b/transformed/jetified-timber-5.0.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-parcelize-runtime:1.5.30@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-parcelize-runtime/1.5.30/ad02311060801216e6a24fc42ad179324c95b4b1/kotlin-parcelize-runtime-1.5.30.jar"
+      resolved="org.jetbrains.kotlin:kotlin-parcelize-runtime:1.5.30"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.30@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions-runtime/1.5.30/cbd99c64601a1897f1289938de5b0b34ebf311be/kotlin-android-extensions-runtime-1.5.30.jar"
+      resolved="org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.5.30"/>
+  <library
       name="com.parse.bolts:bolts-tasks:1.4.0@jar"
       jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
       resolved="com.parse.bolts:bolts-tasks:1.4.0"/>
   <library
-      name="com.google.guava:listenablefuture:1.0@jar"
-      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/1.0/c949a840a6acbc5268d088e47b04177bf90b3cad/listenablefuture-1.0.jar"
-      resolved="com.google.guava:listenablefuture:1.0"/>
+      name="com.google.guava:guava:31.0.1-android@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.0.1-android/b400db548e748a1a60ba18543ad4fbb44a675a69/guava-31.0.1-android.jar"
+      resolved="com.google.guava:guava:31.0.1-android"/>
+  <library
+      name="com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+      resolved="com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava"/>
+  <library
+      name="junit:junit:4.12@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar"
+      resolved="junit:junit:4.12"/>
+  <library
+      name="com.google.guava:failureaccess:1.0.1@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar"
+      resolved="com.google.guava:failureaccess:1.0.1"/>
+  <library
+      name="org.hamcrest:hamcrest-core:1.3@jar"
+      jars="/Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar"
+      resolved="org.hamcrest:hamcrest-core:1.3"/>
 </libraries>

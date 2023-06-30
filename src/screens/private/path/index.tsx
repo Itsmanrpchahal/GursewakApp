@@ -3,6 +3,15 @@ import styled, { withTheme } from "styled-components/native";
 import { useTypedSelector } from "@root/hooks/useTypedSelector";
 import { useTheme } from "styled-components";
 import { View } from "react-native";
+import {
+  icAddGold,
+  icEditBlue,
+  icEditYellow,
+  icPlus,
+  icaddBlack,
+  icaddBlue,
+  icplusYellow,
+} from "../../../assets";
 
 const Path = () => {
   const { modeState } = useTypedSelector((state) => state.mode);
@@ -10,12 +19,23 @@ const Path = () => {
 
   return (
     <MainWrapper>
-      <TitleWrappewr color={modeState ? colors.yellow : colors.primary}>
-        Content to be Added
-      </TitleWrappewr>
-      <TitleSubWrapper color={modeState ? colors.textWhite : colors.primary}>
-        Content to be Added
-      </TitleSubWrapper>
+      <HorizontalWrapper1>
+        <TitleWrappewr color={modeState ? colors.yellow : colors.primary}>
+          Content to be Added
+        </TitleWrappewr>
+        <ImageWrapper
+          source={modeState ? icplusYellow : icaddBlue}
+        ></ImageWrapper>
+      </HorizontalWrapper1>
+
+      <HorizontalWrapper1>
+        <TitleSubWrapper color={modeState ? colors.textWhite : colors.primary}>
+          Content to be Added
+        </TitleSubWrapper>
+        <ImageWrapper
+          source={modeState ? icEditYellow : icEditBlue}
+        ></ImageWrapper>
+      </HorizontalWrapper1>
 
       <View style={{ position: "relative" }}>
         <BackView
@@ -32,9 +52,14 @@ const Path = () => {
           </UpperView>
         </HorizontalWrapper>
       </View>
-      <TitleSubWrapper color={modeState ? colors.textWhite : colors.primary}>
-        Camp SP
-      </TitleSubWrapper>
+      <HorizontalWrapper1>
+        <TitleSubWrapper color={modeState ? colors.textWhite : colors.primary}>
+          Camp SP
+        </TitleSubWrapper>
+        <ImageWrapper
+          source={modeState ? icEditYellow : icEditBlue}
+        ></ImageWrapper>
+      </HorizontalWrapper1>
 
       <View style={{ position: "relative" }}>
         <BackView
@@ -52,9 +77,14 @@ const Path = () => {
         </HorizontalWrapper>
       </View>
 
-      <TitleSubWrapper color={modeState ? colors.textWhite : colors.primary}>
-        SP
-      </TitleSubWrapper>
+      <HorizontalWrapper1>
+        <TitleSubWrapper color={modeState ? colors.textWhite : colors.primary}>
+          SP
+        </TitleSubWrapper>
+        <ImageWrapper
+          source={modeState ? icEditYellow : icEditBlue}
+        ></ImageWrapper>
+      </HorizontalWrapper1>
 
       <View style={{ position: "relative" }}>
         <BackView
@@ -88,11 +118,21 @@ type Props = {
   width: string;
 };
 
+const ImageWrapper = styled.Image`
+  margin-top: 16px;
+`;
+
 const TextNumber = styled.Text`
   padding-right: 5px;
   text-align:right
   color: ${({ color }: any) => color};
   font-size: ${({ theme }: any) => theme.fontSize[0].cardSmallText};
+`;
+
+const HorizontalWrapper1 = styled.View`
+    width:100%
+  flex-direction: row;
+  justify-content:space-between;
 `;
 
 const HorizontalWrapper = styled.View`

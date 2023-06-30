@@ -16,6 +16,7 @@ import { Appearance } from "react-native";
 import { useTheme } from "styled-components";
 import navigationStrings from "../../../navigations/navigationStrings";
 import MusicComponent from "../../../component/musicComponent";
+import { icAddGold, icFullScreen } from "../../../assets";
 
 const data = [
   { label: "Item 1", value: "1" },
@@ -39,6 +40,7 @@ const PothiSahibViewer = ({ navigation }) => {
       <DropdownWrapper>
         <DropDownText>ਆਖਹਿ</DropDownText>
         <Dropdown
+          style={{ marginLeft: 10, marginBottom: 10, marginRight: 10 }}
           data={data}
           search={false}
           maxHeight={300}
@@ -82,11 +84,40 @@ const PothiSahibViewer = ({ navigation }) => {
           );
         }}
       />
+
+      <TouchableOpacity
+        onPress={() => {
+          navigation.setOptions({
+            headerShown: true,
+          });
+        }}
+      >
+        <ImageBtn>
+          <Image
+            style={{ height: 22, width: 22 }}
+            source={icFullScreen}
+          ></Image>
+        </ImageBtn>
+      </TouchableOpacity>
     </MainWrapper>
   );
 };
 
 export default withTheme(PothiSahibViewer);
+
+const ImageBtn = styled.View`
+  position: absolute;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+  border-radius: 30px;
+  background-color: ${({ theme }: any) => theme.colors.primary};
+`;
 
 const DropDownText = styled.Text`
   padding-left:8px

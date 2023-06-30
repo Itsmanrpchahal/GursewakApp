@@ -197,11 +197,11 @@ const Akhar = () => {
               </TouchableOpacity>
             </AkharWrapper>
           </HorizontalWrapper>
-          {view === 5 ||
-          view === 6 ||
-          view === 7 ||
-          view === 8 ||
-          view === 9 ? (
+          {(view === 5 && tab === 0) ||
+          (view === 6 && tab === 0) ||
+          (view === 7 && tab === 0) ||
+          (view === 8 && tab === 0) ||
+          (view === 9 && tab === 0) ? (
             <HiddenView>
               <TitleText>Content to be added</TitleText>
             </HiddenView>
@@ -280,11 +280,11 @@ const Akhar = () => {
             </AkharWrapper>
           </HorizontalWrapper>
 
-          {view === 10 ||
-          view === 11 ||
-          view === 12 ||
-          view === 13 ||
-          view === 14 ? (
+          {(view === 10 && tab === 0) ||
+          (view === 11 && tab === 0) ||
+          (view === 12 && tab === 0) ||
+          (view === 13 && tab === 0) ||
+          (view === 14 && tab === 0) ? (
             <HiddenView>
               <TitleText>Content to be added</TitleText>
             </HiddenView>
@@ -363,11 +363,11 @@ const Akhar = () => {
             </AkharWrapper>
           </HorizontalWrapper>
 
-          {view === 15 ||
-          view === 16 ||
-          view === 17 ||
-          view === 18 ||
-          view === 19 ? (
+          {(view === 15 && tab === 0) ||
+          (view === 16 && tab === 0) ||
+          (view === 17 && tab === 0) ||
+          (view === 18 && tab === 0) ||
+          (view === 19 && tab === 0) ? (
             <HiddenView>
               <TitleText>Content to be added</TitleText>
             </HiddenView>
@@ -446,11 +446,11 @@ const Akhar = () => {
             </AkharWrapper>
           </HorizontalWrapper>
 
-          {view === 20 ||
-          view === 21 ||
-          view === 22 ||
-          view === 23 ||
-          view === 24 ? (
+          {(view === 20 && tab === 0) ||
+          (view === 21 && tab === 0) ||
+          (view === 22 && tab === 0) ||
+          (view === 23 && tab === 0) ||
+          (view === 24 && tab === 0) ? (
             <HiddenView>
               <TitleText>Content to be added</TitleText>
             </HiddenView>
@@ -529,11 +529,11 @@ const Akhar = () => {
             </AkharWrapper>
           </HorizontalWrapper>
 
-          {view === 25 ||
-          view === 26 ||
-          view === 27 ||
-          view === 28 ||
-          view === 29 ? (
+          {(view === 25 && tab === 0) ||
+          (view === 26 && tab === 0) ||
+          (view === 27 && tab === 0) ||
+          (view === 28 && tab === 0) ||
+          (view === 29 && tab === 0) ? (
             <HiddenView>
               <TitleText>Content to be added</TitleText>
             </HiddenView>
@@ -612,11 +612,11 @@ const Akhar = () => {
             </AkharWrapper>
           </HorizontalWrapper>
 
-          {view === 20 ||
-          view === 31 ||
-          view === 32 ||
-          view === 33 ||
-          view === 34 ? (
+          {(view === 30 && tab === 0) ||
+          (view === 31 && tab === 0) ||
+          (view === 32 && tab === 0) ||
+          (view === 33 && tab === 0) ||
+          (view === 34 && tab === 0) ? (
             <HiddenView>
               <TitleText>Content to be added</TitleText>
             </HiddenView>

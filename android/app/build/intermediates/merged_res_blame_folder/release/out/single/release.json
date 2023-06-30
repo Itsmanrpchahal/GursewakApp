@@ -100,6 +100,10 @@
         "source": "com.theme.app-react-1:/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
     },
     {
+        "merged": "com.theme.app-merged_res-6:/drawable-xxhdpi_src_assets_pauseyellow_pauseyellow.png.flat",
+        "source": "com.theme.app-react-1:/drawable-xxhdpi/src_assets_pauseyellow_pauseyellow.png"
+    },
+    {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_addgold_addgold.png.flat",
         "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_addgold_addgold.png"
     },
@@ -126,6 +130,10 @@
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_node_modules_reactnativeratings_dist_images_star.png.flat",
         "source": "com.theme.app-react-1:/drawable-mdpi/node_modules_reactnativeratings_dist_images_star.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_pauseblue_pauseblue.png.flat",
+        "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_pauseblue_pauseblue.png"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-xhdpi_src_assets_repearyellow_repeatyellow.png.flat",
@@ -168,6 +176,10 @@
         "source": "com.theme.app-react-1:/drawable-xhdpi/src_assets_rewind_rewind.png"
     },
     {
+        "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_rewindyellow_rewindyellow.png.flat",
+        "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_rewindyellow_rewindyellow.png"
+    },
+    {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_web_web.png.flat",
         "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_web_web.png"
     },
@@ -178,6 +190,10 @@
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_nextsong_nextsong.png.flat",
         "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_nextsong_nextsong.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_addblack_addblack.png.flat",
+        "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_addblack_addblack.png"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_instagram_instagram.png.flat",
@@ -332,6 +348,10 @@
         "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_accentstar_accentstart.png"
     },
     {
+        "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_img_img5.jpg.flat",
+        "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_img_img5.jpg"
+    },
+    {
         "merged": "com.theme.app-merged_res-6:/drawable-xhdpi_src_assets_instagram_instagram.png.flat",
         "source": "com.theme.app-react-1:/drawable-xhdpi/src_assets_instagram_instagram.png"
     },
@@ -342,6 +362,14 @@
     {
         "merged": "com.theme.app-merged_res-6:/drawable-xxhdpi_src_assets_balupdesh_balupdesh.png.flat",
         "source": "com.theme.app-react-1:/drawable-xxhdpi/src_assets_balupdesh_balupdesh.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/drawable-xxhdpi_src_assets_pauseblue_pauseblue.png.flat",
+        "source": "com.theme.app-react-1:/drawable-xxhdpi/src_assets_pauseblue_pauseblue.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/drawable-xhdpi_src_assets_pauseyellow_pauseyellow.png.flat",
+        "source": "com.theme.app-react-1:/drawable-xhdpi/src_assets_pauseyellow_pauseyellow.png"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_backarrow_backarrow.png.flat",
@@ -370,6 +398,10 @@
     {
         "merged": "com.theme.app-merged_res-6:/drawable-xxhdpi_src_assets_plusyellow_plusyellow.png.flat",
         "source": "com.theme.app-react-1:/drawable-xxhdpi/src_assets_plusyellow_plusyellow.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/drawable-xxhdpi_src_assets_addblue_addblue.png.flat",
+        "source": "com.theme.app-react-1:/drawable-xxhdpi/src_assets_addblue_addblue.png"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_repeatblue_repeat.png.flat",
@@ -426,6 +458,10 @@
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_arrowup_arrowup.png.flat",
         "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_arrowup_arrowup.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/raw_src_utils_vedio.mp4.flat",
+        "source": "com.theme.app-react-1:/raw/src_utils_vedio.mp4"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_usericon_usericon.png.flat",
@@ -504,6 +540,10 @@
         "source": "com.theme.app-react-1:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
     },
     {
+        "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_img_img3.jpg.flat",
+        "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_img_img3.jpg"
+    },
+    {
         "merged": "com.theme.app-merged_res-6:/drawable-xhdpi_src_assets_ikonkar_ikonkar.png.flat",
         "source": "com.theme.app-react-1:/drawable-xhdpi/src_assets_ikonkar_ikonkar.png"
     },
@@ -518,6 +558,10 @@
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_node_modules_reactnativeelementdropdown_src_assets_close.png.flat",
         "source": "com.theme.app-react-1:/drawable-mdpi/node_modules_reactnativeelementdropdown_src_assets_close.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_logo.png.flat",
+        "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_logo.png"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_yticon_youtube.png.flat",
@@ -560,6 +604,10 @@
         "source": "com.theme.app-react-1:/drawable-xhdpi/src_assets_email_email.png"
     },
     {
+        "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_img_img2.jpg.flat",
+        "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_img_img2.jpg"
+    },
+    {
         "merged": "com.theme.app-merged_res-6:/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "com.theme.app-main-7:/mipmap-xhdpi/ic_launcher.png"
     },
@@ -582,6 +630,10 @@
     {
         "merged": "com.theme.app-merged_res-6:/drawable-xhdpi_src_assets_settingyellow_settingyellow.png.flat",
         "source": "com.theme.app-react-1:/drawable-xhdpi/src_assets_settingyellow_settingyellow.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/drawable-xhdpi_src_assets_pauseblue_pauseblue.png.flat",
+        "source": "com.theme.app-react-1:/drawable-xhdpi/src_assets_pauseblue_pauseblue.png"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
@@ -610,6 +662,10 @@
     {
         "merged": "com.theme.app-merged_res-6:/drawable-xxhdpi_src_assets_deleteyellow_deleteyellow.png.flat",
         "source": "com.theme.app-react-1:/drawable-xxhdpi/src_assets_deleteyellow_deleteyellow.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_img_img1.jpg.flat",
+        "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_img_img1.jpg"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_note_note.png.flat",
@@ -660,6 +716,14 @@
         "source": "com.theme.app-main-7:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "com.theme.app-merged_res-6:/raw_src_utils_video.mp4.flat",
+        "source": "com.theme.app-react-1:/raw/src_utils_video.mp4"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/drawable-xhdpi_src_assets_addblue_addblue.png.flat",
+        "source": "com.theme.app-react-1:/drawable-xhdpi/src_assets_addblue_addblue.png"
+    },
+    {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_lightbar_lightbar.png.flat",
         "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_lightbar_lightbar.png"
     },
@@ -684,12 +748,20 @@
         "source": "com.theme.app-react-1:/drawable-xhdpi/node_modules_reactnativecheckbox_img_ic_check_box.png"
     },
     {
+        "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_img_img4.jpg.flat",
+        "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_img_img4.jpg"
+    },
+    {
         "merged": "com.theme.app-merged_res-6:/drawable-xxhdpi_src_assets_fullscreen_fullscreen.png.flat",
         "source": "com.theme.app-react-1:/drawable-xxhdpi/src_assets_fullscreen_fullscreen.png"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-xxhdpi_src_assets_plus_plus.png.flat",
         "source": "com.theme.app-react-1:/drawable-xxhdpi/src_assets_plus_plus.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/drawable-xhdpi_src_assets_rewindyellow_rewindyellow.png.flat",
+        "source": "com.theme.app-react-1:/drawable-xhdpi/src_assets_rewindyellow_rewindyellow.png"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_arrowblue_icarrowblue.png.flat",
@@ -740,12 +812,20 @@
         "source": "com.theme.app-react-1:/drawable-xhdpi/src_assets_sundargutka_sundargutka.png"
     },
     {
+        "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_addblue_addblue.png.flat",
+        "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_addblue_addblue.png"
+    },
+    {
         "merged": "com.theme.app-merged_res-6:/drawable-xxhdpi_src_assets_roundback_roundback.png.flat",
         "source": "com.theme.app-react-1:/drawable-xxhdpi/src_assets_roundback_roundback.png"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_settingyellow_settingyellow.png.flat",
         "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_settingyellow_settingyellow.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/drawable-xxhdpi_src_assets_addblack_addblack.png.flat",
+        "source": "com.theme.app-react-1:/drawable-xxhdpi/src_assets_addblack_addblack.png"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_node_modules_reactnativecheckbox_img_ic_indeterminate_check_box.png.flat",
@@ -758,6 +838,10 @@
     {
         "merged": "com.theme.app-merged_res-6:/drawable-xhdpi_src_assets_sehajpath_sehajpath.png.flat",
         "source": "com.theme.app-react-1:/drawable-xhdpi/src_assets_sehajpath_sehajpath.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/drawable-xxhdpi_src_assets_rewindyellow_rewindyellow.png.flat",
+        "source": "com.theme.app-react-1:/drawable-xxhdpi/src_assets_rewindyellow_rewindyellow.png"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_yellowdownload_yellowdownload.png.flat",
@@ -888,8 +972,16 @@
         "source": "com.theme.app-react-1:/drawable-xhdpi/src_assets_plus_plus.png"
     },
     {
+        "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_pauseyellow_pauseyellow.png.flat",
+        "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_pauseyellow_pauseyellow.png"
+    },
+    {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_optionyellow_optionyellow.png.flat",
         "source": "com.theme.app-react-1:/drawable-mdpi/src_assets_optionyellow_optionyellow.png"
+    },
+    {
+        "merged": "com.theme.app-merged_res-6:/drawable-xhdpi_src_assets_addblack_addblack.png.flat",
+        "source": "com.theme.app-react-1:/drawable-xhdpi/src_assets_addblack_addblack.png"
     },
     {
         "merged": "com.theme.app-merged_res-6:/drawable-mdpi_src_assets_editblue_editblue.png.flat",

@@ -71,3 +71,6 @@ export { default as icShareArrowYellow } from "../assets/shareArrowYellow/shareA
 export { default as icPauseYellow } from "../assets/pauseYellow/pauseYellow.png";
 export { default as icPauseBlue } from "../assets/pauseBlue/pauseBlue.png";
 export { default as icRewindYellow } from "../assets/rewindYellow/rewindYellow.png";
+export { default as icaddBlack } from "../assets/addBlack/addBlack.png";
+export { default as icaddBlue } from "../assets/addBlue/addBlue.png";
+export { default as icLogo } from "../assets/logo.png";

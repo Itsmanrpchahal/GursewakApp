@@ -76,7 +76,7 @@
 36-->[com.android.installreferrer:installreferrer:1.1.2] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/efe86c1876b106907afb9f4779b8b89c/transformed/jetified-installreferrer-1.1.2/AndroidManifest.xml:9:22-107
 37
 38    <application
-38-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:12:5-36:19
+38-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:12:5-38:19
 39        android:name="com.theme.MainApplication"
 39-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:13:7-38
 40        android:allowBackup="false"
@@ -102,128 +102,130 @@
 51            android:exported="false" />
 51-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/debug/AndroidManifest.xml:11:84-108
 52        <activity
-52-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:19:7-35:18
+52-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:20:7-37:18
 53            android:name="com.theme.MainActivity"
-53-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:20:9-37
+53-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:21:9-37
 54            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-54-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:22:9-118
+54-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:24:9-118
 55            android:exported="true"
-55-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:25:9-32
+55-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:27:9-32
 56            android:label="@string/app_name"
-56-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:21:9-41
+56-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:23:9-41
 57            android:launchMode="singleTask"
-57-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:23:9-40
-58            android:windowSoftInputMode="adjustResize" >
-58-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:24:9-51
-59            <intent-filter>
-59-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:26:9-29:25
-60                <action android:name="android.intent.action.MAIN" />
-60-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:27:13-65
-60-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:27:21-62
-61
-62                <category android:name="android.intent.category.LAUNCHER" />
-62-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:28:13-73
-62-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:28:23-70
-63            </intent-filter>
-64            <intent-filter>
-64-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:30:11-34:21
-65                <action android:name="android.intent.action.MAIN" />
-65-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:27:13-65
-65-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:27:21-62
-66
-67                <category android:name="android.intent.category.LAUNCHER" />
-67-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:28:13-73
-67-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:28:23-70
-68
-69                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
-69-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:33:11-75
-69-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:33:19-73
-70            </intent-filter>
-71        </activity> <!-- The main service, handles playback, playlists and media buttons -->
-72        <service
-72-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-22:19
-73            android:name="com.doublesymmetry.trackplayer.service.MusicService"
-73-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-79
-74            android:enabled="true"
-74-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-35
-75            android:exported="false" >
-75-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
-76            <intent-filter>
-76-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-21:29
-77                <action android:name="android.intent.action.MEDIA_BUTTON" />
-77-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:17-77
-77-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:25-74
-78            </intent-filter>
-79        </service> <!-- A receiver that will receive media buttons. Required on pre-lollipop devices -->
-80        <receiver
-80-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-31:20
-81            android:name="androidx.media.session.MediaButtonReceiver"
-81-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-70
-82            android:exported="true" >
-82-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-36
-83            <intent-filter>
-83-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-21:29
-84                <action android:name="android.intent.action.MEDIA_BUTTON" />
-84-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:17-77
-84-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:25-74
-85            </intent-filter>
-86        </receiver>
-87
-88        <provider
-88-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-42:20
-89            android:name="com.RNFetchBlob.Utils.FileProvider"
-89-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-62
-90            android:authorities="com.theme.provider"
-90-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-60
-91            android:exported="false"
-91-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-37
-92            android:grantUriPermissions="true" >
-92-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-47
-93            <meta-data
-93-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-41:58
-94                android:name="android.support.FILE_PROVIDER_PATHS"
-94-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:40:17-67
-95                android:resource="@xml/provider_paths" />
-95-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:41:17-55
-96        </provider>
-97
-98        <activity
-98-->[com.google.android.gms:play-services-base:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fdd1ce27533080bff695effec7a105d0/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-99            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-99-->[com.google.android.gms:play-services-base:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fdd1ce27533080bff695effec7a105d0/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-100            android:exported="false"
-100-->[com.google.android.gms:play-services-base:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fdd1ce27533080bff695effec7a105d0/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-101            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-101-->[com.google.android.gms:play-services-base:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fdd1ce27533080bff695effec7a105d0/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-102
-103        <meta-data
-103-->[com.google.android.gms:play-services-basement:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/23f3804d2fc3a5327346cce623865525/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-104            android:name="com.google.android.gms.version"
-104-->[com.google.android.gms:play-services-basement:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/23f3804d2fc3a5327346cce623865525/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-105            android:value="@integer/google_play_services_version" />
-105-->[com.google.android.gms:play-services-basement:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/23f3804d2fc3a5327346cce623865525/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-106
-107        <provider
-107-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-108            android:name="androidx.startup.InitializationProvider"
-108-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
-109            android:authorities="com.theme.androidx-startup"
-109-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
-110            android:exported="false" >
-110-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
-111            <meta-data
-111-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-112                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-112-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
-113                android:value="androidx.startup" />
-113-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
-114            <meta-data
-114-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/c08a5e03aea05228390578a64c2ed911/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-115                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-115-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/c08a5e03aea05228390578a64c2ed911/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-116                android:value="androidx.startup" />
-116-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/c08a5e03aea05228390578a64c2ed911/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-117        </provider>
-118    </application>
-119
-120</manifest>
+57-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:25:9-40
+58            android:screenOrientation="portrait"
+58-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:22:11-47
+59            android:windowSoftInputMode="adjustResize" >
+59-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:26:9-51
+60            <intent-filter>
+60-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:28:9-31:25
+61                <action android:name="android.intent.action.MAIN" />
+61-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:29:13-65
+61-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:29:21-62
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:30:13-73
+63-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:30:23-70
+64            </intent-filter>
+65            <intent-filter>
+65-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:32:11-36:21
+66                <action android:name="android.intent.action.MAIN" />
+66-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:29:13-65
+66-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:29:21-62
+67
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:30:13-73
+68-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:30:23-70
+69
+70                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+70-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:35:11-75
+70-->/Users/itsmanprchahal/Documents/GitHub/GursewakApp/android/app/src/main/AndroidManifest.xml:35:19-73
+71            </intent-filter>
+72        </activity> <!-- The main service, handles playback, playlists and media buttons -->
+73        <service
+73-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-22:19
+74            android:name="com.doublesymmetry.trackplayer.service.MusicService"
+74-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-79
+75            android:enabled="true"
+75-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-35
+76            android:exported="false" >
+76-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+77            <intent-filter>
+77-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-21:29
+78                <action android:name="android.intent.action.MEDIA_BUTTON" />
+78-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:17-77
+78-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:25-74
+79            </intent-filter>
+80        </service> <!-- A receiver that will receive media buttons. Required on pre-lollipop devices -->
+81        <receiver
+81-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-31:20
+82            android:name="androidx.media.session.MediaButtonReceiver"
+82-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-70
+83            android:exported="true" >
+83-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-36
+84            <intent-filter>
+84-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-21:29
+85                <action android:name="android.intent.action.MEDIA_BUTTON" />
+85-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:17-77
+85-->[:react-native-track-player] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:25-74
+86            </intent-filter>
+87        </receiver>
+88
+89        <provider
+89-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-42:20
+90            android:name="com.RNFetchBlob.Utils.FileProvider"
+90-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-62
+91            android:authorities="com.theme.provider"
+91-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-60
+92            android:exported="false"
+92-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-37
+93            android:grantUriPermissions="true" >
+93-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-47
+94            <meta-data
+94-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-41:58
+95                android:name="android.support.FILE_PROVIDER_PATHS"
+95-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:40:17-67
+96                android:resource="@xml/provider_paths" />
+96-->[:rn-fetch-blob] /Users/itsmanprchahal/Documents/GitHub/GursewakApp/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:41:17-55
+97        </provider>
+98
+99        <activity
+99-->[com.google.android.gms:play-services-base:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fdd1ce27533080bff695effec7a105d0/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+100            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+100-->[com.google.android.gms:play-services-base:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fdd1ce27533080bff695effec7a105d0/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+101            android:exported="false"
+101-->[com.google.android.gms:play-services-base:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fdd1ce27533080bff695effec7a105d0/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+102            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+102-->[com.google.android.gms:play-services-base:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/fdd1ce27533080bff695effec7a105d0/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+103
+104        <meta-data
+104-->[com.google.android.gms:play-services-basement:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/23f3804d2fc3a5327346cce623865525/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+105            android:name="com.google.android.gms.version"
+105-->[com.google.android.gms:play-services-basement:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/23f3804d2fc3a5327346cce623865525/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+106            android:value="@integer/google_play_services_version" />
+106-->[com.google.android.gms:play-services-basement:17.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/23f3804d2fc3a5327346cce623865525/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+107
+108        <provider
+108-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+109            android:name="androidx.startup.InitializationProvider"
+109-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+110            android:authorities="com.theme.androidx-startup"
+110-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+111            android:exported="false" >
+111-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+112            <meta-data
+112-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+113                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+113-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+114                android:value="androidx.startup" />
+114-->[androidx.emoji2:emoji2:1.0.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/46010e491a83a13b9df7e0c186b90692/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+115            <meta-data
+115-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/c08a5e03aea05228390578a64c2ed911/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+116                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+116-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/c08a5e03aea05228390578a64c2ed911/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+117                android:value="androidx.startup" />
+117-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/itsmanprchahal/Documents/Projects/americloud-donations-android-kiosk/gradle/caches/transforms-3/c08a5e03aea05228390578a64c2ed911/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+118        </provider>
+119    </application>
+120
+121</manifest>

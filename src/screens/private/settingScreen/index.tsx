@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import styled, { withTheme } from "styled-components/native";
 import {
   Image,
+  Linking,
   ScrollView,
   StatusBar,
   Switch,
@@ -42,6 +43,11 @@ const themeData = [
   { label: "Light", value: false },
   { label: "Dark", value: true },
 ];
+
+const languageData = [
+  { label: "English", value: 1 },
+  { label: "Punjabi", value: 2 },
+];
 const SettingScreen = ({ navigation }) => {
   const [theme, setTheme] = useState(false);
   const [value, setValue] = useState(null);
@@ -76,7 +82,7 @@ const SettingScreen = ({ navigation }) => {
           <TextWrapper>Language</TextWrapper>
           <DropdownWrapper>
             <Dropdown
-              data={data}
+              data={languageData}
               search={false}
               activeColor={colors.primary}
               maxHeight={300}
@@ -87,7 +93,7 @@ const SettingScreen = ({ navigation }) => {
               valueField="value"
               placeholderStyle={{ color: "black" }}
               selectedTextStyle={{ color: "black" }}
-              placeholder={!isFocus ? "Select item" : "..."}
+              placeholder={!isFocus ? "English" : "..."}
               value={value}
               onFocus={() => setIsFocus(true)}
               onBlur={() => setIsFocus(false)}
@@ -236,7 +242,13 @@ const SettingScreen = ({ navigation }) => {
         <ToggleWrapper>
           <ItemWrapper1>
             <TextWrapperWhite>Email</TextWrapperWhite>
-            <DecsTextWrapperWhite>hello@gursevak.com</DecsTextWrapperWhite>
+            <TouchableOpacity
+              onPress={() => {
+                Linking.openURL("mailto:hello@gursevak.com");
+              }}
+            >
+              <DecsTextWrapperWhite>hello@gursevak.com</DecsTextWrapperWhite>
+            </TouchableOpacity>
           </ItemWrapper1>
           <ImageWrapper source={icEmail} />
         </ToggleWrapper>

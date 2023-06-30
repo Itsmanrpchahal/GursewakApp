@@ -71,15 +71,13 @@ const TextField: React.FC<TextFieldProps> = ({
           {...rest}
         />
 
-        {secureTextEntry && (
-          <SecureEntryIcon>
-            <TouchableOpacity
-              onPress={() => setShowSecureEntry(!showSecureEntry)}
-            >
-              <Image source={icon} />
-            </TouchableOpacity>
-          </SecureEntryIcon>
-        )}
+        <SecureEntryIcon>
+          <TouchableOpacity
+            onPress={() => setShowSecureEntry(!showSecureEntry)}
+          >
+            <Image source={icon} />
+          </TouchableOpacity>
+        </SecureEntryIcon>
       </Horizontal>
       {error !== null && (
         <ErrorWrapper>

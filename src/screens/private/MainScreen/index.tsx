@@ -1,31 +1,59 @@
 // @ts-ignore
 import React, { useEffect, useState } from "react";
 import styled from "styled-components/native";
-import { StyleSheet, TouchableOpacity } from "react-native";
+import {
+  Dimensions,
+  Image,
+  StyleSheet,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { withTheme } from "styled-components/native";
 // @ts-ignore
 import { useActions } from "@root/hooks/useActions";
 import CheckBox from "react-native-check-box";
 import navigationStrings from "../../../navigations/navigationStrings";
 import Video from "react-native-video";
+import { useTheme } from "styled-components";
 
 const MainScreen = ({ navigation }) => {
   const { getHome } = useActions();
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(true);
+  const [end, setEnd] = useState(0);
   const video = React.useRef(null);
+  const { colors }: any = useTheme();
+  const windowWidth = Dimensions.get("window").width;
+  const windowHeight = Dimensions.get("window").height;
   useEffect(() => {
     getHome({}).then((res) => {
       console.log(JSON.stringify(res));
     });
   }, []);
 
+  useEffect(() => {}, [end]);
   // @ts-ignore
   return (
     <MainWrapper>
-      {/* <Video
-        source={require("../../../utils/vedio.mp4")}
-        style={styles.video}
-      /> */}
+      <View
+        style={{
+          alignContent: "center",
+          justifyContent: "center",
+          alignItems: "center",
+          top: "30%",
+          width: "100%",
+          height: (windowWidth - 10) * (9 / 16),
+        }}
+      >
+        <Video
+          source={require("../../../utils/video.mp4")}
+          resizeMode="stretch"
+          style={{
+            aspectRatio: 16 / 9,
+            width: "100%",
+          }}
+        />
+      </View>
+
       <BottomWrapper>
         <CheckBox
           style={{ width: "65%" }}

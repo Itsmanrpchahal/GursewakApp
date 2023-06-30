@@ -20,6 +20,7 @@ import {
 import {
   FlatList,
   Image,
+  LayoutChangeEvent,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -62,6 +63,24 @@ const SplashWithSearchBar = ({ navigation }) => {
   const [tab, setTab] = useState(0);
   const { colors }: any = useTheme();
   const { modeState } = useTypedSelector((state) => state.mode);
+  const [height, setHeight] = useState<number>();
+  const [delayedData, setDelayedData] = useState([]);
+  const onLayout = ({
+    nativeEvent: {
+      layout: { x, y, width: w, height: h },
+    },
+  }: LayoutChangeEvent) => {
+    console.log("onLayout: ", x, y, w, h);
+    setHeight(h);
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDelayedData(data);
+    }, 300); // Delay of 1 second (adjust as needed)
+
+    return () => clearTimeout(timer);
+  }, [data]);
 
   return (
     <MainWrapper>
@@ -71,32 +90,34 @@ const SplashWithSearchBar = ({ navigation }) => {
           <TopWrapper>
             <TouchableOpacity
               onPress={() => {
-                navigation.navigate(navigationStrings.SETTINGS);
-              }}
-            >
-              <ImageWrapper source={icSetting} />
-            </TouchableOpacity>
-            <TouchableOpacity
-              onPress={() => {
                 navigation.navigate(navigationStrings.LOGIN);
               }}
             >
               <ImageWrapper source={icUser} />
             </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.SETTINGS);
+              }}
+            >
+              <ImageWrapper source={icSetting} />
+            </TouchableOpacity>
           </TopWrapper>
 
           {/* <TextWrapper>Content to be added</TextWrapper> */}
-          <Image style={{ marginTop: -10 }} source={icGoldenTemple} />
+          {/* Image is cropped */}
+          <Image style={{ marginTop: 0 }} source={icGoldenTemple} />
           <TextWrapperAccent>Learn Shudh Gurbani</TextWrapperAccent>
 
           <FlatList
             style={{
-              height: "100%",
               marginTop: -10,
+              marginBottom: 110,
             }}
-            columnWrapperStyle={{ justifyContent: "space-between" }}
-            data={data}
+            data={delayedData}
+            scrollEnabled={false}
             numColumns={2}
+            onLayout={onLayout}
             renderItem={({ item, index }) => {
               return (
                 <TouchableOpacity
@@ -119,8 +140,11 @@ const SplashWithSearchBar = ({ navigation }) => {
                       : null
                   }
                 >
-                  <ListView>
-                    <ImageWrapper1 source={item.iamge} />
+                  <ListView height={height && height}>
+                    <ImageView>
+                      <ImageWrapper1 source={item.iamge} />
+                    </ImageView>
+
                     <TextWrapper style={{ marginTop: 5 }}>
                       {item.title}
                     </TextWrapper>
@@ -194,11 +218,22 @@ const SplashWithSearchBar = ({ navigation }) => {
                 />
               </TouchableOpacity>
             </InputWrapper>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate(navigationStrings.POTHI_SHAIB_VIEW);
+              }}
+            >
+              <ImageWrapper
+                style={{
+                  marginLeft: 10,
+                  height: 23,
+                  width: 23,
+                  paddingRight: 15,
+                }}
+                source={icRoundBack}
+              />
+            </TouchableOpacity>
 
-            <ImageWrapper
-              style={{ marginLeft: 3, height: 23, width: 23, paddingRight: 15 }}
-              source={icRoundBack}
-            />
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate(navigationStrings.FAVOURITE);
@@ -255,7 +290,18 @@ type ColorProps = {
   color: string;
   backgroundColor: string;
   width: string;
+  height: string;
 };
+
+const VerticleWrapper = styled.View`
+  align-items: flex-start;
+  justify-content: space-evenly;
+  bottom: 0px;
+  background-color: ${({ backgroundColor }: any) => "red"};
+`;
+const ListTile = styled.View`
+  align-items: center;
+`;
 
 const InputWrapper = styled.View<ColorProps>`
   width: ${({ width }: any) => width}%;
@@ -293,15 +339,23 @@ const ButtonWrapper = styled.View`
 const BottomWrapper = styled.View`
   position: absolute;
   bottom: 0px;
+  height: 110px;
   padding: 16px;
   background-color: ${({ theme }: any) => theme.colors.primary};
 `;
 
-const ListView = styled.View`
-  width: 100%;
+const ImageView = styled.View`
+  height: 40px;
   align-items: center;
-  margin-top: 15px;
-  justify-content: space-between;
+  width: 50%;
+`;
+
+const ListView = styled.View<ColorProps>`
+  width:100%
+  justify-content:center;
+  align-items:center;
+  height: ${({ height }: any) => height / 3}px;
+
 `;
 
 const TextWrapperAccent = styled.Text`
@@ -314,7 +368,6 @@ const TextWrapperAccent = styled.Text`
 
 const TextWrapper = styled.Text`
   margin-top: 20px;
-  width: 100%;
   text-align: center;
   color: ${({ theme }: any) => theme.colors.textWhite};
 `;
@@ -322,13 +375,13 @@ const TextWrapper = styled.Text`
 const ImageWrapper1 = styled.Image``;
 
 const ImageWrapper = styled.Image`
-  margin-right: 16px;
+  margin-right: 15px;
 `;
 
 const TopWrapper = styled.View`
   flex-direction: row;
   justify-content: flex-end;
-  margin-right: 50px;
+  margin-right: 10px;
   margin-top: 10px;
 `;
 
@@ -337,7 +390,6 @@ const MainWrapper1 = styled.View`
   background-color: ${({ theme }: any) => theme.colors.primary};
 `;
 const MainWrapper = styled.View`
-  align-items: center;
   flex: 1;
   height: 100%;
   background-color: ${({ theme }: any) => theme.colors.primary};
